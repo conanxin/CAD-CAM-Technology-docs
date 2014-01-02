@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>第6章 计算机辅助工艺过程设计 &mdash; CAD/CAM Technology 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="CAD/CAM Technology 1.0 documentation" href="index.html" />
+    <link rel="next" title="第7章 计算机辅助数控加工" href="unit7.html" />
+    <link rel="prev" title="第5章 计算机辅助工程分析" href="unit5.html" /> 
+  </head>
+  <body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<a href="index.html"><img src="_static/logo.png" border="0" alt="py4sci"/></a>
+</div>
+
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="unit7.html" title="第7章 计算机辅助数控加工"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="unit5.html" title="第5章 计算机辅助工程分析"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">home</a>|&nbsp;</li>
+        <li><a href="search.html">search</a>|&nbsp;</li>
+ 
+      </ul>
+    </div>
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">第6章 计算机辅助工艺过程设计</a><ul>
+<li><a class="reference internal" href="#id2">6.1概述</a><ul>
+<li><a class="reference internal" href="#capp">6.1.1CAPP基本概念</a></li>
+<li><a class="reference internal" href="#id3">6.1.2CAPP的产生与意义</a></li>
+<li><a class="reference internal" href="#id4">6.1.3CAPP的设计步骤与结构组成</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id5">6.2成组技术概论</a><ul>
+<li><a class="reference internal" href="#id6">6.2.1零件的相似性</a></li>
+<li><a class="reference internal" href="#id7">6.2.2零件的分类编码和分类编码系统</a></li>
+<li><a class="reference internal" href="#id8">6.2.3零件的分类成组方法</a></li>
+<li><a class="reference internal" href="#id9">6.2.4成组技术的应用和经济效益</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id10">6.5零件信息的描述与输入</a><ul>
+<li><a class="reference internal" href="#id11">6.3.1零件信息描述的要求和内容</a></li>
+<li><a class="reference internal" href="#id12">6.3.2零件分类编码描述法</a></li>
+<li><a class="reference internal" href="#id13">6.3.3零件形状要素描述法</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id14">6.4派生CAPP系统的原理和设计</a><ul>
+<li><a class="reference internal" href="#id15">6.4.1派生CAPP系统原理</a></li>
+<li><a class="reference internal" href="#id16">6.4.2派生式CAPP系统的开发设计过程</a></li>
+<li><a class="reference internal" href="#id17">6.4.3派生式CAPP系统的使用</a></li>
+<li><a class="reference internal" href="#id18">6.4.4典型的派生式CAPP系统</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id19">6.5生成式CAPP系统原理和设计</a><ul>
+<li><a class="reference internal" href="#id20">6.5.1生成式CAPP系统原理</a></li>
+<li><a class="reference internal" href="#id21">6.5.2设计生成式CAPP系统的准备阶段</a></li>
+<li><a class="reference internal" href="#id22">6.5.3生成式CAPP系统的设计方法</a></li>
+<li><a class="reference internal" href="#id23">6.5.4工艺过程设计中的决策方法</a></li>
+<li><a class="reference internal" href="#id24">6.5.5典型的生成式CAPP系统</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id25">6.6CAPP技术的发展</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="unit5.html"
+                        title="previous chapter">第5章 计算机辅助工程分析</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="unit7.html"
+                        title="next chapter">第7章 计算机辅助数控加工</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/unit6.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>第6章 计算机辅助工艺过程设计<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>6.1概述<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="capp">
+<h3>6.1.1CAPP基本概念<a class="headerlink" href="#capp" title="Permalink to this headline">¶</a></h3>
+<p>计算机辅助工艺过程设计是通过向计算机输入被加工零件的信息和工艺信息，由计算机自动输出零件的工艺路线和工序内容等
+工艺文件的过程。</p>
+</div>
+<div class="section" id="id3">
+<h3>6.1.2CAPP的产生与意义<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>计算机辅助工艺过程设计的意义：</p>
+<blockquote>
+<div><p>（1）可以代替工艺工程师的繁重劳动。</p>
+<p>（2）提高工艺过程设计质量。</p>
+<p>（3）缩短生产准备周期，提高生产率。</p>
+<p>（4）减少工艺过程设计费用及制造费用。</p>
+<p>（5）为实现计算机集成制造系统（CIMS）创造条件。</p>
+</div></blockquote>
+</div>
+<div class="section" id="id4">
+<h3>6.1.3CAPP的设计步骤与结构组成<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>计算机辅助工艺过程设计的步骤大致如下：</p>
+<blockquote>
+<div><p>（1）产品图样信息输入。</p>
+<p>（2）工艺路线和工序内容拟定。</p>
+<p>（3）加工设备和工艺装备的确定。</p>
+<p>（4）工艺参数计算。</p>
+<p>（5）工艺文件的输出。</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>6.2成组技术概论<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>要缩短小批量生产的生产周期，从工件在车间时间消耗的分配上分析，可以采用以下三种方法：</p>
+<blockquote>
+<div><p>（1）采用先进刀具和合理的切削参数，提高切削效率。</p>
+<p>（2）改进工艺装备和实现单机自动化，减少加工过程中的工件装卸、定位、测量、换刀等辅助时间。</p>
+<p>（3）减少工件的运输和等待时间。</p>
+</div></blockquote>
+<div class="section" id="id6">
+<h3>6.2.1零件的相似性<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>任何一种机械类产品中的组成零件都可以分为以下三类：</p>
+<blockquote>
+<div><p>（1）复杂件或特殊件（A类）</p>
+<p>（2）相似类（B类）</p>
+<p>（3）简单件或标准件（C类）</p>
+</div></blockquote>
+</div>
+<div class="section" id="id7">
+<h3>6.2.2零件的分类编码和分类编码系统<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>零件分类编码系统结构</li>
+</ol>
+<blockquote>
+<div><p>构造一个编码系统时，下述因素需要优先考虑：</p>
+<p>（1）零件的大类；</p>
+<p>（2）编码内容应表示的详细程度；</p>
+<p>（3）编码系统的结构；</p>
+<p>（4）每一码位选用的字符。</p>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>零件分类编码系统</li>
+</ol>
+</div>
+<div class="section" id="id8">
+<h3>6.2.3零件的分类成组方法<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>特征码位</li>
+<li>码域法</li>
+</ol>
+</div>
+<div class="section" id="id9">
+<h3>6.2.4成组技术的应用和经济效益<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>成组技术在产品设计中的应用</li>
+</ol>
+<blockquote>
+<div><p>成组计算在设计工作中的应用，大致可分为下列三个方面：</p>
+<p>（1）根据零件分类编码系统，检索现有的零件图样，使现有的零件图样能得到最大限度的重复使用，
+或只经少量修改即可使用；</p>
+<p>（2）根据零件重复使用的频数，进行同类零件的结构和尺寸的标准化和规格化；</p>
+<p>（3）提供有助于设计人员使用的标准化设计资料。</p>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>成组技术在制造工艺中的应用</li>
+</ol>
+<blockquote>
+<div><p>1）成组工艺的设计方法</p>
+<p>2）成组夹具设计</p>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>成组技术在生产组织管理中的应用</li>
+<li>成组技术的技术经济效益</li>
+</ol>
+<blockquote>
+<div><p>（1）提高劳动生产率。</p>
+<p>（2）保证产品质量。</p>
+<p>（3）缩短生产技术准备周期。</p>
+<p>（4）减少零件运输工作量、实现物料流合理化。</p>
+<p>（5）减少在制品数量和库存费用。</p>
+<p>（6）有利于管理科学化。</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="id10">
+<h2>6.5零件信息的描述与输入<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id11">
+<h3>6.3.1零件信息描述的要求和内容<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>零件信息描述的要求</li>
+</ol>
+<blockquote>
+<div><p>（1）信息描述要准确、完整。</p>
+<p>（2）信息描述要易于被计算机接受和处理，界面友好，使用方便，效率高。</p>
+<p>（3）信息描述要易于被工程技术人员理解和掌握，便于操作人员运用。</p>
+<p>（4）信息描述要考虑计算机辅助设计、计算机辅助制造、计算机辅助检测等多方面的要求，
+以便能够信息共享和进行系统集成。</p>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>零件信息描述的内容</li>
+</ol>
+<blockquote>
+<div><p>1）几何信息</p>
+<p>2）工艺信息</p>
+</div></blockquote>
+</div>
+<div class="section" id="id12">
+<h3>6.3.2零件分类编码描述法<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>成组代码描述法</li>
+<li>柔性编码描述法</li>
+<li>专用代码描述法</li>
+<li>标准代号描述法</li>
+</ol>
+</div>
+<div class="section" id="id13">
+<h3>6.3.3零件形状要素描述法<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<p>形状要素描述，要考虑：</p>
+<blockquote>
+<div><p>（1）形状要素的种类要能覆盖欲描述零件的要求，同时数量要尽量少，形状要素要有典型性。</p>
+<p>（2）为了有效地对零件进行描述，许多形状要素描述系统采用特征分层结构。</p>
+<p>（3）形状要素的划分应同时考虑零件的几何结构特性和工艺特性等诸多因素，而不是单纯几何结构的划分，
+要考虑产品零件的特点。</p>
+<p>（4）形状要素的描述可以采用编码、语言、数学等多种形式。</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="id14">
+<h2>6.4派生CAPP系统的原理和设计<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id15">
+<h3>6.4.1派生CAPP系统原理<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<p>派生式CAPP系统（Variant or Retrieve）的基本原理是利用零件的相似性，相似的零件有相似的工艺过程。</p>
+</div>
+<div class="section" id="id16">
+<h3>6.4.2派生式CAPP系统的开发设计过程<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<p>开发设计一个派生式CAPP系统一般包括：</p>
+<blockquote>
+<div><p>（1）选择或开发零件分类编码系统。</p>
+<p>（2）对现有的零件进行编码。</p>
+<p>（3）划分零件族，建立零件族特征矩阵。</p>
+<p>（4）编制零件族标准工艺过程。</p>
+<p>（5）建立工艺数据库或数据文件。</p>
+<p>（6）CAPP系统软件的设计和调试。</p>
+</div></blockquote>
+</div>
+<div class="section" id="id17">
+<h3>6.4.3派生式CAPP系统的使用<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id18">
+<h3>6.4.4典型的派生式CAPP系统<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>CAM-I的CAPP系统</li>
+<li>TOJICAP系统</li>
+</ol>
+</div>
+</div>
+<div class="section" id="id19">
+<h2>6.5生成式CAPP系统原理和设计<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id20">
+<h3>6.5.1生成式CAPP系统原理<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id21">
+<h3>6.5.2设计生成式CAPP系统的准备阶段<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+<p>准备阶段的工作：</p>
+<blockquote>
+<div><p>（1）确定系统的对象范围。</p>
+<p>（2）对零件进行工艺分析。</p>
+<p>（3）设计零件信息描述方法。</p>
+<p>（4）确定在工艺过程设计中各项任务的决策方法。</p>
+<p>（5）建立工艺数据库。</p>
+</div></blockquote>
+</div>
+<div class="section" id="id22">
+<h3>6.5.3生成式CAPP系统的设计方法<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>零件表面加工方法的选择</li>
+<li>工艺路线的安排</li>
+<li>工序设计</li>
+</ol>
+</div>
+<div class="section" id="id23">
+<h3>6.5.4工艺过程设计中的决策方法<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>数学模型决策</li>
+<li>逻辑推理决策</li>
+<li>智能思维决策</li>
+</ol>
+</div>
+<div class="section" id="id24">
+<h3>6.5.5典型的生成式CAPP系统<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>APPAS系统</li>
+<li>CPPP系统</li>
+</ol>
+</div>
+</div>
+<div class="section" id="id25">
+<h2>6.6CAPP技术的发展<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h2>
+<p>当前研究开发CAPP系统的热点主要在以下方面：</p>
+<blockquote>
+<div><p>（1）产品数字模型的生成与获取；</p>
+<p>（2）CAPP的体系结构及CAPP智能开发工具系统的研究；</p>
+<p>（3）基于分布型人工智能技术的分布型智能式CAPP系统；</p>
+<p>（4）人工神经网络技术在智能式CAPP系统中的应用；</p>
+<p>（5）并行工程模式下的CAPP系统；</p>
+<p>（6）虚拟制造中的CAPP系统；</p>
+<p>（7）基于网络制造的CAPP系统；</p>
+<p>（8）面向企业的实用化CAPP系统；</p>
+<p>（9）CAPP系统与自动化生产调度系统的集成。</p>
+</div></blockquote>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="unit7.html" title="第7章 计算机辅助数控加工"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="unit5.html" title="第5章 计算机辅助工程分析"
+             >previous</a> |</li>
+        <li><a href="index.html">home</a>|&nbsp;</li>
+        <li><a href="search.html">search</a>|&nbsp;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, ConanXin.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

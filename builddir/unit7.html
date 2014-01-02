@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>第7章 计算机辅助数控加工 &mdash; CAD/CAM Technology 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="CAD/CAM Technology 1.0 documentation" href="index.html" />
+    <link rel="next" title="第8章 CAD/CAM集成技术及其应用" href="unit8.html" />
+    <link rel="prev" title="第6章 计算机辅助工艺过程设计" href="unit6.html" /> 
+  </head>
+  <body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<a href="index.html"><img src="_static/logo.png" border="0" alt="py4sci"/></a>
+</div>
+
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="unit8.html" title="第8章 CAD/CAM集成技术及其应用"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="unit6.html" title="第6章 计算机辅助工艺过程设计"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">home</a>|&nbsp;</li>
+        <li><a href="search.html">search</a>|&nbsp;</li>
+ 
+      </ul>
+    </div>
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">第7章 计算机辅助数控加工</a><ul>
+<li><a class="reference internal" href="#id2">7.1计算机辅助数控加工基础</a><ul>
+<li><a class="reference internal" href="#id3">7.1.1数控编程的内容与步骤</a></li>
+<li><a class="reference internal" href="#id4">7.1.2数控编程的标准与代码</a></li>
+<li><a class="reference internal" href="#id5">7.1.3数控编程的指令代码</a></li>
+<li><a class="reference internal" href="#id6">7.1.4数控加工程序的结构与格式</a></li>
+<li><a class="reference internal" href="#id7">7.1.5手工编程实例</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id8">7.2计算机辅助数控加工的实现流程</a><ul>
+<li><a class="reference internal" href="#id9">7.2.1数控语言自动编程</a></li>
+<li><a class="reference internal" href="#cad-cam">7.2.2CAD/CAM系统自动编程</a></li>
+<li><a class="reference internal" href="#id10">7.2.3后置处理</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id11">7.3计算机辅助制造过程仿真</a><ul>
+<li><a class="reference internal" href="#id12">7.3.1几何仿真</a></li>
+<li><a class="reference internal" href="#id13">7.3.2物理仿真</a></li>
+<li><a class="reference internal" href="#id14">7.3.3加工工程仿真</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="unit6.html"
+                        title="previous chapter">第6章 计算机辅助工艺过程设计</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="unit8.html"
+                        title="next chapter">第8章 CAD/CAM集成技术及其应用</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/unit7.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>第7章 计算机辅助数控加工<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>7.1计算机辅助数控加工基础<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id3">
+<h3>7.1.1数控编程的内容与步骤<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>分析零件图样，进行工艺处理</li>
+</ol>
+<blockquote>
+<div><p>数控编程人员应注意：</p>
+<p>（1）确定加工方案。</p>
+<p>（2）工夹具的设计和选择。</p>
+<p>（3）选择合理的走刀路线。</p>
+<p>（4）选择正确的对刀点。</p>
+<p>（5）合理选择刀具。</p>
+<p>（6）确定合理的切削用量。</p>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>数值计算</li>
+<li>编写零件加工程序</li>
+<li>制备控制介质及输入程序</li>
+<li>程序检验及首件试切</li>
+</ol>
+</div>
+<div class="section" id="id4">
+<h3>7.1.2数控编程的标准与代码<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>数控机床坐标系命名</li>
+<li>绝对坐标与增量坐标</li>
+</ol>
+</div>
+<div class="section" id="id5">
+<h3>7.1.3数控编程的指令代码<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>准备功能G</li>
+<li>辅助功能M</li>
+<li>其他功能</li>
+</ol>
+</div>
+<div class="section" id="id6">
+<h3>7.1.4数控加工程序的结构与格式<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>程序的结构</li>
+<li>程序段格式</li>
+</ol>
+</div>
+<div class="section" id="id7">
+<h3>7.1.5手工编程实例<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="id8">
+<h2>7.2计算机辅助数控加工的实现流程<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id9">
+<h3>7.2.1数控语言自动编程<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="cad-cam">
+<h3>7.2.2CAD/CAM系统自动编程<a class="headerlink" href="#cad-cam" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>CAD/CAM系统自动编程原理和功能</li>
+<li>CAD/CAM系统自动编程的基本步骤</li>
+</ol>
+<blockquote>
+<div><p>（1）集合造型。</p>
+<p>（2）加工工艺分析。</p>
+<p>（3）刀具轨迹生成。</p>
+<p>（4）刀位验证及刀具轨迹的编辑。</p>
+<p>（5）后置处理。</p>
+<p>（6）数控程序的输出。</p>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>CAD/CAM软件系统自动编程特点</li>
+</ol>
+</div>
+<div class="section" id="id10">
+<h3>7.2.3后置处理<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>后置处理技术</li>
+<li>后置处理程序的编制方法</li>
+</ol>
+</div>
+</div>
+<div class="section" id="id11">
+<h2>7.3计算机辅助制造过程仿真<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id12">
+<h3>7.3.1几何仿真<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>刀位轨迹仿真</li>
+<li>虚拟加工（数控代码仿真）</li>
+</ol>
+</div>
+<div class="section" id="id13">
+<h3>7.3.2物理仿真<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>分析方法</li>
+<li>实验方法</li>
+<li>机械建模方法</li>
+</ol>
+</div>
+<div class="section" id="id14">
+<h3>7.3.3加工工程仿真<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>解析模型</li>
+<li>有限元模型</li>
+<li>分子动力学模型</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="unit8.html" title="第8章 CAD/CAM集成技术及其应用"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="unit6.html" title="第6章 计算机辅助工艺过程设计"
+             >previous</a> |</li>
+        <li><a href="index.html">home</a>|&nbsp;</li>
+        <li><a href="search.html">search</a>|&nbsp;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, ConanXin.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>
