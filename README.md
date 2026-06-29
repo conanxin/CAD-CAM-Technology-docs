@@ -38,6 +38,15 @@ make html
 - [jieba](https://github.com/fxsjy/jieba) — 中文搜索分词
 - MathJax — 数学公式渲染
 
+## V3 新增内容
+
+- **工程案例**（examples/）：三个完整的制造案例
+  - **CAD 到 G-code**：从几何建模到数控程序的完整流程，含 G-code 示例
+  - **数据交换格式**：STEP / STL / IGES / DXF / G-code 格式对比与跨系统协作
+  - **CAPP 工艺路线**：阶梯轴零件的工艺规划与工艺卡片设计
+- **案例图示**：新增 3 个 SVG 流程图
+- **G-code 代码示例**：带注释的教学用数控程序
+
 ## 内容结构
 
 - **现代 CAD/CAM 背景**：技术发展趋势与全流程概述
@@ -47,13 +56,16 @@ make html
 - **第5章**：计算机辅助工程分析（有限元、优化设计）
 - **第6-8章**：CAPP、数控编程、系统开发
 - **词汇表**：核心术语与缩写
+- **工程案例**：CAD→G-code、数据交换、CAPP 工艺规划
 
 ## 后续完善方向
 
+- [x] 增加工程案例（CAD→G-code、数据交换、CAPP）
+- [x] 增加 G-code / STEP / STL 示例
+- [ ] 加入真实软件截图（SolidWorks / FreeCAD / Fusion）
+- [ ] 增加 FreeCAD / Fusion / Mastercam 工具链示例
 - [ ] 补充更多图示和公式
-- [ ] 增加工程案例（汽车/航空/模具制造）
 - [ ] 增加软件工具链说明（SolidWorks/CATIA/UG NX/Mastercam）
-- [ ] 增加 G-code / STEP / STL 示例
 - [ ] 添加更多参考文献链接
 - [ ] 引入 Mermaid 流程图
 - [ ] 增加代码示例（Python + CAD 库）
