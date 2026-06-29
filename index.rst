@@ -26,6 +26,7 @@ CAD/CAM技术基础
 - **课程总览**：:doc:`course-overview` — 了解这门课解决什么问题
 - **章节地图**：:doc:`chapter-map` — 快速定位每章内容与能力要求
 - **学习路径**：:doc:`learning-path` — 推荐阅读顺序与扩展方向
+- **工作流路线图**：:doc:`workflow-roadmap` — 从设计到制造的完整工具链认知
 - **工程案例**：:doc:`examples/index` — 从 CAD 到 G-code 的完整制造流程
 - **词汇表**：:doc:`glossary` — 查阅 CAD/CAM 核心术语
 - **复习题**：:doc:`practice-questions` — 检验学习效果
@@ -47,6 +48,7 @@ CAD/CAM技术基础
     course-overview
     chapter-map
     learning-path
+    workflow-roadmap
     modern-cadcam-context
     unit1
     unit2

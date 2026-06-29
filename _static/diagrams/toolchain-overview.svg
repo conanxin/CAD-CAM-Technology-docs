@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320">
+  <rect width="900" height="320" fill="#f8f9fa" rx="10"/>
+  
+  <text x="450" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2c3e50">CAD/CAM 工具链角色总览</text>
+  
+  <!-- Category headers -->
+  <text x="90" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1565c0">CAD 设计</text>
+  <text x="270" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#2e7d32">工程分析</text>
+  <text x="450" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#ef6c00">工艺规划</text>
+  <text x="630" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#6a1b9a">数控编程</text>
+  <text x="810" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#c62828">制造执行</text>
+  
+  <!-- Category boxes -->
+  <rect x="20" y="70" width="140" height="230" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <rect x="200" y="70" width="140" height="230" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <rect x="380" y="70" width="140" height="230" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="5"/>
+  <rect x="560" y="70" width="140" height="230" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" rx="5"/>
+  <rect x="740" y="70" width="140" height="230" fill="#ffebee" stroke="#c62828" stroke-width="2" rx="5"/>
+  
+  <!-- CAD tools -->
+  <rect x="35" y="85" width="110" height="28" fill="white" stroke="#1976d2" stroke-width="1" rx="3"/>
+  <text x="90" y="103" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">SolidWorks</text>
+  
+  <rect x="35" y="120" width="110" height="28" fill="white" stroke="#1976d2" stroke-width="1" rx="3"/>
+  <text x="90" y="138" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">CATIA</text>
+  
+  <rect x="35" y="155" width="110" height="28" fill="white" stroke="#1976d2" stroke-width="1" rx="3"/>
+  <text x="90" y="173" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">Siemens NX</text>
+  
+  <rect x="35" y="190" width="110" height="28" fill="white" stroke="#1976d2" stroke-width="1" rx="3"/>
+  <text x="90" y="208" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">FreeCAD</text>
+  
+  <rect x="35" y="225" width="110" height="28" fill="white" stroke="#1976d2" stroke-width="1" rx="3"/>
+  <text x="90" y="243" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">Fusion 360</text>
+  
+  <text x="90" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">几何建模 + 装配</text>
+  
+  <!-- CAE tools -->
+  <rect x="215" y="85" width="110" height="28" fill="white" stroke="#388e3c" stroke-width="1" rx="3"/>
+  <text x="270" y="103" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">ANSYS</text>
+  
+  <rect x="215" y="120" width="110" height="28" fill="white" stroke="#388e3c" stroke-width="1" rx="3"/>
+  <text x="270" y="138" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">Abaqus</text>
+  
+  <rect x="215" y="155" width="110" height="28" fill="white" stroke="#388e3c" stroke-width="1" rx="3"/>
+  <text x="270" y="173" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">NASTRAN</text>
+  
+  <rect x="215" y="190" width="110" height="28" fill="white" stroke="#388e3c" stroke-width="1" rx="3"/>
+  <text x="270" y="208" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">COMSOL</text>
+  
+  <text x="270" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">有限元/仿真/优化</text>
+  
+  <!-- CAPP tools -->
+  <rect x="395" y="85" width="110" height="28" fill="white" stroke="#f57c00" stroke-width="1" rx="3"/>
+  <text x="450" y="103" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">CAPP 系统</text>
+  
+  <rect x="395" y="120" width="110" height="28" fill="white" stroke="#f57c00" stroke-width="1" rx="3"/>
+  <text x="450" y="138" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">工艺数据库</text>
+  
+  <rect x="395" y="155" width="110" height="28" fill="white" stroke="#f57c00" stroke-width="1" rx="3"/>
+  <text x="450" y="173" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">ERP/MES</text>
+  
+  <text x="450" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">工序规划 +</text>
+  <text x="450" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">资源调度</text>
+  
+  <!-- CAM tools -->
+  <rect x="575" y="85" width="110" height="28" fill="white" stroke="#7b1fa2" stroke-width="1" rx="3"/>
+  <text x="630" y="103" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">Mastercam</text>
+  
+  <rect x="575" y="120" width="110" height="28" fill="white" stroke="#7b1fa2" stroke-width="1" rx="3"/>
+  <text x="630" y="138" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">UG CAM</text>
+  
+  <rect x="575" y="155" width="110" height="28" fill="white" stroke="#7b1fa2" stroke-width="1" rx="3"/>
+  <text x="630" y="173" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">PowerMill</text>
+  
+  <rect x="575" y="190" width="110" height="28" fill="white" stroke="#7b1fa2" stroke-width="1" rx="3"/>
+  <text x="630" y="208" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">FeatureCAM</text>
+  
+  <text x="630" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">刀具路径 +</text>
+  <text x="630" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">后处理</text>
+  
+  <!-- Manufacturing -->
+  <rect x="755" y="85" width="110" height="28" fill="white" stroke="#c62828" stroke-width="1" rx="3"/>
+  <text x="810" y="103" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">CNC 机床</text>
+  
+  <rect x="755" y="120" width="110" height="28" fill="white" stroke="#c62828" stroke-width="1" rx="3"/>
+  <text x="810" y="138" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">3D 打印机</text>
+  
+  <rect x="755" y="155" width="110" height="28" fill="white" stroke="#c62828" stroke-width="1" rx="3"/>
+  <text x="810" y="173" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">三坐标测量</text>
+  
+  <rect x="755" y="190" width="110" height="28" fill="white" stroke="#c62828" stroke-width="1" rx="3"/>
+  <text x="810" y="208" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">机器人</text>
+  
+  <text x="810" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">物理加工 +</text>
+  <text x="810" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">质量检测</text>
+  
+  <!-- Arrows between categories -->
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#666"/>
+    </marker>
+  </defs>
+  
+  <line x1="160" y1="150" x2="200" y2="150" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="340" y1="150" x2="380" y2="150" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="520" y1="150" x2="560" y2="150" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="700" y1="150" x2="740" y2="150" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Feedback loop -->
+  <path d="M 810 280 Q 450 310 90 280" stroke="#999" stroke-width="1.5" stroke-dasharray="5,3" fill="none" marker-end="url(#arrow)"/>
+  <text x="450" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#999">质量反馈 → 设计迭代</text>
+</svg>

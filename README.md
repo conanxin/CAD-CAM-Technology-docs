@@ -7,7 +7,7 @@
 本项目已从旧版阅读笔记升级为**课程化学习文档站**，基于 [《CAD/CAM技术基础》](http://book.douban.com/subject/5296837/) 教材，使用 Sphinx 构建为适合自学的在线课程。
 
 - **在线版本**：https://conanxin.github.io/CAD-CAM-Technology-docs
-- **当前版本**：`v0.4.0-annotated-gcode-visualization`
+- **当前版本**：`v0.4.2-workflow-roadmap`
 - **历史版本**（SAE）：http://conanxincv.sinaapp.com/project2/index.html（已归档，不再更新）
 
 ## 当前版本亮点
@@ -19,6 +19,7 @@
 | **学习辅助** | 课程总览、章节地图、复习题、词汇表、学习路径 |
 | **工程案例** | 3 个完整制造案例：CAD→G-code、数据交换、CAPP 工艺路线 |
 | **G-code 教学** | 逐行解释 + 路径可视化，帮助初学者理解数控程序 |
+| **工作流路线图** | 工具链总览、四阶段学习路线、文件格式决策指南 |
 | **STEP/STL 实验** | 格式结构对比、精度分析、格式选择决策 |
 
 ## 快速入口
@@ -29,6 +30,7 @@
 | 章节地图 | https://conanxin.github.io/CAD-CAM-Technology-docs/chapter-map.html |
 | 复习题 | https://conanxin.github.io/CAD-CAM-Technology-docs/practice-questions.html |
 | 词汇表 | https://conanxin.github.io/CAD-CAM-Technology-docs/glossary.html |
+| **工作流路线图** | https://conanxin.github.io/CAD-CAM-Technology-docs/workflow-roadmap.html |
 | **工程案例：CAD 到 G-code** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cad-to-gcode.html |
 | **工程案例：数据交换格式** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/data-exchange.html |
 | **G-code 逐行解释** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/gcode-toolpath-visualization.html |
@@ -38,6 +40,7 @@
 
 - **V1**（2024-06）：Sphinx/Furo 现代化，GitHub Pages 部署
 - **V2**（2024-06）：课程化结构（课程总览、章节地图、复习题、每章学习结构）
+- **V4C**（2024-06）：工作流路线图（工具链总览、四阶段学习路线、文件格式决策指南）
 - **V4B**（2024-06）：STEP/STL 数据交换 mini-lab（格式结构对比与精度分析）
 
 ## 本地构建

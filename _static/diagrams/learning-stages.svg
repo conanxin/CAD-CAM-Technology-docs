@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280">
+  <rect width="800" height="280" fill="#f8f9fa" rx="10"/>
+  
+  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2c3e50">CAD/CAM 学习路线图</text>
+  
+  <!-- Stage 1 -->
+  <rect x="30" y="55" width="170" height="200" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="8"/>
+  <rect x="30" y="55" width="170" height="35" fill="#1976d2" rx="8"/>
+  <rect x="30" y="75" width="170" height="15" fill="#1976d2"/>
+  <text x="115" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white">阶段 1：基础认知</text>
+  
+  <text x="115" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333" font-weight="bold">建立整体框架</text>
+  
+  <text x="45" y="125" font-family="Arial, sans-serif" font-size="9" fill="#555">• CAD/CAM 概论</text>
+  <text x="45" y="140" font-family="Arial, sans-serif" font-size="9" fill="#555">• 技术发展历程</text>
+  <text x="45" y="155" font-family="Arial, sans-serif" font-size="9" fill="#555">• 应用领域概览</text>
+  <text x="45" y="170" font-family="Arial, sans-serif" font-size="9" fill="#555">• 文件格式初识</text>
+  
+  <text x="115" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#1976d2" font-weight="bold">对应: Unit 1-2</text>
+  <text x="115" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">预计: 1-2 周</text>
+  
+  <!-- Arrow 1 -->
+  <polygon points="210,145 225,140 225,150" fill="#666"/>
+  <line x1="200" y1="145" x2="225" y2="145" stroke="#666" stroke-width="2"/>
+  
+  <!-- Stage 2 -->
+  <rect x="230" y="55" width="170" height="200" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="8"/>
+  <rect x="230" y="55" width="170" height="35" fill="#388e3c" rx="8"/>
+  <rect x="230" y="75" width="170" height="15" fill="#388e3c"/>
+  <text x="315" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white">阶段 2：建模技术</text>
+  
+  <text x="315" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333" font-weight="bold">掌握几何表达</text>
+  
+  <text x="245" y="125" font-family="Arial, sans-serif" font-size="9" fill="#555">• 图形变换</text>
+  <text x="245" y="140" font-family="Arial, sans-serif" font-size="9" fill="#555">• 曲线与曲面</text>
+  <text x="245" y="155" font-family="Arial, sans-serif" font-size="9" fill="#555">• 实体建模</text>
+  <text x="245" y="170" font-family="Arial, sans-serif" font-size="9" fill="#555">• 特征建模</text>
+  
+  <text x="315" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#388e3c" font-weight="bold">对应: Unit 3-4</text>
+  <text x="315" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">预计: 2-3 周</text>
+  
+  <!-- Arrow 2 -->
+  <polygon points="410,145 425,140 425,150" fill="#666"/>
+  <line x1="400" y1="145" x2="425" y2="145" stroke="#666" stroke-width="2"/>
+  
+  <!-- Stage 3 -->
+  <rect x="430" y="55" width="170" height="200" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="8"/>
+  <rect x="430" y="55" width="170" height="35" fill="#f57c00" rx="8"/>
+  <rect x="430" y="75" width="170" height="15" fill="#f57c00"/>
+  <text x="515" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white">阶段 3：分析工艺</text>
+  
+  <text x="515" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333" font-weight="bold">理解工程决策</text>
+  
+  <text x="445" y="125" font-family="Arial, sans-serif" font-size="9" fill="#555">• 有限元分析</text>
+  <text x="445" y="140" font-family="Arial, sans-serif" font-size="9" fill="#555">• 优化设计</text>
+  <text x="445" y="155" font-family="Arial, sans-serif" font-size="9" fill="#555">• CAPP 工艺规划</text>
+  <text x="445" y="170" font-family="Arial, sans-serif" font-size="9" fill="#555">• 工序设计</text>
+  
+  <text x="515" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#f57c00" font-weight="bold">对应: Unit 5-6</text>
+  <text x="515" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">预计: 2-3 周</text>
+  
+  <!-- Arrow 3 -->
+  <polygon points="610,145 625,140 625,150" fill="#666"/>
+  <line x1="600" y1="145" x2="625" y2="145" stroke="#666" stroke-width="2"/>
+  
+  <!-- Stage 4 -->
+  <rect x="630" y="55" width="170" height="200" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" rx="8"/>
+  <rect x="630" y="55" width="170" height="35" fill="#7b1fa2" rx="8"/>
+  <rect x="630" y="75" width="170" height="15" fill="#7b1fa2"/>
+  <text x="715" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white">阶段 4：编程集成</text>
+  
+  <text x="715" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333" font-weight="bold">实现制造落地</text>
+  
+  <text x="645" y="125" font-family="Arial, sans-serif" font-size="9" fill="#555">• 数控编程</text>
+  <text x="645" y="140" font-family="Arial, sans-serif" font-size="9" fill="#555">• G-code 基础</text>
+  <text x="645" y="155" font-family="Arial, sans-serif" font-size="9" fill="#555">• 刀具路径</text>
+  <text x="645" y="170" font-family="Arial, sans-serif" font-size="9" fill="#555">• 系统集成</text>
+  
+  <text x="715" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#7b1fa2" font-weight="bold">对应: Unit 7-8</text>
+  <text x="715" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">预计: 2-3 周</text>
+  
+  <!-- Bottom note -->
+  <text x="400" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">工程案例穿插在各阶段中实践 · 总预计 7-11 周</text>
+</svg>
