@@ -7,7 +7,7 @@
 本项目已从旧版阅读笔记升级为**课程化学习文档站**，基于 [《CAD/CAM技术基础》](http://book.douban.com/subject/5296837/) 教材，使用 Sphinx 构建为适合自学的在线课程。
 
 - **在线版本**：https://conanxin.github.io/CAD-CAM-Technology-docs
-- **当前版本**：`v0.3.0-engineering-case-studies`
+- **当前版本**：`v0.4.0-annotated-gcode-visualization`
 - **历史版本**（SAE）：http://conanxincv.sinaapp.com/project2/index.html（已归档，不再更新）
 
 ## 当前版本亮点
@@ -18,6 +18,7 @@
 | **8 章课程结构** | 完整覆盖 CAD/CAM 概论、建模、图形变换、工程分析、CAPP、数控编程、系统集成 |
 | **学习辅助** | 课程总览、章节地图、复习题、词汇表、学习路径 |
 | **工程案例** | 3 个完整制造案例：CAD→G-code、数据交换、CAPP 工艺路线 |
+| **G-code 教学** | 逐行解释 + 路径可视化，帮助初学者理解数控程序 |
 
 ## 快速入口
 
@@ -29,13 +30,13 @@
 | 词汇表 | https://conanxin.github.io/CAD-CAM-Technology-docs/glossary.html |
 | **工程案例：CAD 到 G-code** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cad-to-gcode.html |
 | **工程案例：数据交换格式** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/data-exchange.html |
-| **工程案例：CAPP 工艺路线** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/capp-process-plan.html |
+| **G-code 逐行解释** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/gcode-toolpath-visualization.html |
 
 ## 版本演进
 
 - **V1**（2024-06）：Sphinx/Furo 现代化，GitHub Pages 部署
 - **V2**（2024-06）：课程化结构（课程总览、章节地图、复习题、每章学习结构）
-- **V3**（2024-06）：工程案例增强（CAD→G-code、数据交换、CAPP 工艺规划）
+- **V4A**（2024-06）：G-code 逐行解释与路径可视化（教学增强）
 
 ## 本地构建
 
@@ -68,10 +69,11 @@ make html
 - **第5章**：计算机辅助工程分析（有限元、优化设计）
 - **第6-8章**：CAPP、数控编程、系统开发
 - **词汇表**：核心术语与缩写
-- **工程案例**：CAD→G-code、数据交换、CAPP 工艺规划
+- **工程案例**：CAD→G-code（含逐行解释）、数据交换、CAPP 工艺规划
 
 ## 后续完善方向
 
+- [x] G-code 逐行解释与路径可视化
 - [x] 增加工程案例（CAD→G-code、数据交换、CAPP）
 - [x] 增加 G-code / STEP / STL 示例
 - [ ] 加入真实软件截图（SolidWorks / FreeCAD / Fusion）
