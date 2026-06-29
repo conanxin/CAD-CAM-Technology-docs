@@ -19,8 +19,29 @@
 | **学习辅助** | 课程总览、章节地图、复习题、词汇表、学习路径 |
 | **工程案例** | 3 个完整制造案例：CAD→G-code、数据交换、CAPP 工艺路线 |
 | **G-code 教学** | 逐行解释 + 路径可视化，帮助初学者理解数控程序 |
-| **工作流路线图** | 工具链总览、四阶段学习路线、文件格式决策指南 |
+| **工作流路线图** | 工具链总览、四阶段学习路线、文件格式决策指南、3 个低门槛实践任务 |
 | **STEP/STL 实验** | 格式结构对比、精度分析、格式选择决策 |
+| **版本发布说明** | V1→V4C 演进时间线、能力矩阵、教学亮点、后续规划 |
+
+## 版本能力矩阵
+
+| 能力维度 | 内容 | 版本 |
+|----------|------|------|
+| 基础课程 | 8 章完整教材 | V2 |
+| 课程导航 | 总览、地图、路径 | V2 |
+| 学习检验 | 复习题、词汇表 | V2 |
+| 工程案例 | 3 个完整制造流程 | V3 |
+| G-code 教学 | 逐行解释 + 路径可视化 | V4A |
+| 格式实验 | STEP/STL 对比 mini-lab | V4B |
+| 工具链认知 | 路线图、格式决策、实践任务 | V4C |
+
+## 教学亮点速览
+
+**G-code 逐行解释（V4A）**：逐行解读数控程序 + SVG 路径可视化，让初学者"看到"机床动作 → [查看](https://conanxin.github.io/CAD-CAM-Technology-docs/examples/gcode-toolpath-visualization.html)
+
+**STEP/STL mini-lab（V4B）**：同一零件导出两种格式，对比文件结构与几何表达 → [查看](https://conanxin.github.io/CAD-CAM-Technology-docs/examples/step-stl-mini-lab.html)
+
+**工作流路线图（V4C）**：四阶段学习路线 + 文件格式决策表 + 3 个低门槛实践任务 → [查看](https://conanxin.github.io/CAD-CAM-Technology-docs/workflow-roadmap.html)
 
 ## 快速入口
 
@@ -31,6 +52,7 @@
 | 复习题 | https://conanxin.github.io/CAD-CAM-Technology-docs/practice-questions.html |
 | 词汇表 | https://conanxin.github.io/CAD-CAM-Technology-docs/glossary.html |
 | **工作流路线图** | https://conanxin.github.io/CAD-CAM-Technology-docs/workflow-roadmap.html |
+| **版本发布说明** | https://conanxin.github.io/CAD-CAM-Technology-docs/release-showcase.html |
 | **工程案例：CAD 到 G-code** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cad-to-gcode.html |
 | **工程案例：数据交换格式** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/data-exchange.html |
 | **G-code 逐行解释** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/gcode-toolpath-visualization.html |
@@ -38,10 +60,12 @@
 
 ## 版本演进
 
-- **V1**（2024-06）：Sphinx/Furo 现代化，GitHub Pages 部署
-- **V2**（2024-06）：课程化结构（课程总览、章节地图、复习题、每章学习结构）
-- **V4C**（2024-06）：工作流路线图（工具链总览、四阶段学习路线、文件格式决策指南）
+- **V4C**（2024-06）：工作流路线图（工具链总览、四阶段学习路线、文件格式决策指南、3 个实践任务）
 - **V4B**（2024-06）：STEP/STL 数据交换 mini-lab（格式结构对比与精度分析）
+- **V4A**（2024-06）：G-code 逐行解释与路径可视化（逐行解读 + SVG 刀具路径图）
+- **V3**（2024-06）：工程案例化（CAD→G-code、数据交换、CAPP 工艺路线）
+- **V2**（2024-06）：课程化结构（课程总览、章节地图、复习题、每章学习结构）
+- **V1**（2024-06）：Sphinx/Furo 现代化，GitHub Pages 部署
 
 ## 本地构建
 
