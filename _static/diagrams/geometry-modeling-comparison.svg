@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 250">
+  <rect x="0" y="0" width="700" height="250" fill="#f8f9fa" rx="10"/>
+  
+  <text x="350" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">几何建模方法对比</text>
+  
+  <rect x="30" y="60" width="180" height="160" fill="#e74c3c" rx="5" opacity="0.8"/>
+  <text x="120" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">线框建模</text>
+  <text x="120" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Wireframe</text>
+  <text x="120" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">优点：简单、快速</text>
+  <text x="120" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">缺点：无面和体信息</text>
+  <text x="120" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">适用：简单轮廓</text>
+  <text x="120" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">信息：顶点 + 边</text>
+  
+  <rect x="260" y="60" width="180" height="160" fill="#3498db" rx="5" opacity="0.8"/>
+  <text x="350" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">曲面建模</text>
+  <text x="350" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Surface</text>
+  <text x="350" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">优点：精确描述曲面</text>
+  <text x="350" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">缺点：无厚度/体积</text>
+  <text x="350" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">适用：汽车/航空外形</text>
+  <text x="350" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">信息：顶点 + 边 + 面</text>
+  
+  <rect x="490" y="60" width="180" height="160" fill="#2ecc71" rx="5" opacity="0.8"/>
+  <text x="580" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">实体建模</text>
+  <text x="580" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Solid</text>
+  <text x="580" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">优点：完整拓扑信息</text>
+  <text x="580" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">缺点：计算复杂</text>
+  <text x="580" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">适用：机械零件设计</text>
+  <text x="580" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">信息：顶点 + 边 + 面 + 体</text>
+  
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34495e"/>
+    </marker>
+  </defs>
+  
+  <line x1="210" y1="140" x2="260" y2="140" stroke="#34495e" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="440" y1="140" x2="490" y2="140" stroke="#34495e" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <text x="350" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#7f8c8d">复杂度递增 → 信息完整性递增</text>
+</svg>

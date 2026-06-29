@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 150">
+  <rect x="0" y="0" width="600" height="150" fill="#f8f9fa" rx="10"/>
+  
+  <text x="300" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">CAD/CAM 数据交换</text>
+  
+  <rect x="20" y="60" width="120" height="60" fill="#3498db" rx="5" opacity="0.8"/>
+  <text x="80" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">CAD 系统 A</text>
+  <text x="80" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Pro/E / UG</text>
+  
+  <rect x="230" y="50" width="140" height="80" fill="#f39c12" rx="5" opacity="0.8"/>
+  <text x="300" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">标准交换格式</text>
+  <text x="300" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">IGES / STEP</text>
+  <text x="300" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">DXF / STL</text>
+  
+  <rect x="460" y="60" width="120" height="60" fill="#2ecc71" rx="5" opacity="0.8"/>
+  <text x="520" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">CAD/CAM 系统 B</text>
+  <text x="520" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Mastercam / Cimatron</text>
+  
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34495e"/>
+    </marker>
+  </defs>
+  
+  <line x1="140" y1="90" x2="230" y2="90" stroke="#34495e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="185" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d">导出</text>
+  
+  <line x1="370" y1="90" x2="460" y2="90" stroke="#34495e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="415" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d">导入</text>
+  
+  <text x="300" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">中性文件格式实现异构系统间的数据互通</text>
+</svg>

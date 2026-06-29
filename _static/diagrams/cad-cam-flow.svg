@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200">
+  <rect x="0" y="0" width="800" height="200" fill="#f8f9fa" rx="10"/>
+  
+  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">CAD/CAM 全流程</text>
+  
+  <rect x="20" y="60" width="100" height="80" fill="#3498db" rx="5" opacity="0.8"/>
+  <text x="70" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">概念设计</text>
+  <text x="70" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">草图/拓扑</text>
+  
+  <rect x="140" y="60" width="100" height="80" fill="#2ecc71" rx="5" opacity="0.8"/>
+  <text x="190" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">详细设计</text>
+  <text x="190" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">三维建模</text>
+  
+  <rect x="260" y="60" width="100" height="80" fill="#e74c3c" rx="5" opacity="0.8"/>
+  <text x="310" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">工程分析</text>
+  <text x="310" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">FEA/仿真</text>
+  
+  <rect x="380" y="60" width="100" height="80" fill="#f39c12" rx="5" opacity="0.8"/>
+  <text x="430" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">工艺规划</text>
+  <text x="430" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">CAPP</text>
+  
+  <rect x="500" y="60" width="100" height="80" fill="#9b59b6" rx="5" opacity="0.8"/>
+  <text x="550" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">数控编程</text>
+  <text x="550" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">G代码</text>
+  
+  <rect x="620" y="60" width="100" height="80" fill="#1abc9c" rx="5" opacity="0.8"/>
+  <text x="670" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">加工制造</text>
+  <text x="670" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">CNC/3D打印</text>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34495e"/>
+    </marker>
+  </defs>
+  
+  <line x1="120" y1="100" x2="140" y2="100" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="240" y1="100" x2="260" y2="100" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="360" y1="100" x2="380" y2="100" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="480" y1="100" x2="500" y2="100" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="600" y1="100" x2="620" y2="100" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+</svg>

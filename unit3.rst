@@ -35,6 +35,30 @@
 5. 错切变换
 6. 二维图形的组合变换
 
+二维齐次变换矩阵
+------------------
+
+二维图形的齐次坐标变换可以用 3×3 矩阵表示：
+
+.. math::
+
+    \begin{bmatrix} x' \\ y' \\ 1 \end{bmatrix}
+    =
+    \begin{bmatrix} a & b & c \\ d & e & f \\ 0 & 0 & 1 \end{bmatrix}
+    \begin{bmatrix} x \\ y \\ 1 \end{bmatrix}
+
+其中，平移变换矩阵为：
+
+.. math::
+
+    T(t_x, t_y) = \begin{bmatrix} 1 & 0 & t_x \\ 0 & 1 & t_y \\ 0 & 0 & 1 \end{bmatrix}
+
+旋转变换矩阵（绕原点旋转 :math:`\theta` 角）为：
+
+.. math::
+
+    R(\theta) = \begin{bmatrix} \cos\theta & -\sin\theta & 0 \\ \sin\theta & \cos\theta & 0 \\ 0 & 0 & 1 \end{bmatrix}
+
 3.2.3三维图形几何变换
 ~~~~~~~~~~~~~~~~~~~~~~
 

@@ -1,0 +1,26 @@
+# Sphinx build
+_build/
+builddir/
+.doctrees/
+
+# Python
+*.pyc
+**/__pycache__/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/

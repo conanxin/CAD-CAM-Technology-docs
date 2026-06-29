@@ -19,6 +19,8 @@ Contents:
 .. toctree::
     :maxdepth: 2
     
+    modern-cadcam-context
+    learning-path
     unit1
     unit2
     unit3
@@ -27,6 +29,7 @@ Contents:
     unit6
     unit7
     unit8
+    glossary
 
 Indices and tables
 ==================
