@@ -7,14 +7,35 @@
 本项目已从旧版阅读笔记升级为**课程化学习文档站**，基于 [《CAD/CAM技术基础》](http://book.douban.com/subject/5296837/) 教材，使用 Sphinx 构建为适合自学的在线课程。
 
 - **在线版本**：https://conanxin.github.io/CAD-CAM-Technology-docs
+- **当前版本**：`v0.3.0-engineering-case-studies`
 - **历史版本**（SAE）：http://conanxincv.sinaapp.com/project2/index.html（已归档，不再更新）
 
-## V2 新增内容
+## 当前版本亮点
 
-- **课程总览**（course-overview）：了解这门课解决什么问题、学完后的能力清单
-- **章节地图**（chapter-map）：8 章内容、关键词、能力要求、复习方式一览
-- **复习题**（practice-questions）：按 unit1~unit8 分组，含概念题、理解题、应用题
-- **每章学习结构**：学习目标、核心概念、本章导读、关键术语、工程应用场景、复习问题、延伸学习建议
+| 模块 | 说明 |
+|------|------|
+| **现代文档站** | 基于 Sphinx + Furo 主题，支持中文搜索、数学公式、响应式布局 |
+| **8 章课程结构** | 完整覆盖 CAD/CAM 概论、建模、图形变换、工程分析、CAPP、数控编程、系统集成 |
+| **学习辅助** | 课程总览、章节地图、复习题、词汇表、学习路径 |
+| **工程案例** | 3 个完整制造案例：CAD→G-code、数据交换、CAPP 工艺路线 |
+
+## 快速入口
+
+| 内容 | 链接 |
+|------|------|
+| 课程总览 | https://conanxin.github.io/CAD-CAM-Technology-docs/course-overview.html |
+| 章节地图 | https://conanxin.github.io/CAD-CAM-Technology-docs/chapter-map.html |
+| 复习题 | https://conanxin.github.io/CAD-CAM-Technology-docs/practice-questions.html |
+| 词汇表 | https://conanxin.github.io/CAD-CAM-Technology-docs/glossary.html |
+| **工程案例：CAD 到 G-code** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cad-to-gcode.html |
+| **工程案例：数据交换格式** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/data-exchange.html |
+| **工程案例：CAPP 工艺路线** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/capp-process-plan.html |
+
+## 版本演进
+
+- **V1**（2024-06）：Sphinx/Furo 现代化，GitHub Pages 部署
+- **V2**（2024-06）：课程化结构（课程总览、章节地图、复习题、每章学习结构）
+- **V3**（2024-06）：工程案例增强（CAD→G-code、数据交换、CAPP 工艺规划）
 
 ## 本地构建
 
@@ -37,15 +58,6 @@ make html
 - [Furo](https://pradyunsg.me/furo/) — 现代文档主题
 - [jieba](https://github.com/fxsjy/jieba) — 中文搜索分词
 - MathJax — 数学公式渲染
-
-## V3 新增内容
-
-- **工程案例**（examples/）：三个完整的制造案例
-  - **CAD 到 G-code**：从几何建模到数控程序的完整流程，含 G-code 示例
-  - **数据交换格式**：STEP / STL / IGES / DXF / G-code 格式对比与跨系统协作
-  - **CAPP 工艺路线**：阶梯轴零件的工艺规划与工艺卡片设计
-- **案例图示**：新增 3 个 SVG 流程图
-- **G-code 代码示例**：带注释的教学用数控程序
 
 ## 内容结构
 
