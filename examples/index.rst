@@ -37,6 +37,7 @@
 2. **有一定基础**：阅读 :doc:`capp-process-plan`，理解工艺规划的核心思路
 3. **系统学习**：阅读 :doc:`cad-to-gcode`，建立从设计到制造的完整认知
 4. **深入理解**：阅读 :doc:`gcode-toolpath-visualization`，逐行理解 G-code 程序如何控制机床动作
+5. **格式实验**：阅读 :doc:`step-stl-mini-lab`，通过对比实验理解 STEP 与 STL 的本质差异
 
 每个案例对应的课程章节
 ========================
@@ -51,9 +52,15 @@
    * - CAD 到 G-code
      - 几何建模、刀具路径、后处理
      - unit3, unit4, unit6, unit7
+   * - G-code 逐行解释
+     - 数控程序结构、指令含义、路径可视化
+     - unit7
    * - 数据交换
      - STEP/STL/IGES 格式、跨系统协作
      - unit1, unit5, unit8
+   * - STEP/STL Mini-Lab
+     - 格式结构对比、精度分析、格式选择
+     - unit4, unit8
    * - CAPP 工艺路线
      - 工艺规划、工序设计、工艺卡片
      - unit6, unit8
@@ -82,7 +89,11 @@
    - 理解刀具路径如何转化为机床指令
    - 阅读 :doc:`gcode-toolpath-visualization`，逐行理解每个 G-code 指令的含义
 
-6. **学完 unit8（集成）后**
+6. **学完 unit4（建模）和 unit8（集成）后**
+   - 阅读 :doc:`step-stl-mini-lab`，通过立方体和圆柱体对比实验
+   - 理解 B-rep 与三角网格的本质差异，培养格式选择能力
+
+7. **学完 unit8（集成）后**
    - 回顾三个案例中的数据流
    - 思考如何实现更高效的系统集成
 
@@ -92,4 +103,5 @@
    cad-to-gcode
    gcode-toolpath-visualization
    data-exchange
+   step-stl-mini-lab
    capp-process-plan

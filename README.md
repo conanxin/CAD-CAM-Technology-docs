@@ -19,6 +19,7 @@
 | **学习辅助** | 课程总览、章节地图、复习题、词汇表、学习路径 |
 | **工程案例** | 3 个完整制造案例：CAD→G-code、数据交换、CAPP 工艺路线 |
 | **G-code 教学** | 逐行解释 + 路径可视化，帮助初学者理解数控程序 |
+| **STEP/STL 实验** | 格式结构对比、精度分析、格式选择决策 |
 
 ## 快速入口
 
@@ -31,12 +32,13 @@
 | **工程案例：CAD 到 G-code** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cad-to-gcode.html |
 | **工程案例：数据交换格式** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/data-exchange.html |
 | **G-code 逐行解释** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/gcode-toolpath-visualization.html |
+| **STEP/STL 格式实验** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/step-stl-mini-lab.html |
 
 ## 版本演进
 
 - **V1**（2024-06）：Sphinx/Furo 现代化，GitHub Pages 部署
 - **V2**（2024-06）：课程化结构（课程总览、章节地图、复习题、每章学习结构）
-- **V4A**（2024-06）：G-code 逐行解释与路径可视化（教学增强）
+- **V4B**（2024-06）：STEP/STL 数据交换 mini-lab（格式结构对比与精度分析）
 
 ## 本地构建
 
@@ -69,10 +71,11 @@ make html
 - **第5章**：计算机辅助工程分析（有限元、优化设计）
 - **第6-8章**：CAPP、数控编程、系统开发
 - **词汇表**：核心术语与缩写
-- **工程案例**：CAD→G-code（含逐行解释）、数据交换、CAPP 工艺规划
+- **工程案例**：CAD→G-code（含逐行解释）、数据交换（含 STEP/STL mini-lab）、CAPP 工艺规划
 
 ## 后续完善方向
 
+- [x] STEP/STL 格式对比实验（mini-lab）
 - [x] G-code 逐行解释与路径可视化
 - [x] 增加工程案例（CAD→G-code、数据交换、CAPP）
 - [x] 增加 G-code / STEP / STL 示例
