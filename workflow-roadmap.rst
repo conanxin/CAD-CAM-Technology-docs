@@ -274,6 +274,21 @@ CAD/CAM 工具链总览
      - :doc:`examples/cad-to-gcode` + :doc:`examples/gcode-toolpath-visualization`
      - 理解从模型到机床指令的完整转换
 
+一张图看懂本站
+================================
+
+本站内容分为四个层次，形成完整的学习闭环：
+
+- **基础课程层**：course-overview -> unit1 -> unit2 -> unit3 -> unit4 -> unit5 -> unit6 -> unit7 -> unit8
+
+- **学习辅助层**：chapter-map（快速定位）、glossary（术语查询）、practice-questions（效果检验）、learning-path（阅读建议）
+
+- **工程案例层** / examples/index：cad-to-gcode（完整制造流程）、data-exchange（格式流转）、capp-process-plan（工艺设计）
+
+- **深度理解层**：gcode-toolpath-visualization（V4A: G-code 逐行解释与路径可视化）、step-stl-mini-lab（V4B: STEP 与 STL 格式对比实验）
+
+**阅读关系**：先读基础课程建立知识，再用案例串联应用，最后用深度理解层检验掌握程度。
+
 下一步建议
 ================================
 
@@ -295,3 +310,57 @@ CAD/CAM 工具链总览
 - **工程分析**：重点学习 Unit 5，了解 ANSYS/ABAQUS 入门
 - **数控编程**：重点学习 Unit 7，配合 :doc:`examples/gcode-toolpath-visualization`
 - **系统集成**：重点学习 Unit 8，理解 STEP/IGES/PDM 的作用
+
+低门槛实践任务
+----------------
+
+以下是 3 个不需要昂贵软件即可完成的实践任务：
+
+**任务 1：用 FreeCAD 建一个带孔矩形板并导出 STEP 与 STL**
+
+1. 下载并安装 `FreeCAD <https://www.freecad.org/>`_
+2. 新建 Part Design 工作区，创建一个 100mm × 60mm × 10mm 的立方体
+3. 在立方体上表面中心创建一个直径 20mm 的通孔
+4. 分别导出为 STEP (.step) 和 STL (.stl) 格式
+5. 对比两个文件的文件大小和内容差异
+
+**你能学到什么**：体验从 CAD 建模到数据交换的第一步，理解 STEP 和 STL 的本质区别。
+
+**任务 2：对比 STEP 与 STL 文件差异**
+
+1. 用文本编辑器打开上一步导出的 STEP 文件
+2. 观察文件头、几何实体定义（CARTESIAN_POINT, DIRECTION 等）
+3. 用文本编辑器打开 STL 文件
+4. 观察三角面片定义（facet normal, vertex 等）
+5. 记录：STEP 文件中出现了多少个实体？STL 文件中有多少个三角面？
+
+**你能学到什么**：直观理解 B-rep（精确边界表示）与三角网格表示的本质差异。这与 :doc:`examples/step-stl-mini-lab` 中的实验原理一致。
+
+**任务 3：读懂一段简单 G-code 的运动顺序**
+
+阅读以下 G-code 程序，按顺序写出刀具的运动轨迹：
+
+.. code-block:: text
+
+    G21          ; 设置单位为毫米
+    G90          ; 绝对坐标模式
+    G0 Z5        ; 快速抬刀到安全高度
+    G0 X0 Y0     ; 快速移动到起点
+    G1 Z-1 F100  ; 下刀，进给速度 100mm/min
+    G1 X50 Y0 F200
+    G1 X50 Y50
+    G1 X0 Y50
+    G1 X0 Y0
+    G0 Z5        ; 抬刀
+    M30          ; 程序结束
+
+**问题**：
+
+1. 刀具加工出的形状是什么？（正方形 / 圆形 / 三角形？）
+2. 加工深度是多少毫米？
+3. 实际切削时的进给速度是多少？
+4. G0 和 G1 的区别是什么？
+
+**参考答案**：正方形，50mm × 50mm，深度 1mm，切削进给 200mm/min，G0 是快速定位，G1 是直线插补切削。
+
+**你能学到什么**：理解 G-code 的基本结构和坐标运动逻辑，为阅读 :doc:`examples/gcode-toolpath-visualization` 打下基础。
