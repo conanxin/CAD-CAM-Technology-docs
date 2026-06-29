@@ -20,6 +20,7 @@
 | **工程案例** | 3 个完整制造案例：CAD→G-code、数据交换、CAPP 工艺路线 |
 | **G-code 教学** | 逐行解释 + 路径可视化，帮助初学者理解数控程序 |
 | **工作流路线图** | 工具链总览、四阶段学习路线、文件格式决策指南、3 个低门槛实践任务 |
+| **FreeCAD 实操** | 带孔矩形板建模 + STEP/STL 导出，完整 FreeCAD 操作指南 |
 | **STEP/STL 实验** | 格式结构对比、精度分析、格式选择决策 |
 | **版本发布说明** | V1→V4C 演进时间线、能力矩阵、教学亮点、后续规划 |
 
@@ -34,6 +35,7 @@
 | G-code 教学 | 逐行解释 + 路径可视化 | V4A |
 | 格式实验 | STEP/STL 对比 mini-lab | V4B |
 | 工具链认知 | 路线图、格式决策、实践任务 | V4C |
+| FreeCAD 实操 | 建模练习 + STEP/STL 导出指南 | V5A |
 
 ## 教学亮点速览
 
@@ -56,10 +58,11 @@
 | **工程案例：CAD 到 G-code** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cad-to-gcode.html |
 | **工程案例：数据交换格式** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/data-exchange.html |
 | **G-code 逐行解释** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/gcode-toolpath-visualization.html |
-| **STEP/STL 格式实验** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/step-stl-mini-lab.html |
+| **FreeCAD 实操 Lab** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/freecad-plate-modeling.html |
 
 ## 版本演进
 
+- **V5A**（2024-06）：FreeCAD 实操 Lab（带孔矩形板建模 + STEP/STL 导出完整指南）
 - **V4C**（2024-06）：工作流路线图（工具链总览、四阶段学习路线、文件格式决策指南、3 个实践任务）
 - **V4B**（2024-06）：STEP/STL 数据交换 mini-lab（格式结构对比与精度分析）
 - **V4A**（2024-06）：G-code 逐行解释与路径可视化（逐行解读 + SVG 刀具路径图）

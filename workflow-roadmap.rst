@@ -318,13 +318,13 @@ CAD/CAM 工具链总览
 
 **任务 1：用 FreeCAD 建一个带孔矩形板并导出 STEP 与 STL**
 
-1. 下载并安装 `FreeCAD <https://www.freecad.org/>`_
-2. 新建 Part Design 工作区，创建一个 100mm × 60mm × 10mm 的立方体
-3. 在立方体上表面中心创建一个直径 20mm 的通孔
-4. 分别导出为 STEP (.step) 和 STL (.stl) 格式
-5. 对比两个文件的文件大小和内容差异
+完整步骤见 :doc:`examples/freecad-plate-modeling`。该页面包含：
 
-**你能学到什么**：体验从 CAD 建模到数据交换的第一步，理解 STEP 和 STL 的本质区别。
+- FreeCAD Part Design 工作区的逐步操作指南
+- 100mm × 60mm × 10mm 矩形板 + 直径 20mm 通孔的建模过程
+- STEP 和 STL 导出方法
+- 文件结构对比和思考题
+- 练习检查清单
 
 **任务 2：对比 STEP 与 STL 文件差异**
 

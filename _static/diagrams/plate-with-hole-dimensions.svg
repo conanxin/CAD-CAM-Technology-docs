@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350">
+  <rect width="500" height="350" fill="#f8f9fa" rx="10"/>
+  
+  <text x="250" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">练习零件：带孔矩形板</text>
+  
+  <!-- Main plate -->
+  <rect x="100" y="60" width="300" height="180" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="2"/>
+  
+  <!-- Hole -->
+  <circle cx="250" cy="150" r="30" fill="#f8f9fa" stroke="#c62828" stroke-width="2"/>
+  <circle cx="250" cy="150" r="2" fill="#c62828"/>
+  
+  <!-- Dimension lines -->
+  <!-- Width -->
+  <line x1="100" y1="55" x2="400" y2="55" stroke="#333" stroke-width="1"/>
+  <line x1="100" y1="50" x2="100" y2="60" stroke="#333" stroke-width="1"/>
+  <line x1="400" y1="50" x2="400" y2="60" stroke="#333" stroke-width="1"/>
+  <text x="250" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">100 mm</text>
+  
+  <!-- Height -->
+  <line x1="95" y1="60" x2="95" y2="240" stroke="#333" stroke-width="1"/>
+  <line x1="90" y1="60" x2="100" y2="60" stroke="#333" stroke-width="1"/>
+  <line x1="90" y1="240" x2="100" y2="240" stroke="#333" stroke-width="1"/>
+  <text x="82" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333" transform="rotate(-90 82 155)">60 mm</text>
+  
+  <!-- Thickness (3D hint) -->
+  <line x1="420" y1="60" x2="420" y2="240" stroke="#666" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="435" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333" transform="rotate(-90 435 155)">10 mm</text>
+  
+  <!-- Hole diameter -->
+  <line x1="250" y1="150" x2="280" y2="150" stroke="#c62828" stroke-width="1"/>
+  <text x="295" y="155" font-family="Arial, sans-serif" font-size="12" fill="#c62828">⌀ 20 mm</text>
+  
+  <!-- Center lines -->
+  <line x1="250" y1="70" x2="250" y2="230" stroke="#999" stroke-width="1" stroke-dasharray="6,3"/>
+  <line x1="110" y1="150" x2="390" y2="150" stroke="#999" stroke-width="1" stroke-dasharray="6,3"/>
+  
+  <!-- Specs box -->
+  <rect x="100" y="265" width="300" height="70" fill="white" stroke="#666" stroke-width="1" rx="3"/>
+  <text x="110" y="282" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">零件规格</text>
+  <text x="110" y="298" font-family="Arial, sans-serif" font-size="10" fill="#555">• 外形：100 mm × 60 mm × 10 mm 矩形板</text>
+  <text x="110" y="313" font-family="Arial, sans-serif" font-size="10" fill="#555">• 通孔：直径 20 mm，位于板中心</text>
+  <text x="110" y="328" font-family="Arial, sans-serif" font-size="10" fill="#555">• 材料：不限（练习用）</text>
+</svg>
