@@ -44,6 +44,9 @@
 **案例 G — FreeCAD 五步学习路线**：
   FreeCAD 实操线的总入口和收口页：五步学习路线、全链路产出物表、初学者完成标准。对应 V5D。
 
+**案例 H — L 型支架 Capstone 项目**：
+  FreeCAD 实操线的综合项目：集成 V5A-V5D 全部学习成果，完成从需求分析到 G-code 理解的完整流程。对应 V6A。
+
 推荐阅读顺序
 ============
 
@@ -56,6 +59,7 @@
 7. **系统学习**：阅读 :doc:`cad-to-gcode`，建立从设计到制造的完整认知
 8. **深入理解**：阅读 :doc:`gcode-toolpath-visualization`，逐行理解 G-code 程序如何控制机床动作
 9. **格式实验**：阅读 :doc:`step-stl-mini-lab`，通过对比实验理解 STEP 与 STL 的本质差异
+10. **综合项目**：完成 :doc:`bracket-capstone-project`，集成全部 V5A-V5D 学习成果
 
 每个案例对应的课程章节
 ========================
@@ -94,6 +98,9 @@
    * - FreeCAD 五步学习路线
      - 五步路线、产出物表、完成标准
      - V5D
+   * - L 型支架 Capstone
+     - 集成项目、5个阶段、提交包
+     - V6A
 
 如何用案例复习 unit1~unit8
 ============================
@@ -132,6 +139,8 @@
    - 思考如何实现更高效的系统集成
    - **总收口**：再次阅读 :doc:`freecad-workflow-index`，确认是否所有完成标准都已达成
 
+8. **综合项目**：完成 :doc:`bracket-capstone-project` L 型支架 Capstone 项目，集成 V5A-V5D 全部学习成果，验证你已具备 FreeCAD 实践线的完整能力。
+
 .. toctree::
    :hidden:
 
@@ -144,3 +153,4 @@
    freecad-export-checklist
    freecad-to-cam-worksheet
    freecad-workflow-index
+   bracket-capstone-project

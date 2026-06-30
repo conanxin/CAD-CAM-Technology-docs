@@ -332,6 +332,10 @@ CAD/CAM 工具链总览
 
 完成上述三步后，请阅读 :doc:`examples/freecad-workflow-index`，查看 FreeCAD 五步学习路线总览和初学者完成标准。
 
+**任务 1.5：完成 L 型支架 Capstone 项目**
+
+完成以上三步后，作为综合验证，建议完成 :doc:`examples/bracket-capstone-project` L 型支架 Capstone 项目。项目包含 5 个阶段（需求分析、CAD 建模、导出验证、CAM 规划、G-code 理解），集成 V5A-V5D 全部学习成果。
+
 **任务 2：对比 STEP 与 STL 文件差异**
 
 1. 用文本编辑器打开上一步导出的 STEP 文件
