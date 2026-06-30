@@ -512,3 +512,8 @@ V6 系列（图形化项目制学习）
 - :doc:`freecad-plate-modeling` — V5A FreeCAD 入门
 - :doc:`step-stl-mini-lab` — V4B STEP/STL 格式对比
 - :doc:`../workflow-roadmap` — 工作流总览
+
+V9A 作品集升级
+================
+
+如果已完成 V6 Capstone 和 V8 Assembly 装配体，可以阅读 :doc:`capstone-portfolio-upgrade` 学习如何把 V6 + V8 的成果整合到 Capstone 作品集。

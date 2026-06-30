@@ -499,3 +499,14 @@ V8C 的关键内容：
 **参考答案**：正方形，50mm × 50mm，深度 1mm，切削进给 200mm/min，G0 是快速定位，G1 是直线插补切削。
 
 **你能学到什么**：理解 G-code 的基本结构和坐标运动逻辑，为阅读 :doc:`examples/gcode-toolpath-visualization` 打下基础。
+
+V9A 作品集整合
+==================
+
+本项目包含 V6/V7/V8 三条学习线，V9A 提供了整合提交指南：
+
+- V6 Capstone 项目线（V6A-V6D）
+- V7 CadQuery 单零件代码化（V7A-V7D）
+- V8 CadQuery Assembly 装配体（V8A-V8D）
+
+如果已完成三条线，可以阅读 :doc:`examples/capstone-portfolio-upgrade` 学习如何把 V6 + V7 + V8 的成果整合为一个更完整的 Capstone 作品集。

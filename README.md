@@ -7,7 +7,7 @@
 本项目已从旧版阅读笔记升级为**课程化学习文档站**,基于 [《CAD/CAM技术基础》](http://book.douban.com/subject/5296837/) 教材,使用 Sphinx 构建为适合自学的在线课程。
 
 - **在线版本**:https://conanxin.github.io/CAD-CAM-Technology-docs
-- **当前版本**:`v0.8.3-assembly-learning-path`
+- **当前版本**:`v0.9.0-capstone-portfolio-upgrade`
 - **历史版本**(SAE):http://conanxincv.sinaapp.com/project2/index.html(已归档,不再更新)
 
 ## 当前版本亮点
@@ -29,6 +29,7 @@
 | **Assembly BOM 与检查清单** | 装配体 BOM 表格、爆炸图理解、装配检查清单 |
 | **Assembly Placement mini-lab** | 定位、Location、嵌套子装配、教学型干涉检查 |
 | **Assembly 学习路径** | V8 系列(V8A/V8B/V8C)三步走总入口和收口页 |
+| **Capstone 作品集升级** | V6/V7/V8 三线整合(FreeCAD + CadQuery + Assembly 综合作品集) |
 | **FreeCAD Path Workbench** | Job/Tool/Operation/Post 概念、教学 G-code 样例 |
 | **项目档案与评分** | 项目档案模板、评分表、资源包 |
 | **L 型支架 Capstone** | 集成 V5A-V5D 全部学习成果的综合项目 |
@@ -66,6 +67,7 @@
 | Assembly BOM 与检查清单 | 装配体 BOM、爆炸图、检查清单 | V8B |
 | Assembly Placement mini-lab | 定位、子装配、干涉检查 | V8C |
 | Assembly 学习路径 | V8 系列收口、三步走总览 | V8D |
+| Capstone 作品集升级 | V6/V7/V8 三线整合 | V9A |
 
 ## 教学亮点速览
 
@@ -87,9 +89,11 @@
 
 **Assembly BOM 与检查清单(V8B)**:BOM 表格、爆炸图理解、装配检查清单 → [查看](https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-assembly-bom-checklist.html)
 
-**Assembly Placement mini-lab（V8C）**：Location/Placement、嵌套子装配、教学型干涉检查 → [查看](https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-assembly-placement-mini-lab.html)
+**Assembly Placement mini-lab(V8C)**:Location/Placement、嵌套子装配、教学型干涉检查 → [查看](https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-assembly-placement-mini-lab.html)
 
 **Assembly 学习路径（V8D）**：V8 系列三步走总入口、2 个 .py 代码 + 5 个资源包文件地图 → [查看](https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-assembly-learning-path.html)
+
+**Capstone 作品集升级（V9A）**：V6/V7/V8 三线整合、升级版作品集结构、推荐文件夹结构 → [查看](https://conanxin.github.io/CAD-CAM-Technology-docs/examples/capstone-portfolio-upgrade.html)
 
 ## 快速入口
 
@@ -121,10 +125,12 @@
 | **Assembly BOM 与检查清单** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-assembly-bom-checklist.html |
 | **Assembly Placement mini-lab** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-assembly-placement-mini-lab.html |
 | **Assembly 学习路径** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-assembly-learning-path.html |
+| **Capstone 作品集升级** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/capstone-portfolio-upgrade.html |
 | **CadQuery 示例代码目录** | https://github.com/conanxin/CAD-CAM-Technology-docs/tree/master/code/cadquery |
 
 ## 版本演进
 
+- **V9A**(2024-06):Capstone 作品集升级(V6/V7/V8 三线整合、升级版作品集结构、推荐文件夹结构、V6/V7/V8 对照表、自评升级清单、2 个资源包)
 - **V8D**(2024-06):Assembly 学习路径收口页(V8 系列 V8A/V8B/V8C 三步走总入口、2 个 .py 代码 + 5 个资源包文件地图、Assembly 与 Capstone 关系、单零件/装配体/BOM/G-code 层级关系、2 个 SVG)
 - **V8C**(2024-06):Assembly Placement mini-lab(Location/Placement 概念、全局 vs 局部坐标系、nested assembly、bolt_pair 子装配、教学型干涉检查、2 个资源包文件、2 个 SVG)
 - **V8B**(2024-06):Assembly BOM 与检查清单(BOM 表格、爆炸图理解、装配检查清单、教学型 BOM_DATA 代码、3 个资源包文件、2 个 SVG)
