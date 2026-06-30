@@ -35,15 +35,19 @@
 **案例 D — FreeCAD 实操**：
   第一个动手实验：在 FreeCAD 中创建带孔矩形板，导出 STEP 和 STL。对应 unit3、unit4。
 
+**案例 E — FreeCAD 导出检查**：
+  建模完成后的系统验证：导出前检查、STEP 验证、STL 验证、文件命名规范、常见错误排查。对应 V5B。
+
 推荐阅读顺序
 ============
 
 1. **零基础入门**：先阅读 :doc:`freecad-plate-modeling`，完成第一个 CAD 建模实践
-2. **初学者**：阅读 :doc:`data-exchange`，了解数据如何在不同系统间流转
-3. **有一定基础**：阅读 :doc:`capp-process-plan`，理解工艺规划的核心思路
-4. **系统学习**：阅读 :doc:`cad-to-gcode`，建立从设计到制造的完整认知
-5. **深入理解**：阅读 :doc:`gcode-toolpath-visualization`，逐行理解 G-code 程序如何控制机床动作
-6. **格式实验**：阅读 :doc:`step-stl-mini-lab`，通过对比实验理解 STEP 与 STL 的本质差异
+2. **导出检查**：阅读 :doc:`freecad-export-checklist`，系统验证 STEP/STL 导出结果
+3. **初学者**：阅读 :doc:`data-exchange`，了解数据如何在不同系统间流转
+4. **有一定基础**：阅读 :doc:`capp-process-plan`，理解工艺规划的核心思路
+5. **系统学习**：阅读 :doc:`cad-to-gcode`，建立从设计到制造的完整认知
+6. **深入理解**：阅读 :doc:`gcode-toolpath-visualization`，逐行理解 G-code 程序如何控制机床动作
+7. **格式实验**：阅读 :doc:`step-stl-mini-lab`，通过对比实验理解 STEP 与 STL 的本质差异
 
 每个案例对应的课程章节
 ========================
@@ -73,6 +77,9 @@
    * - FreeCAD 实操
      - FreeCAD 建模、STEP/STL 导出
      - unit3, unit4
+   * - FreeCAD 导出检查
+     - 导出前检查、STEP/STL 验证、错误排查
+     - V5B
 
 如何用案例复习 unit1~unit8
 ============================
@@ -85,6 +92,7 @@
    - 阅读 :doc:`cad-to-gcode` 中的几何建模部分
    - 理解模型如何用于后续加工
    - **动手实践**：阅读 :doc:`freecad-plate-modeling`，在 FreeCAD 中创建你的第一个零件
+   - **导出验证**：阅读 :doc:`freecad-export-checklist`，确保导出文件质量可靠
 
 3. **学完 unit5（工程分析）后**
    - 阅读 :doc:`data-exchange` 中 CAE 分析的数据准备
@@ -116,3 +124,4 @@
    step-stl-mini-lab
    capp-process-plan
    freecad-plate-modeling
+   freecad-export-checklist

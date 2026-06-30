@@ -4,6 +4,8 @@ Mini-Lab：STEP 与 STL 格式对比实验
 
 本页面通过对比实验，帮助你理解 STEP 和 STL 两种数据格式的本质区别：一个是精确几何描述，一个是近似三角网格。
 
+如果你已经完成 :doc:`freecad-plate-modeling` 练习，可以用自己导出的 STEP 和 STL 文件对照本实验。也建议先阅读 :doc:`freecad-export-checklist`，确保导出文件质量可靠。
+
 实验目标
 ========
 

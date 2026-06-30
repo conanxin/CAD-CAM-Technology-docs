@@ -330,6 +330,7 @@ STEP 与 STL 对比
 相关页面
 ========
 
+- :doc:`freecad-export-checklist`：完成建模后，继续阅读导出检查清单，系统验证 STEP/STL 导出结果
 - :doc:`step-stl-mini-lab`：更深入地理解 STEP 与 STL 格式的本质差异
 - :doc:`../workflow-roadmap`：了解这个练习在整个 CAD/CAM 工具链中的位置
 - :doc:`cad-to-gcode`：了解从 CAD 模型到加工代码的完整流程
