@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 220">
+  <rect width="800" height="220" fill="#f8f9fa" rx="10"/>
+  
+  <text x="400" y="22" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">Capstone 项目线五步学习路径</text>
+  
+  <!-- Step 1 -->
+  <rect x="20" y="50" width="130" height="70" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="85" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">Step 1: 做项目</text>
+  <text x="85" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#555">bracket-capstone-</text>
+  <text x="85" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#555">project</text>
+  
+  <!-- Arrow -->
+  <polygon points="155,85 170,80 170,90" fill="#666"/>
+  <line x1="150" y1="85" x2="170" y2="85" stroke="#666" stroke-width="2"/>
+  
+  <!-- Step 2 -->
+  <rect x="175" y="50" width="130" height="70" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="5"/>
+  <text x="240" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">Step 2: 整理成果</text>
+  <text x="240" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#555">bracket-project-</text>
+  <text x="240" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#555">portfolio</text>
+  
+  <!-- Arrow -->
+  <polygon points="310,85 325,80 325,90" fill="#666"/>
+  <line x1="305" y1="85" x2="325" y2="85" stroke="#666" stroke-width="2"/>
+  
+  <!-- Step 3 -->
+  <rect x="330" y="50" width="130" height="70" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <text x="395" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">Step 3: 自评</text>
+  <text x="395" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#555">bracket-</text>
+  <text x="395" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#555">assessment-rubric</text>
+  
+  <!-- Arrow -->
+  <polygon points="465,85 480,80 480,90" fill="#666"/>
+  <line x1="460" y1="85" x2="480" y2="85" stroke="#666" stroke-width="2"/>
+  
+  <!-- Step 4 -->
+  <rect x="485" y="50" width="130" height="70" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" rx="5"/>
+  <text x="550" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">Step 4: 理解 CAM</text>
+  <text x="550" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#555">freecad-path-</text>
+  <text x="550" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#555">workbench-intro</text>
+  
+  <!-- Arrow -->
+  <polygon points="620,85 635,80 635,90" fill="#666"/>
+  <line x1="615" y1="85" x2="635" y2="85" stroke="#666" stroke-width="2"/>
+  
+  <!-- Step 5 -->
+  <rect x="640" y="50" width="140" height="70" fill="#ffebee" stroke="#c62828" stroke-width="2" rx="5"/>
+  <text x="710" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">Step 5: 归档扩展</text>
+  <text x="710" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#555">gcode-</text>
+  <text x="710" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#555">toolpath-visualization</text>
+  
+  <!-- Bottom: Skills acquired -->
+  <rect x="20" y="135" width="760" height="75" fill="#ffffff" stroke="#ccc" stroke-width="1" rx="5"/>
+  <text x="400" y="152" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#555">每步核心技能</text>
+  <text x="35" y="170" font-family="Arial, sans-serif" font-size="9" fill="#333">Step 1: CAD 建模 + CAM 任务规划</text>
+  <text x="35" y="185" font-family="Arial, sans-serif" font-size="9" fill="#333">Step 2: 文档化与作品集整理</text>
+  <text x="35" y="200" font-family="Arial, sans-serif" font-size="9" fill="#333">Step 3: 自我评估与反思</text>
+  <text x="410" y="170" font-family="Arial, sans-serif" font-size="9" fill="#333">Step 4: CAM 概念理解</text>
+  <text x="410" y="185" font-family="Arial, sans-serif" font-size="9" fill="#333">Step 5: G-code 阅读 + 后续规划</text>
+  <text x="410" y="200" font-family="Arial, sans-serif" font-size="9" fill="#666">✓ 可独立完成项目并展示</text>
+</svg>

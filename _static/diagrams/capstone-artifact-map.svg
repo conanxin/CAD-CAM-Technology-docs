@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280">
+  <rect width="800" height="280" fill="#f8f9fa" rx="10"/>
+  
+  <text x="400" y="22" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">Capstone 项目制产出物串联图</text>
+  
+  <!-- Column 1: CAD -->
+  <rect x="30" y="45" width="220" height="220" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <rect x="30" y="45" width="220" height="28" fill="#1976d2" rx="5"/>
+  <text x="140" y="64" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">CAD 层</text>
+  
+  <text x="45" y="92" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">📐 bracket.FCStd</text>
+  <text x="45" y="106" font-family="Arial, sans-serif" font-size="9" fill="#555">FreeCAD 原生文件</text>
+  
+  <text x="45" y="128" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">📦 bracket.step</text>
+  <text x="45" y="142" font-family="Arial, sans-serif" font-size="9" fill="#555">CAD 交换格式</text>
+  
+  <text x="45" y="164" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">🖨 bracket.stl</text>
+  <text x="45" y="178" font-family="Arial, sans-serif" font-size="9" fill="#555">3D 打印格式</text>
+  
+  <text x="45" y="200" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">✅ export-checklist.md</text>
+  <text x="45" y="214" font-family="Arial, sans-serif" font-size="9" fill="#555">导出检查记录</text>
+  
+  <text x="45" y="234" font-family="Arial, sans-serif" font-size="9" fill="#666">V6A</text>
+  
+  <!-- Arrow 1 -->
+  <line x1="260" y1="155" x2="280" y2="155" stroke="#666" stroke-width="2" marker-end="url(#arr-cap)"/>
+  
+  <!-- Column 2: CAM -->
+  <rect x="280" y="45" width="220" height="220" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="5"/>
+  <rect x="280" y="45" width="220" height="28" fill="#f57c00" rx="5"/>
+  <text x="390" y="64" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">CAM 层</text>
+  
+  <text x="295" y="92" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">📝 cam-task-list.md</text>
+  <text x="295" y="106" font-family="Arial, sans-serif" font-size="9" fill="#555">工序列表</text>
+  
+  <text x="295" y="128" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">🛠 tool-list.csv</text>
+  <text x="295" y="142" font-family="Arial, sans-serif" font-size="9" fill="#555">刀具参数表</text>
+  
+  <text x="295" y="164" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">📋 worksheet-template.md</text>
+  <text x="295" y="178" font-family="Arial, sans-serif" font-size="9" fill="#555">CAM 工作单</text>
+  
+  <text x="295" y="200" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">🔧 Path Workbench</text>
+  <text x="295" y="214" font-family="Arial, sans-serif" font-size="9" fill="#555">Job/Tool/Operation</text>
+  
+  <text x="295" y="234" font-family="Arial, sans-serif" font-size="9" fill="#666">V5C + V6C</text>
+  
+  <!-- Arrow 2 -->
+  <line x1="510" y1="155" x2="530" y2="155" stroke="#666" stroke-width="2" marker-end="url(#arr-cap)"/>
+  
+  <!-- Column 3: G-code + Portfolio -->
+  <rect x="530" y="45" width="240" height="220" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <rect x="530" y="45" width="240" height="28" fill="#388e3c" rx="5"/>
+  <text x="650" y="64" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">G-code + 作品集</text>
+  
+  <text x="545" y="92" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">📄 bracket-demo.gcode</text>
+  <text x="545" y="106" font-family="Arial, sans-serif" font-size="9" fill="#555">教学型 G-code</text>
+  
+  <text x="545" y="128" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">📖 gcode-notes.md</text>
+  <text x="545" y="142" font-family="Arial, sans-serif" font-size="9" fill="#555">G-code 解读笔记</text>
+  
+  <text x="545" y="164" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">📁 submission-checklist</text>
+  <text x="545" y="178" font-family="Arial, sans-serif" font-size="9" fill="#555">提交检查</text>
+  
+  <text x="545" y="200" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">📊 assessment-rubric</text>
+  <text x="545" y="214" font-family="Arial, sans-serif" font-size="9" fill="#555">评分量规</text>
+  
+  <text x="545" y="234" font-family="Arial, sans-serif" font-size="9" fill="#666">V6A + V6B + V6C</text>
+  
+  <!-- Bottom message -->
+  <text x="400" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">每个产出物都有对应页面，完整提交包 = 完整学习闭环</text>
+  
+  <defs>
+    <marker id="arr-cap" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#666"/>
+    </marker>
+  </defs>
+</svg>

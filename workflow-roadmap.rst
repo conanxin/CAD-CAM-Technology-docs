@@ -340,6 +340,10 @@ CAD/CAM 工具链总览
 
 如果你有 FreeCAD 经验，可以阅读 :doc:`examples/freecad-path-workbench-intro` 了解 FreeCAD 内置的 CAM 模块，用 Path Workbench 生成真实 G-code。本任务为可选，不依赖真实机床。
 
+**任务 1.7：查看 V6 Capstone 项目线总入口**
+
+完成以上所有任务后，可以阅读 :doc:`examples/capstone-learning-path` 查看 V6 项目线完整学习路径，整合 V6A/V6B/V6C 为一个完整的项目制学习闭环。
+
 **任务 2：对比 STEP 与 STL 文件差异**
 
 1. 用文本编辑器打开上一步导出的 STEP 文件

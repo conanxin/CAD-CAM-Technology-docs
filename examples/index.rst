@@ -56,6 +56,9 @@
 **案例 K — FreeCAD Path Workbench 入门**：
   FreeCAD 内置 CAM 模块入门：Job/Tool/Operation/Toolpath/Post Processor/G-code 概念、教学型 G-code 样例。对应 V6C。
 
+**案例 L — Capstone 项目线学习路径**：
+  V6 项目线总入口和收口页：五步学习路线、产出物清单、完成标准、误区与扩展。对应 V6D。
+
 推荐阅读顺序
 ============
 
@@ -72,6 +75,7 @@
 11. **项目档案**：阅读 :doc:`bracket-project-portfolio`，使用模板整理项目成果
 12. **项目评分**：阅读 :doc:`bracket-assessment-rubric`，使用评分表自我评估
 13. **Path Workbench**：阅读 :doc:`freecad-path-workbench-intro`，了解 FreeCAD CAM 模块
+14. **项目线总入口**：阅读 :doc:`capstone-learning-path`，查看 V6 项目线完整学习闭环
 
 每个案例对应的课程章节
 ========================
@@ -122,6 +126,9 @@
    * - FreeCAD Path Workbench
      - Job/Tool/Operation/Post 概念
      - V6C
+   * - Capstone 项目线
+     - 五步路线、产出物、完成标准
+     - V6D
 
 如何用案例复习 unit1~unit8
 ============================
@@ -178,3 +185,4 @@
    bracket-project-portfolio
    bracket-assessment-rubric
    freecad-path-workbench-intro
+   capstone-learning-path

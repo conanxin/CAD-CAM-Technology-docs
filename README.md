@@ -7,7 +7,7 @@
 本项目已从旧版阅读笔记升级为**课程化学习文档站**，基于 [《CAD/CAM技术基础》](http://book.douban.com/subject/5296837/) 教材，使用 Sphinx 构建为适合自学的在线课程。
 
 - **在线版本**：https://conanxin.github.io/CAD-CAM-Technology-docs
-- **当前版本**：`v0.6.2-freecad-path-workbench-intro`
+- **当前版本**：`v0.6.3-capstone-learning-path`
 - **历史版本**（SAE）：http://conanxincv.sinaapp.com/project2/index.html（已归档，不再更新）
 
 ## 当前版本亮点
@@ -20,6 +20,7 @@
 | **工程案例** | 3 个完整制造案例：CAD→G-code、数据交换、CAPP 工艺路线 |
 | **G-code 教学** | 逐行解释 + 路径可视化，帮助初学者理解数控程序 |
 | **工作流路线图** | 工具链总览、四阶段学习路线、文件格式决策指南、3 个低门槛实践任务 |
+| **Capstone 项目线** | 五步学习路线、产出物清单、完成标准 |
 | **FreeCAD Path Workbench** | Job/Tool/Operation/Post 概念、教学 G-code 样例 |
 | **项目档案与评分** | 项目档案模板、评分表、资源包 |
 | **L 型支架 Capstone** | 集成 V5A-V5D 全部学习成果的综合项目 |
@@ -48,6 +49,7 @@
 | L 型支架 Capstone | 集成项目 + 5个阶段 | V6A |
 | 项目档案与评分 | 项目档案 + 评分表 + 资源包 | V6B |
 | FreeCAD Path Workbench | Job/Tool/Operation 入门 | V6C |
+| Capstone 项目线 | 五步路线 + 收口页 | V6D |
 
 ## 教学亮点速览
 
@@ -70,6 +72,7 @@
 | **工程案例：CAD 到 G-code** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cad-to-gcode.html |
 | **工程案例：数据交换格式** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/data-exchange.html |
 | **G-code 逐行解释** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/gcode-toolpath-visualization.html |
+| **Capstone 项目线** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/capstone-learning-path.html |
 | **Path Workbench 入门** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/freecad-path-workbench-intro.html |
 | **项目档案** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/bracket-project-portfolio.html |
 | **项目评分** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/bracket-assessment-rubric.html |
@@ -81,6 +84,7 @@
 
 ## 版本演进
 
+- **V6D**（2024-06）：Capstone 项目线学习路径总入口（五步路线 + 产出物清单 + 完成标准 + 6 个误区 + 6 个扩展方向）
 - **V6C**（2024-06）：FreeCAD Path Workbench 入门（Job/Tool/Operation/Toolpath/Post 概念、教学型 G-code 样例）
 - **V6B**（2024-06）：Bracket Capstone 项目档案与评分表（项目档案模板、评分表、提交清单、反思笔记、4 个资源包文件）
 - **V6A**（2024-06）：L 型支架 Capstone 综合项目（集成 V5A-V5D 全部学习成果、5 个阶段、提交包、反思笔记）
