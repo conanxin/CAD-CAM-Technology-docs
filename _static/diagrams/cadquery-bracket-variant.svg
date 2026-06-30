@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400">
+  <rect width="900" height="400" fill="#f8f9fa" rx="10"/>
+
+  <text x="450" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">L 型支架变体：参数化建模示意</text>
+
+  <!-- 立板（垂直方向）-->
+  <g transform="translate(450, 60)">
+    <rect x="-25" y="0" width="50" height="180" fill="#c8e6c9" stroke="#388e3c" stroke-width="2" rx="2"/>
+    <!-- 立板大孔 -->
+    <circle cx="0" cy="90" r="20" fill="white" stroke="#388e3c" stroke-width="1.5"/>
+    <!-- 立板标签 -->
+    <text x="0" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1b5e20">立板 vertical</text>
+    <text x="0" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">height: 80 mm</text>
+  </g>
+
+  <!-- 底板（水平方向）-->
+  <g transform="translate(280, 230)">
+    <rect x="0" y="0" width="340" height="40" fill="#bbdefb" stroke="#1976d2" stroke-width="2" rx="2"/>
+    <!-- 4 个角孔 -->
+    <circle cx="30" cy="20" r="6" fill="white" stroke="#d32f2f" stroke-width="1.5"/>
+    <circle cx="120" cy="20" r="6" fill="white" stroke="#d32f2f" stroke-width="1.5"/>
+    <circle cx="220" cy="20" r="6" fill="white" stroke="#d32f2f" stroke-width="1.5"/>
+    <circle cx="310" cy="20" r="6" fill="white" stroke="#d32f2f" stroke-width="1.5"/>
+    <!-- 底板标签 -->
+    <text x="170" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0d47a1">底板 base</text>
+    <text x="170" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">100 × 60 × 10 mm</text>
+  </g>
+
+  <!-- 标注线 + 标签（左侧）：底板安装孔 -->
+  <line x1="310" y1="250" x2="170" y2="200" stroke="#d32f2f" stroke-width="1.5"/>
+  <circle cx="310" cy="250" r="3" fill="#d32f2f"/>
+  <rect x="40" y="180" width="130" height="50" fill="#ffebee" stroke="#d32f2f" stroke-width="1.5" rx="4"/>
+  <text x="105" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#b71c1c">mounting holes</text>
+  <text x="105" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">4 角孔 Φ8</text>
+  <text x="105" y="226" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">（孔阵列）</text>
+
+  <!-- 标注线 + 标签（右侧）：立板大孔 -->
+  <line x1="450" y1="150" x2="650" y2="80" stroke="#388e3c" stroke-width="1.5"/>
+  <circle cx="450" cy="150" r="3" fill="#388e3c"/>
+  <rect x="640" y="60" width="130" height="50" fill="#e8f5e9" stroke="#388e3c" stroke-width="1.5" rx="4"/>
+  <text x="705" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1b5e20">side hole</text>
+  <text x="705" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">立板中心大孔</text>
+  <text x="705" y="106" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">Φ12</text>
+
+  <!-- 标注线 + 标签（中部）：圆角 -->
+  <!-- 立板与底板连接处内角的圆角示意 -->
+  <path d="M 445,235 Q 450,225 460,225" fill="none" stroke="#7b1fa2" stroke-width="2.5"/>
+  <line x1="455" y1="225" x2="600" y2="180" stroke="#7b1fa2" stroke-width="1.5"/>
+  <rect x="600" y="160" width="160" height="40" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="1.5" rx="4"/>
+  <text x="680" y="178" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#4a148c">fillet R5</text>
+  <text x="680" y="192" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">内棱边圆角</text>
+
+  <!-- 标注线 + 标签（右下）：装配说明 -->
+  <line x1="620" y1="250" x2="800" y2="320" stroke="#f57c00" stroke-width="1.5"/>
+  <rect x="700" y="320" width="180" height="55" fill="#fff3e0" stroke="#f57c00" stroke-width="1.5" rx="4"/>
+  <text x="790" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#e65100">布尔运算：union</text>
+  <text x="790" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">底板.union(立板)</text>
+  <text x="790" y="367" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">合并为单一实体</text>
+
+  <!-- 底部说明 -->
+  <rect x="20" y="335" width="852" height="50" fill="#fff" stroke="#90a4ae" stroke-width="1" rx="5"/>
+  <text x="450" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">从板到支架的扩展</text>
+  <text x="40" y="375" font-family="Arial, sans-serif" font-size="10" fill="#333">• 8 个参数控制整个支架</text>
+  <text x="450" y="375" font-family="Arial, sans-serif" font-size="10" fill="#333">• 多个 Workplane 组合 + 布尔运算 + 圆角 = 完整支架</text>
+</svg>

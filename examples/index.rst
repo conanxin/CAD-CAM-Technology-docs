@@ -62,6 +62,9 @@
 **案例 M — Python + CadQuery 参数化建模**：
   代码化 CAD 建模示例：用 Python + CadQuery 生成带孔矩形板，与 FreeCAD 图形化工作流互补。对应 V7A。
 
+**案例 N — CadQuery 进阶：圆角、倒角、阵列与支架变体**：
+  V7A 的进阶篇：圆角（fillet）、倒角（chamfer）、孔阵列、简化 L 型支架，参数化特征示例。对应 V7B。
+
 代码化建模
 ==========
 
@@ -70,6 +73,11 @@
 - FreeCAD 适合：图形化交互式建模，几何直觉建立，初学者友好
 - CadQuery 适合：参数化建模，批量生成，版本管理，团队协作
 - 两者输出**完全相同**的 STEP/STL 文件，下游工具链无差异
+
+推荐顺序：
+
+1. **入门**：阅读 :doc:`cadquery-parametric-modeling` （V7A）—— 带孔矩形板，理解基础
+2. **进阶**：阅读 :doc:`cadquery-advanced-features` （V7B）—— 圆角、倒角、孔阵列、支架变体
 
 如果你已经完成 FreeCAD 实操（V5A-V5D），可以阅读 :doc:`cadquery-parametric-modeling` 理解代码化建模的思路；如果还没做过，建议先完成 :doc:`freecad-plate-modeling`。
 
@@ -91,6 +99,7 @@
 13. **Path Workbench**：阅读 :doc:`freecad-path-workbench-intro`，了解 FreeCAD CAM 模块
 14. **项目线总入口**：阅读 :doc:`capstone-learning-path`，查看 V6 项目线完整学习闭环
 15. **代码化建模**：阅读 :doc:`cadquery-parametric-modeling`，理解 Python + CadQuery 参数化建模（V7A）
+16. **CadQuery 进阶**：阅读 :doc:`cadquery-advanced-features`，学习圆角、倒角、孔阵列与支架变体（V7B）
 
 每个案例对应的课程章节
 ========================
@@ -147,6 +156,9 @@
    * - Python + CadQuery
      - 代码化建模、参数化、STEP/STL 导出
      - V7A
+   * - CadQuery 进阶
+     - 圆角、倒角、孔阵列、支架变体
+     - V7B
 
 如何用案例复习 unit1~unit8
 ============================
@@ -205,3 +217,4 @@
    freecad-path-workbench-intro
    capstone-learning-path
    cadquery-parametric-modeling
+   cadquery-advanced-features

@@ -39,7 +39,7 @@ CAD/CAM 工具链总览
      - 输出物
    * - **CAD 设计**
      - 几何建模、装配设计、工程图生成
-     - SolidWorks, CATIA, Siemens NX, FreeCAD, Fusion 360, CadQuery（Python 代码化建模）
+     - SolidWorks, CATIA, Siemens NX, FreeCAD, Fusion 360, CadQuery（Python 代码化建模，含 V7A 入门 / V7B 进阶）
      - 三维模型、装配体、二维工程图、参数化代码
    * - **工程分析**
      - 有限元分析、运动仿真、优化设计
@@ -353,6 +353,22 @@ CAD/CAM 工具链总览
 - 两者输出**完全相同**的 STEP/STL 文件，下游工具链无差异
 
 本任务不需要立即安装 CadQuery。可以先阅读 :file:`code/cadquery/plate_with_hole.py` 代码，理解每行代码对应的几何操作。愿意动手的话，参考 :file:`code/cadquery/README.md` 本地运行。
+
+**任务 1.9：CadQuery 进阶特征（V7B）**
+
+完成 V7A 后，可以进一步阅读 :doc:`examples/cadquery-advanced-features` 学习 CadQuery 的进阶特征：
+
+- 圆角（fillet）和倒角（chamfer）的使用场景
+- 孔阵列（4 角孔）的参数化表达
+- 简化 L 型支架的代码化建模
+- 8 条常见误区和特征与参数对照表
+
+配套代码：
+
+- :file:`code/cadquery/plate_advanced_features.py` —— 带圆角和 4 孔阵列的板
+- :file:`code/cadquery/bracket_variant.py` —— L 型支架变体
+
+本任务同样不需要立即安装 CadQuery。代码即文档，阅读即可理解原理。
 
 **任务 2：对比 STEP 与 STL 文件差异**
 

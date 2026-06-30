@@ -7,7 +7,7 @@
 本项目已从旧版阅读笔记升级为**课程化学习文档站**，基于 [《CAD/CAM技术基础》](http://book.douban.com/subject/5296837/) 教材，使用 Sphinx 构建为适合自学的在线课程。
 
 - **在线版本**：https://conanxin.github.io/CAD-CAM-Technology-docs
-- **当前版本**：`v0.7.0-cadquery-parametric-modeling`
+- **当前版本**：`v0.7.1-cadquery-advanced-features`
 - **历史版本**（SAE）：http://conanxincv.sinaapp.com/project2/index.html（已归档，不再更新）
 
 ## 当前版本亮点
@@ -22,6 +22,7 @@
 | **工作流路线图** | 工具链总览、四阶段学习路线、文件格式决策指南、3 个低门槛实践任务 |
 | **Capstone 项目线** | 五步学习路线、产出物清单、完成标准 |
 | **Python + CadQuery** | 代码化参数建模示例、STEP/STL 导出、参数化教学 |
+| **CadQuery 进阶特征** | 圆角/倒角/孔阵列/支架变体的进阶示例 |
 | **FreeCAD Path Workbench** | Job/Tool/Operation/Post 概念、教学 G-code 样例 |
 | **项目档案与评分** | 项目档案模板、评分表、资源包 |
 | **L 型支架 Capstone** | 集成 V5A-V5D 全部学习成果的综合项目 |
@@ -52,6 +53,7 @@
 | FreeCAD Path Workbench | Job/Tool/Operation 入门 | V6C |
 | Capstone 项目线 | 五步路线 + 收口页 | V6D |
 | Python + CadQuery | 代码化建模示例 + 参数化教学 | V7A |
+| CadQuery 进阶特征 | 圆角/倒角/孔阵列/支架变体 | V7B |
 
 ## 教学亮点速览
 
@@ -62,6 +64,8 @@
 **工作流路线图（V4C）**：四阶段学习路线 + 文件格式决策表 + 3 个低门槛实践任务 → [查看](https://conanxin.github.io/CAD-CAM-Technology-docs/workflow-roadmap.html)
 
 **Python + CadQuery（V7A）**：代码化参数建模示例 + 与 FreeCAD 对比，读者可学习如何用 Python 描述几何 → [查看](https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-parametric-modeling.html)
+
+**CadQuery 进阶（V7B）**：圆角/倒角/孔阵列/支架变体的进阶特征示例，理解代码化建模的完整能力 → [查看](https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-advanced-features.html)
 
 ## 快速入口
 
@@ -86,10 +90,12 @@
 | **FreeCAD 导出检查** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/freecad-export-checklist.html |
 | **FreeCAD 实操 Lab** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/freecad-plate-modeling.html |
 | **Python + CadQuery** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-parametric-modeling.html |
-| **CadQuery 示例代码** | https://github.com/conanxin/CAD-CAM-Technology-docs/tree/master/code/cadquery |
+| **CadQuery 进阶特征** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-advanced-features.html |
+| **CadQuery 示例代码目录** | https://github.com/conanxin/CAD-CAM-Technology-docs/tree/master/code/cadquery |
 
 ## 版本演进
 
+- **V7B**（2024-06）：CadQuery 进阶特征（圆角/倒角/孔阵列/支架变体、3 个代码文件、2 个 SVG、特征与参数对照表、8 条常见误区）
 - **V7A**（2024-06）：Python + CadQuery 参数化建模（代码化建模示例、与 FreeCAD 工作流对比、参数化教学、2 个 SVG 图示、可运行 Python 示例代码）
 - **V6D**（2024-06）：Capstone 项目线学习路径总入口（五步路线 + 产出物清单 + 完成标准 + 6 个误区 + 6 个扩展方向）
 - **V6C**（2024-06）：FreeCAD Path Workbench 入门（Job/Tool/Operation/Toolpath/Post 概念、教学型 G-code 样例）

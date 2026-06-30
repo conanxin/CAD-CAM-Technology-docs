@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380">
+  <rect width="900" height="380" fill="#f8f9fa" rx="10"/>
+
+  <text x="450" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">CadQuery 进阶特征：圆角、倒角、孔阵列</text>
+
+  <!-- 中央矩形板（顶视图示意） -->
+  <g transform="translate(280, 90)">
+    <!-- 板体 -->
+    <rect x="0" y="0" width="280" height="180" fill="#bbdefb" stroke="#1976d2" stroke-width="2" rx="4"/>
+
+    <!-- 4 个角孔（孔阵列）-->
+    <circle cx="50" cy="40" r="10" fill="white" stroke="#d32f2f" stroke-width="1.5"/>
+    <circle cx="230" cy="40" r="10" fill="white" stroke="#d32f2f" stroke-width="1.5"/>
+    <circle cx="50" cy="140" r="10" fill="white" stroke="#d32f2f" stroke-width="1.5"/>
+    <circle cx="230" cy="140" r="10" fill="white" stroke="#d32f2f" stroke-width="1.5"/>
+
+    <!-- 棱边圆角示意（4 个角的小弧线）-->
+    <path d="M 0,15 Q 15,0 30,0" fill="none" stroke="#7b1fa2" stroke-width="2.5"/>
+    <path d="M 250,0 Q 265,0 280,15" fill="none" stroke="#7b1fa2" stroke-width="2.5"/>
+    <path d="M 0,165 Q 15,180 30,180" fill="none" stroke="#7b1fa2" stroke-width="2.5"/>
+    <path d="M 250,180 Q 265,180 280,165" fill="none" stroke="#7b1fa2" stroke-width="2.5"/>
+
+    <!-- 板内文字 -->
+    <text x="140" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0d47a1">矩形板（顶视图）</text>
+    <text x="140" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">length × width × thickness</text>
+  </g>
+
+  <!-- 标注线 + 标签（左侧） -->
+  <!-- fillet 标注 -->
+  <line x1="280" y1="100" x2="200" y2="60" stroke="#7b1fa2" stroke-width="1.5"/>
+  <circle cx="280" cy="100" r="3" fill="#7b1fa2"/>
+  <rect x="80" y="40" width="120" height="40" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="1.5" rx="4"/>
+  <text x="140" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4a148c">fillet (圆角)</text>
+  <text x="140" y="73" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">R3 棱边圆角</text>
+
+  <!-- 标注线 + 标签（右侧） -->
+  <!-- hole pattern 标注 -->
+  <line x1="560" y1="130" x2="680" y2="60" stroke="#d32f2f" stroke-width="1.5"/>
+  <circle cx="560" cy="130" r="3" fill="#d32f2f"/>
+  <rect x="680" y="40" width="160" height="40" fill="#ffebee" stroke="#d32f2f" stroke-width="1.5" rx="4"/>
+  <text x="760" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#b71c1c">hole pattern (孔阵列)</text>
+  <text x="760" y="73" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">4 角孔 · Φ8 · 60×30</text>
+
+  <!-- 厚度标注（板下方） -->
+  <line x1="420" y1="280" x2="420" y2="320" stroke="#388e3c" stroke-width="1.5"/>
+  <polygon points="416,316 424,316 420,322" fill="#388e3c"/>
+  <line x1="420" y1="320" x2="420" y2="350" stroke="#388e3c" stroke-width="1.5"/>
+  <polygon points="416,348 424,348 420,342" fill="#388e3c"/>
+  <text x="430" y="340" font-family="Arial, sans-serif" font-size="11" fill="#1b5e20" font-weight="bold">thickness = 10 mm</text>
+  <text x="430" y="355" font-family="Arial, sans-serif" font-size="9" fill="#555">板厚（Z 方向）</text>
+
+  <!-- 底部说明区 -->
+  <rect x="20" y="295" width="852" height="68" fill="#fff" stroke="#90a4ae" stroke-width="1" rx="5"/>
+  <text x="450" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">参数化建模的核心</text>
+  <text x="40" y="335" font-family="Arial, sans-serif" font-size="10" fill="#333">• 修改 length/width/thickness → 板尺寸变化</text>
+  <text x="40" y="350" font-family="Arial, sans-serif" font-size="10" fill="#333">• 修改 fillet_radius → 圆角大小变化</text>
+  <text x="450" y="335" font-family="Arial, sans-serif" font-size="10" fill="#333">• 修改 hole_diameter / hole_spacing → 孔位和孔径变化</text>
+  <text x="450" y="350" font-family="Arial, sans-serif" font-size="10" fill="#333">• 改一个变量 → 整张图重画（无需重新建模）</text>
+</svg>
