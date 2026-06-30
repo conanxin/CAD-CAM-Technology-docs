@@ -474,3 +474,8 @@ V9A 作品集升级
 ================
 
 如果已完成 V6 Capstone 和 V7 CadQuery 代码化建模，可以阅读 :doc:`capstone-portfolio-upgrade` 学习如何把 V6 + V7 的成果整合到 Capstone 作品集。
+
+V9B CadQuery 实际运行试点
+============================
+
+V7V7/V8 所有代码文件都通过了 ``py_compile`` 语法检查，但需要 OCCT 环境才能真实运行。V9B 记录了环境诊断与运行试点结果，参考 :doc:`cadquery-runtime-export-pilot`。

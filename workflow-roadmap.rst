@@ -510,3 +510,15 @@ V9A 作品集整合
 - V8 CadQuery Assembly 装配体（V8A-V8D）
 
 如果已完成三条线，可以阅读 :doc:`examples/capstone-portfolio-upgrade` 学习如何把 V6 + V7 + V8 的成果整合为一个更完整的 Capstone 作品集。
+
+V9B CadQuery 实际运行试点
+==========================
+
+V7/V8 所有 .py 代码文件都通过 ``py_compile`` 语法检查，但**未真实生成模型**。V9B 记录了环境诊断与真实运行试点：
+
+- 环境：Python 3.10 + Ubuntu 22.04
+- CadQuery 2.8 需要 Python 3.11+（不兼容）
+- CadQuery 2.3 支持 Python 3.10 但需要 OCP（PyPI mirror 不可用）
+- 6 个 .py 实际运行全部因 CadQuery 导入失败而失败
+
+参考 :doc:`examples/cadquery-runtime-export-pilot` 了解详细诊断与读者本地运行指导。

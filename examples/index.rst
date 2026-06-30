@@ -86,6 +86,9 @@
 **案例 U — Capstone 作品集升级：加入 CadQuery 与 Assembly 成果**：
   V6/V7/V8 三条学习线整合收口页：升级版作品集结构、推荐文件夹结构、V6/V7/V8 对照表、作品集说明模板、自评升级清单、8 条常见误区。对应 V9A。
 
+**案例 V — CadQuery 真实运行与 STEP/STL 导出试点**：
+  V7/V8 代码示例的真实运行与导出诊断：环境诊断（OS/Python/pip/OCCT）、6 个 .py 实际运行结果表、为什么 OCCT 不可用、读者本地如何生成文件、不创建假 STEP/STL 的教学诚信。对应 V9B。
+
 代码化建模
 ==========
 
@@ -106,6 +109,7 @@
 7. **Placement 与子装配**：阅读 :doc:`cadquery-assembly-placement-mini-lab` （V8C）—— Location + 子装配 + 干涉检查
 8. **装配体收口**：阅读 :doc:`cadquery-assembly-learning-path` （V8D）—— V8 系列总入口和三步走总览
 9. **作品集升级**：阅读 :doc:`capstone-portfolio-upgrade` （V9A）—— V6/V7/V8 三线整合
+10. **CadQuery 运行试点**：阅读 :doc:`cadquery-runtime-export-pilot` （V9B）—— 环境诊断与运行结果
 
 如果你已经完成 FreeCAD 实操（V5A-V5D），可以阅读 :doc:`cadquery-parametric-modeling` 理解代码化建模的思路；如果还没做过，建议先完成 :doc:`freecad-plate-modeling`。
 
@@ -135,6 +139,7 @@
 21. **Placement 与子装配 mini-lab**：阅读 :doc:`cadquery-assembly-placement-mini-lab`，理解 Location + 子装配 + 干涉检查（V8C）
 22. **Assembly 学习路径**：阅读 :doc:`cadquery-assembly-learning-path`，查看 V8 系列收口和三步走总览（V8D）
 23. **Capstone 作品集升级**：阅读 :doc:`capstone-portfolio-upgrade`，整合 V6/V7/V8 三线（V9A）
+24. **CadQuery 运行试点**：阅读 :doc:`cadquery-runtime-export-pilot`，查看环境诊断与运行结果（V9B）
 
 每个案例对应的课程章节
 ========================
@@ -215,6 +220,9 @@
    * - Capstone 作品集升级
      - V6/V7/V8 三线整合
      - V9A
+   * - CadQuery 运行试点
+     - 环境诊断、运行结果
+     - V9B
 
 如何用案例复习 unit1~unit8
 ============================
@@ -281,3 +289,4 @@
    cadquery-assembly-placement-mini-lab
    cadquery-assembly-learning-path
    capstone-portfolio-upgrade
+   cadquery-runtime-export-pilot
