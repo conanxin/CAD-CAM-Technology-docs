@@ -39,7 +39,7 @@ CAD/CAM 工具链总览
      - 输出物
    * - **CAD 设计**
      - 几何建模、装配设计、工程图生成
-     - SolidWorks, CATIA, Siemens NX, FreeCAD, Fusion 360, CadQuery（Python 代码化建模，含 V7A/V7B/V7C 三阶段 + V7D 收口 + V8A 装配体）
+     - SolidWorks, CATIA, Siemens NX, FreeCAD, Fusion 360, CadQuery（Python 代码化建模，含 V7A/V7B/V7C/V7D + V8A 装配体 + V8B BOM/checklist）
      - 三维模型、装配体、二维工程图、参数化代码
    * - **工程分析**
      - 有限元分析、运动仿真、优化设计
@@ -410,6 +410,23 @@ V8A 的关键内容：
 配套代码：
 
 - :file:`code/cadquery/bracket_assembly.py` —— 简化支架装配体
+
+**任务 1.13：Assembly BOM 与检查清单（V8B）**
+
+完成 V8A 后，可以进一步阅读 :doc:`examples/cadquery-assembly-bom-checklist` 学习装配体的工程表达。
+
+V8B 的关键内容：
+
+- **BOM（零件清单）**：从 Assembly 代码派生表格，描述编号/名称/数量/材料/作用
+- **爆炸图**：教学性地拉开组件位置，帮助理解装配顺序
+- **装配检查清单**：结构化验证装配体的完整性和命名
+- **作品集归档**：bracket_assembly.py + BOM + checklist + notes + exploded view
+
+补充资源包：
+
+- :file:`assets/bracket-capstone/assembly/assembly-bom-template.md`
+- :file:`assets/bracket-capstone/assembly/assembly-checklist.md`
+- :file:`assets/bracket-capstone/assembly/assembly-notes-template.md`
 
 **任务 2：对比 STEP 与 STL 文件差异**
 

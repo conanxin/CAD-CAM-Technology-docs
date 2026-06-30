@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280">
+  <rect width="900" height="280" fill="#f8f9fa" rx="10"/>
+
+  <text x="450" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">Assembly 表达四件套（V8B）</text>
+
+  <!-- Step 1: Assembly 组件 -->
+  <rect x="20" y="60" width="170" height="70" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="105" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">1. Assembly 组件</text>
+  <text x="105" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">底板 + 立板 +</text>
+  <text x="105" y="114" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">2 螺栓 + 1 销钉</text>
+
+  <!-- Arrow 1 -->
+  <polygon points="193,95 208,90 208,100" fill="#666"/>
+  <line x1="190" y1="95" x2="208" y2="95" stroke="#666" stroke-width="2"/>
+
+  <!-- Step 2: BOM 表 -->
+  <rect x="213" y="60" width="170" height="70" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="5"/>
+  <text x="298" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">2. BOM 表</text>
+  <text x="298" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">编号 / 名称 / 数量</text>
+  <text x="298" y="114" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">材料 / 作用 / 检查</text>
+
+  <!-- Arrow 2 -->
+  <polygon points="386,95 401,90 401,100" fill="#666"/>
+  <line x1="383" y1="95" x2="401" y2="95" stroke="#666" stroke-width="2"/>
+
+  <!-- Step 3: 检查清单 -->
+  <rect x="406" y="60" width="170" height="70" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <text x="491" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">3. 检查清单</text>
+  <text x="491" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">完整性 / 命名 / 干涉</text>
+  <text x="491" y="114" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">数量 / 坐标系 / 导出</text>
+
+  <!-- Arrow 3 -->
+  <polygon points="579,95 594,90 594,100" fill="#666"/>
+  <line x1="576" y1="95" x2="594" y2="95" stroke="#666" stroke-width="2"/>
+
+  <!-- Step 4: 作品集归档 -->
+  <rect x="599" y="60" width="280" height="70" fill="#ffebee" stroke="#c62828" stroke-width="2" rx="5"/>
+  <text x="739" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">4. 作品集归档</text>
+  <text x="739" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">bracket_assembly.py + BOM + checklist</text>
+  <text x="739" y="114" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">+ notes + exploded view + STEP</text>
+
+  <!-- 横向数据流标注 -->
+  <line x1="20" y1="155" x2="880" y2="155" stroke="#999" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="450" y="172" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666" font-style="italic">↑ Assembly 是源头，BOM 和 checklist 必须与 Assembly 代码保持同步</text>
+
+  <!-- 底部说明 -->
+  <rect x="20" y="195" width="860" height="75" fill="#fff" stroke="#90a4ae" stroke-width="1" rx="5"/>
+  <text x="450" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">为什么需要这四件套</text>
+  <text x="40" y="235" font-family="Arial, sans-serif" font-size="10" fill="#333">• Assembly：3D 几何表达，团队看到"装配长什么样"</text>
+  <text x="40" y="250" font-family="Arial, sans-serif" font-size="10" fill="#333">• BOM：清单表达，团队看到"有哪些零件、多少个"</text>
+  <text x="450" y="235" font-family="Arial, sans-serif" font-size="10" fill="#333">• Checklist：验证表达，评审者验证"装配是否完整"</text>
+  <text x="450" y="250" font-family="Arial, sans-serif" font-size="10" fill="#333">• 归档：作品集提交，方便未来查找</text>
+</svg>

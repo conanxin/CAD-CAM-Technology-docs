@@ -64,6 +64,30 @@
 
 这个文件配合 [`examples/cadquery-assembly-intro.rst`](../../examples/cadquery-assembly-intro.rst) 阅读。
 
+### V8B — 装配体 BOM 与检查清单
+
+V8B 轻量增强了 `bracket_assembly.py`：
+
+- **BOM_DATA**：在文件顶部增加结构化的 BOM 数据（list of dict）
+- **print_bom()**：在 main() 中打印 BOM 表格
+- **与 Assembly 代码同步**：BOM 中的 `function` 字段与 `make_xxx()` 函数名一致
+
+补充页面：
+
+- [`examples/cadquery-assembly-bom-checklist.rst`](../../examples/cadquery-assembly-bom-checklist.rst) — BOM、爆炸图、检查清单
+- [`assets/bracket-capstone/assembly/`](../../assets/bracket-capstone/assembly/) — 资源包
+  - `assembly-bom-template.md` —— BOM 模板
+  - `assembly-checklist.md` —— 检查清单
+  - `assembly-notes-template.md` —— 装配说明模板
+
+**如何把装配体代码与作品集提交材料关联**：
+
+1. 运行 `bracket_assembly.py`，会同时输出 BOM 表格
+2. 复制 `assets/bracket-capstone/assembly/` 中的模板
+3. 用 `assembly-checklist.md` 逐项验证
+4. 用 `assembly-notes-template.md` 记录设计修改、导出记录
+5. 提交时同时提交 `.py` + `.step`（可选）+ BOM + checklist + notes
+
 ## 如何阅读
 
 **第 1 步：先读文档**

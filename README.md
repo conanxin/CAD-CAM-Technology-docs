@@ -7,7 +7,7 @@
 本项目已从旧版阅读笔记升级为**课程化学习文档站**,基于 [《CAD/CAM技术基础》](http://book.douban.com/subject/5296837/) 教材,使用 Sphinx 构建为适合自学的在线课程。
 
 - **在线版本**:https://conanxin.github.io/CAD-CAM-Technology-docs
-- **当前版本**:`v0.8.0-cadquery-assembly-intro`
+- **当前版本**:`v0.8.1-assembly-bom-checklist`
 - **历史版本**(SAE):http://conanxincv.sinaapp.com/project2/index.html(已归档,不再更新)
 
 ## 当前版本亮点
@@ -26,6 +26,7 @@
 | **CadQuery 支架 Capstone** | 完整 L 型支架代码化(与 V6A 几何一致),作为 V6 作品集代码化补充 |
 | **CadQuery 学习路径** | V7 系列(V7A/V7B/V7C)三步走总入口和收口页 |
 | **CadQuery Assembly 入门** | 多零件装配体表达、Location 概念、Assembly 容器 |
+| **Assembly BOM 与检查清单** | 装配体 BOM 表格、爆炸图理解、装配检查清单 |
 | **FreeCAD Path Workbench** | Job/Tool/Operation/Post 概念、教学 G-code 样例 |
 | **项目档案与评分** | 项目档案模板、评分表、资源包 |
 | **L 型支架 Capstone** | 集成 V5A-V5D 全部学习成果的综合项目 |
@@ -60,6 +61,7 @@
 | CadQuery 支架 Capstone | 完整 L 型支架代码模型,与 V6A 几何一致 | V7C |
 | CadQuery 学习路径 | V7 系列收口、三步走总览 | V7D |
 | CadQuery Assembly 入门 | 多零件装配体表达、Location 概念 | V8A |
+| Assembly BOM 与检查清单 | 装配体 BOM、爆炸图、检查清单 | V8B |
 
 ## 教学亮点速览
 
@@ -75,9 +77,11 @@
 
 **CadQuery 支架 Capstone(V7C)**:用代码重写 V6A 支架,参数与几何严格一致,作品集代码化补充 → [查看](https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-bracket-capstone.html)
 
-**CadQuery 学习路径（V7D）**：V7 系列三步走总入口、4 个 .py 代码文件地图、路线对比 → [查看](https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-learning-path.html)
+**CadQuery 学习路径(V7D)**:V7 系列三步走总入口、4 个 .py 代码文件地图、路线对比 → [查看](https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-learning-path.html)
 
 **CadQuery Assembly 入门（V8A）**：多零件装配体表达、Assembly 容器、Location 概念 → [查看](https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-assembly-intro.html)
+
+**Assembly BOM 与检查清单（V8B）**：BOM 表格、爆炸图理解、装配检查清单 → [查看](https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-assembly-bom-checklist.html)
 
 ## 快速入口
 
@@ -106,10 +110,12 @@
 | **CadQuery 支架 Capstone** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-bracket-capstone.html |
 | **CadQuery 学习路径** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-learning-path.html |
 | **CadQuery Assembly 入门** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-assembly-intro.html |
+| **Assembly BOM 与检查清单** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-assembly-bom-checklist.html |
 | **CadQuery 示例代码目录** | https://github.com/conanxin/CAD-CAM-Technology-docs/tree/master/code/cadquery |
 
 ## 版本演进
 
+- **V8B**(2024-06):Assembly BOM 与检查清单(BOM 表格、爆炸图理解、装配检查清单、教学型 BOM_DATA 代码、3 个资源包文件、2 个 SVG)
 - **V8A**(2024-06):CadQuery Assembly 入门(多零件装配体表达、Location 概念、底板+立板+螺栓+销钉示例、Assembly vs 单实体焊接、2 个 SVG)
 - **V7D**(2024-06):CadQuery 学习路径收口页(V7 系列 V7A/V7B/V7C 三步走总入口、4 个 .py 代码文件地图、FreeCAD vs CadQuery 路线对比、2 个 SVG)
 - **V7C**(2024-06):CadQuery 支架 Capstone(完整 L 型支架代码模型,与 V6A 几何一致、作为 V6 作品集代码化补充、2 个 SVG 流程/特征图)

@@ -37,6 +37,66 @@ import cadquery as cq
 
 
 # ============================================================
+# BOM 数据（V8B 轻量增增增增）—— 与 Assembly 代码保持同步
+# ============================================================
+
+BOM_DATA = [
+    {
+        "id": 1,
+        "name": "base_plate",
+        "quantity": 1,
+        "role": "装配体“地面”，承载其他组件",
+        "material": "Q235 钢（教学示意）",
+        "function": "make_base_plate",
+        "checks": ["孔位正确", "尺寸正确"],
+    },
+    {
+        "id": 2,
+        "name": "vertical_plate",
+        "quantity": 1,
+        "role": "装配体“立面”，与底板 L 型结合",
+        "material": "Q235 钢（教学示意）",
+        "function": "make_vertical_plate",
+        "checks": ["销钉孔位置正确", "立板高度正确"],
+    },
+    {
+        "id": 3,
+        "name": "mounting_bolt",
+        "quantity": 2,
+        "role": "把底板固定到外部设备",
+        "material": "8.8 级钢（教学示意）",
+        "function": "make_bolt",
+        "checks": ["直径 = 8mm", "长度足够"],
+    },
+    {
+        "id": 4,
+        "name": "side_pin",
+        "quantity": 1,
+        "role": "立板与外部设备的定位",
+        "material": "45 钢（教学示意）",
+        "function": "make_pin",
+        "checks": ["直径 = 6mm", "长度足够"],
+    },
+]
+
+
+def total_bom_quantity(bom=BOM_DATA):
+    """计算 BOM 总数量。"""
+    return sum(item["quantity"] for item in bom)
+
+
+def print_bom(bom=BOM_DATA):
+    """打印 BOM 表格。"""
+    print(f"{'ID':<4} {'Name':<18} {'Qty':<5} {'Role':<30}")
+    print("-" * 60)
+    for item in bom:
+        print(f"{item['id']:<4} {item['name']:<18} "
+              f"{item['quantity']:<5} {item['role']:<30}")
+    print("-" * 60)
+    print(f"Total quantity: {total_bom_quantity(bom)}")
+
+
+# ============================================================
 # 参数集中区
 # ============================================================
 
@@ -249,6 +309,10 @@ def main():
     print(f"  - 1 x side_pin (Phi{pin_diameter} 示意)")
     print(f"")
     print(f"教学声明：螺栓和销钉尺寸是教学示意值，不可直接用于实际设计")
+    print(f"")
+    print(f"BOM 表格：")
+    print_bom()
+    print(f"")
 
     # 构建装配体
     assembly = build_assembly()
