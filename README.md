@@ -7,7 +7,7 @@
 本项目已从旧版阅读笔记升级为**课程化学习文档站**,基于 [《CAD/CAM技术基础》](http://book.douban.com/subject/5296837/) 教材,使用 Sphinx 构建为适合自学的在线课程。
 
 - **在线版本**:https://conanxin.github.io/CAD-CAM-Technology-docs
-- **当前版本**:`v0.7.2-cadquery-bracket-capstone`
+- **当前版本**:`v0.7.3-cadquery-learning-path`
 - **历史版本**(SAE):http://conanxincv.sinaapp.com/project2/index.html(已归档,不再更新)
 
 ## 当前版本亮点
@@ -24,6 +24,7 @@
 | **Python + CadQuery** | 代码化参数建模示例、STEP/STL 导出、参数化教学 |
 | **CadQuery 进阶特征** | 圆角/倒角/孔阵列/支架变体的进阶示例 |
 | **CadQuery 支架 Capstone** | 完整 L 型支架代码化(与 V6A 几何一致),作为 V6 作品集代码化补充 |
+| **CadQuery 学习路径** | V7 系列(V7A/V7B/V7C)三步走总入口和收口页 |
 | **FreeCAD Path Workbench** | Job/Tool/Operation/Post 概念、教学 G-code 样例 |
 | **项目档案与评分** | 项目档案模板、评分表、资源包 |
 | **L 型支架 Capstone** | 集成 V5A-V5D 全部学习成果的综合项目 |
@@ -56,6 +57,7 @@
 | Python + CadQuery | 代码化建模示例 + 参数化教学 | V7A |
 | CadQuery 进阶特征 | 圆角/倒角/孔阵列/支架变体 | V7B |
 | CadQuery 支架 Capstone | 完整 L 型支架代码模型,与 V6A 几何一致 | V7C |
+| CadQuery 学习路径 | V7 系列收口、三步走总览 | V7D |
 
 ## 教学亮点速览
 
@@ -67,9 +69,11 @@
 
 **Python + CadQuery(V7A)**:代码化参数建模示例 + 与 FreeCAD 对比,读者可学习如何用 Python 描述几何 → [查看](https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-parametric-modeling.html)
 
-**CadQuery 进阶（V7B）**：圆角/倒角/孔阵列/支架变体的进阶特征示例，理解代码化建模的完整能力 → [查看](https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-advanced-features.html)
+**CadQuery 进阶(V7B)**:圆角/倒角/孔阵列/支架变体的进阶特征示例,理解代码化建模的完整能力 → [查看](https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-advanced-features.html)
 
 **CadQuery 支架 Capstone（V7C）**：用代码重写 V6A 支架，参数与几何严格一致，作品集代码化补充 → [查看](https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-bracket-capstone.html)
+
+**CadQuery 学习路径（V7D）**：V7 系列三步走总入口、4 个 .py 代码文件地图、路线对比 → [查看](https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-learning-path.html)
 
 ## 快速入口
 
@@ -96,10 +100,12 @@
 | **Python + CadQuery** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-parametric-modeling.html |
 | **CadQuery 进阶特征** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-advanced-features.html |
 | **CadQuery 支架 Capstone** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-bracket-capstone.html |
+| **CadQuery 学习路径** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-learning-path.html |
 | **CadQuery 示例代码目录** | https://github.com/conanxin/CAD-CAM-Technology-docs/tree/master/code/cadquery |
 
 ## 版本演进
 
+- **V7D**(2024-06):CadQuery 学习路径收口页(V7 系列 V7A/V7B/V7C 三步走总入口、4 个 .py 代码文件地图、FreeCAD vs CadQuery 路线对比、2 个 SVG)
 - **V7C**(2024-06):CadQuery 支架 Capstone(完整 L 型支架代码模型,与 V6A 几何一致、作为 V6 作品集代码化补充、2 个 SVG 流程/特征图)
 - **V7B**(2024-06):CadQuery 进阶特征(圆角/倒角/孔阵列/支架变体、3 个代码文件、2 个 SVG、特征与参数对照表、8 条常见误区)
 - **V7A**(2024-06):Python + CadQuery 参数化建模(代码化建模示例、与 FreeCAD 工作流对比、参数化教学、2 个 SVG 图示、可运行 Python 示例代码)

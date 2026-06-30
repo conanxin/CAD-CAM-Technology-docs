@@ -39,7 +39,7 @@ CAD/CAM 工具链总览
      - 输出物
    * - **CAD 设计**
      - 几何建模、装配设计、工程图生成
-     - SolidWorks, CATIA, Siemens NX, FreeCAD, Fusion 360, CadQuery（Python 代码化建模，含 V7A 入门 / V7B 进阶 / V7C 支架 Capstone）
+     - SolidWorks, CATIA, Siemens NX, FreeCAD, Fusion 360, CadQuery（Python 代码化建模，含 V7A/V7B/V7C 三阶段 + V7D 收口）
      - 三维模型、装配体、二维工程图、参数化代码
    * - **工程分析**
      - 有限元分析、运动仿真、优化设计
@@ -383,6 +383,18 @@ V7C 的关键约束：
 配套代码：
 
 - :file:`code/cadquery/bracket_capstone.py` —— 完整 L 型支架代码化建模
+
+**任务 1.11：V7 系列学习路径收口（V7D）**
+
+完成 V7A + V7B + V7C 后，可以阅读 :doc:`examples/cadquery-learning-path` 查看 V7 系列的总入口和收口页：
+
+- 三步学习路线（V7A 入门 → V7B 进阶 → V7C 综合）
+- 4 个 .py 代码文件地图（角色与关系）
+- FreeCAD vs CadQuery 路线对比
+- 完成标准（学完 V7 之后应具备的能力）
+- 8 条常见误区 + 8 个扩展方向
+
+本任务是 V7 系列的**收口页**——不引入新代码或新特征，仅作为路线图导航。
 
 **任务 2：对比 STEP 与 STL 文件差异**
 

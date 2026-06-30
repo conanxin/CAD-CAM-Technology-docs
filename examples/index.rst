@@ -68,6 +68,9 @@
 **案例 O — CadQuery 支架 Capstone：用代码生成完整支架**：
   V7 系列的综合阶段：用 CadQuery 重写 V6A FreeCAD 支架 Capstone，参数与几何与 V6A 完全一致，可作为 V6 作品集的代码化补充。对应 V7C。
 
+**案例 P — CadQuery 学习路径：从入门到 Capstone 收口**：
+  V7 系列（V7A/V7B/V7C）的总入口和收口页：三步学习路线、4 个 .py 代码文件地图、FreeCAD vs CadQuery 路线对比、完成标准、误区与扩展方向。对应 V7D。
+
 代码化建模
 ==========
 
@@ -82,6 +85,7 @@
 1. **入门**：阅读 :doc:`cadquery-parametric-modeling` （V7A）—— 带孔矩形板，理解基础
 2. **进阶**：阅读 :doc:`cadquery-advanced-features` （V7B）—— 圆角、倒角、孔阵列、支架变体
 3. **综合**：阅读 :doc:`cadquery-bracket-capstone` （V7C）—— 完整 L 型支架 Capstone（与 V6A 几何一致）
+4. **收口**：阅读 :doc:`cadquery-learning-path` （V7D）—— V7 系列总入口和三步走总览
 
 如果你已经完成 FreeCAD 实操（V5A-V5D），可以阅读 :doc:`cadquery-parametric-modeling` 理解代码化建模的思路；如果还没做过，建议先完成 :doc:`freecad-plate-modeling`。
 
@@ -105,6 +109,7 @@
 15. **代码化建模**：阅读 :doc:`cadquery-parametric-modeling`，理解 Python + CadQuery 参数化建模（V7A）
 16. **CadQuery 进阶**：阅读 :doc:`cadquery-advanced-features`，学习圆角、倒角、孔阵列与支架变体（V7B）
 17. **CadQuery 支架 Capstone**：阅读 :doc:`cadquery-bracket-capstone`，理解代码化建模的完整应用（V7C）
+18. **CadQuery 学习路径**：阅读 :doc:`cadquery-learning-path`，查看 V7 系列收口和三步走总览（V7D）
 
 每个案例对应的课程章节
 ========================
@@ -167,6 +172,9 @@
    * - CadQuery 支架 Capstone
      - 完整 L 型支架代码模型，与 V6A 几何一致
      - V7C
+   * - CadQuery 学习路径
+     - V7 系列收口、三步走总览
+     - V7D
 
 如何用案例复习 unit1~unit8
 ============================
@@ -227,3 +235,4 @@
    cadquery-parametric-modeling
    cadquery-advanced-features
    cadquery-bracket-capstone
+   cadquery-learning-path

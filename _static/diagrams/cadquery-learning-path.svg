@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280">
+  <rect width="900" height="280" fill="#f8f9fa" rx="10"/>
+
+  <text x="450" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">CadQuery 三步学习路线（V7 系列）</text>
+
+  <!-- Step 1: V7A 入门 -->
+  <rect x="20" y="60" width="270" height="120" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="155" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#0d47a1">Step 1: V7A 入门</text>
+  <text x="155" y="103" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">带孔矩形板</text>
+  <text x="155" y="118" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">code: plate_with_hole.py</text>
+  <text x="155" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">难度 ⭐</text>
+  <text x="155" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">约 2-3 小时</text>
+  <text x="155" y="168" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-style="italic" fill="#1976d2">理解 CadQuery 基本概念</text>
+
+  <!-- Arrow 1 -->
+  <polygon points="295,120 320,115 320,125" fill="#666"/>
+  <line x1="290" y1="120" x2="320" y2="120" stroke="#666" stroke-width="2"/>
+  <text x="305" y="108" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#444" font-weight="bold">+圆角</text>
+  <text x="305" y="138" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#444" font-weight="bold">+孔阵列</text>
+
+  <!-- Step 2: V7B 进阶 -->
+  <rect x="325" y="60" width="270" height="120" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <text x="460" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1b5e20">Step 2: V7B 进阶</text>
+  <text x="460" y="103" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">圆角/倒角/孔阵列 + 简化支架</text>
+  <text x="460" y="118" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">code: plate_advanced_features.py</text>
+  <text x="460" y="131" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">code: bracket_variant.py</text>
+  <text x="460" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">难度 ⭐⭐⭐</text>
+  <text x="460" y="168" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-style="italic" fill="#1b5e20">掌握真实 CAD 建模常见特征</text>
+
+  <!-- Arrow 2 -->
+  <polygon points="600,120 625,115 625,125" fill="#666"/>
+  <line x1="595" y1="120" x2="625" y2="120" stroke="#666" stroke-width="2"/>
+  <text x="610" y="108" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#444" font-weight="bold">+V6A</text>
+  <text x="610" y="138" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#444" font-weight="bold">完整参数</text>
+
+  <!-- Step 3: V7C 综合 -->
+  <rect x="630" y="60" width="250" height="120" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="5"/>
+  <text x="755" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#e65100">Step 3: V7C 综合</text>
+  <text x="755" y="103" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">完整 L 型支架 Capstone</text>
+  <text x="755" y="118" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">code: bracket_capstone.py</text>
+  <text x="755" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">（与 V6A 几何一致）</text>
+  <text x="755" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">难度 ⭐⭐⭐⭐</text>
+  <text x="755" y="168" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-style="italic" fill="#e65100">真实 Capstone 项目</text>
+
+  <!-- 底部说明 -->
+  <rect x="20" y="200" width="860" height="65" fill="#fff" stroke="#90a4ae" stroke-width="1" rx="5"/>
+  <text x="450" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">V7D 收口（当前页）</text>
+  <text x="40" y="240" font-family="Arial, sans-serif" font-size="10" fill="#333">• 三步走总入口和收口页</text>
+  <text x="40" y="255" font-family="Arial, sans-serif" font-size="10" fill="#333">• 4 个 .py 代码文件地图</text>
+  <text x="450" y="240" font-family="Arial, sans-serif" font-size="10" fill="#333">• FreeCAD vs CadQuery 路线对比</text>
+  <text x="450" y="255" font-family="Arial, sans-serif" font-size="10" fill="#333">• 完成标准 + 8 条常见误区 + 扩展方向</text>
+</svg>

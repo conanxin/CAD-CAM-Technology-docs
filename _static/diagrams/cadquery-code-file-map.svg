@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360">
+  <rect width="900" height="360" fill="#f8f9fa" rx="10"/>
+
+  <text x="450" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">CadQuery 代码文件地图（V7 系列）</text>
+
+  <!-- 文件 1: plate_with_hole.py -->
+  <g transform="translate(20, 70)">
+    <rect x="0" y="0" width="200" height="100" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+    <text x="100" y="22" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0d47a1">plate_with_hole.py</text>
+    <text x="100" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#1976d2" font-weight="bold">V7A 入门</text>
+    <text x="100" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">1 板 + 1 孔 + 8 棱边倒角</text>
+    <text x="100" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">难度 ⭐</text>
+    <text x="100" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#777">Workplane + box + hole + chamfer</text>
+  </g>
+
+  <!-- 演进箭头 1 -->
+  <polygon points="225,120 250,115 250,125" fill="#666"/>
+  <line x1="220" y1="120" x2="250" y2="120" stroke="#666" stroke-width="2"/>
+  <text x="237" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#444">+孔阵列</text>
+  <text x="237" y="138" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#444">+圆角</text>
+
+  <!-- 文件 2: plate_advanced_features.py -->
+  <g transform="translate(255, 70)">
+    <rect x="0" y="0" width="200" height="100" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+    <text x="100" y="22" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1b5e20">plate_advanced_features.py</text>
+    <text x="100" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#388e3c" font-weight="bold">V7B 进阶</text>
+    <text x="100" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">1 板 + 4 角孔 + 圆角</text>
+    <text x="100" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">难度 ⭐⭐</text>
+    <text x="100" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#777">forConstruction + vertices + hole</text>
+  </g>
+
+  <!-- 演进箭头 2 -->
+  <polygon points="460,120 485,115 485,125" fill="#666"/>
+  <line x1="455" y1="120" x2="485" y2="120" stroke="#666" stroke-width="2"/>
+  <text x="472" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#444">+多实体</text>
+  <text x="472" y="138" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#444">+union</text>
+
+  <!-- 文件 3: bracket_variant.py -->
+  <g transform="translate(490, 70)">
+    <rect x="0" y="0" width="200" height="100" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="5"/>
+    <text x="100" y="22" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#e65100">bracket_variant.py</text>
+    <text x="100" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#f57c00" font-weight="bold">V7B 简化支架</text>
+    <text x="100" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">底板 + 立板 + 多种孔 + 圆角</text>
+    <text x="100" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">难度 ⭐⭐⭐</text>
+    <text x="100" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#777">union + transformed + edges() 选择器</text>
+  </g>
+
+  <!-- 演进箭头 3 -->
+  <polygon points="695,120 720,115 720,125" fill="#666"/>
+  <line x1="690" y1="120" x2="720" y2="120" stroke="#666" stroke-width="2"/>
+  <text x="707" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#444">+V6A 完整</text>
+  <text x="707" y="138" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#444">参数 + 倒角</text>
+
+  <!-- 文件 4: bracket_capstone.py -->
+  <g transform="translate(725, 70)">
+    <rect x="0" y="0" width="160" height="100" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" rx="5"/>
+    <text x="80" y="22" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#4a148c">bracket_capstone.py</text>
+    <text x="80" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#7b1fa2" font-weight="bold">V7C 综合</text>
+    <text x="80" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">完整 L 型支架</text>
+    <text x="80" y="71" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#555">（与 V6A 几何一致）</text>
+    <text x="80" y="86" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">难度 ⭐⭐⭐⭐</text>
+  </g>
+
+  <!-- 4 个文件汇总 -->
+  <rect x="20" y="195" width="860" height="50" fill="#fff" stroke="#90a4ae" stroke-width="1" rx="5"/>
+  <text x="450" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">4 个文件的关系</text>
+  <text x="40" y="232" font-family="Arial, sans-serif" font-size="10" fill="#333">• V7A → V7B：增加孔阵列（forConstruction + vertices + hole）和圆角</text>
+
+  <!-- 关系流向 -->
+  <rect x="20" y="260" width="860" height="90" fill="#fff" stroke="#90a4ae" stroke-width="1" rx="5"/>
+  <text x="450" y="278" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">阅读建议</text>
+  <text x="40" y="295" font-family="Arial, sans-serif" font-size="10" fill="#333">• 按时间顺序读 4 个文件：plate_with_hole.py → plate_advanced_features.py → bracket_variant.py → bracket_capstone.py</text>
+  <text x="40" y="310" font-family="Arial, sans-serif" font-size="10" fill="#333">• 每个文件重点关注<tspan font-weight="bold">相对前一文件新增的内容</tspan>，不要试图一次读懂所有细节</text>
+  <text x="40" y="325" font-family="Arial, sans-serif" font-size="10" fill="#333">• 每个文件都设计为可独立运行（main 入口 + 标准 STEP/STL 导出）</text>
+  <text x="40" y="340" font-family="Arial, sans-serif" font-size="10" fill="#333">• 即使本地不能运行 CadQuery，阅读代码也能完成学习（py_compile 通过 = 语法正确）</text>
+</svg>
