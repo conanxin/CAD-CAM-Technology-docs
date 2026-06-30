@@ -15,6 +15,20 @@
 4. 熟悉 CAPP 工艺路线的设计思路
 5. 建立"设计→工艺→制造"的系统性思维
 
+从 Showcase 开始
+==================
+
+如果你刚开始访问本站，建议先阅读 :doc:`../project-showcase` （项目全景页），了解本站有什么、演进到哪里、读者怎么开始。然后再按下面的分组选择路径。
+
+**快速分组入口**：
+
+- **工程案例**：cad-to-gcode、data-exchange、capp-process-plan
+- **FreeCAD 实操线**：freecad-plate-modeling → freecad-export-checklist → freecad-to-cam-worksheet → freecad-workflow-index
+- **Capstone 项目线**：bracket-capstone-project → bracket-project-portfolio → capstone-learning-path
+- **CadQuery 代码建模线**：cadquery-parametric-modeling → cadquery-advanced-features → cadquery-bracket-capstone → cadquery-learning-path
+- **Assembly 装配体线**：cadquery-assembly-intro → cadquery-assembly-bom-checklist → cadquery-assembly-placement-mini-lab → cadquery-assembly-learning-path
+- **Runtime / Portfolio 路线**：capstone-portfolio-upgrade → cadquery-runtime-export-pilot → cadquery-local-environment-guide → cadquery-runtime-portfolio-path
+
 四个案例之间的关系
 ====================
 

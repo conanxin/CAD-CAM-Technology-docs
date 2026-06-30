@@ -1,0 +1,202 @@
+/* showcase.css — V10A Homepage Showcase Styles
+ * Lightweight CSS to enhance homepage visual hierarchy without breaking Furo default theme.
+ * No external fonts, no JS dependencies.
+ */
+
+/* Hero 区块 —— 首页顶部视觉重心 */
+.section.hero {
+    text-align: center;
+    padding: 1.5rem 0 2rem;
+    border-bottom: 1px solid var(--color-foreground-border, #e0e0e0);
+    margin-bottom: 2rem;
+}
+
+.section.hero h1 {
+    font-size: 1.9rem;
+    margin-bottom: 0.6rem;
+    color: var(--color-foreground-strong, #1a1a1a);
+}
+
+.section.hero p.tagline {
+    font-size: 1.05rem;
+    color: var(--color-foreground-muted, #555);
+    max-width: 60rem;
+    margin: 0 auto 1rem;
+    line-height: 1.6;
+}
+
+.section.hero .badges {
+    margin: 0.8rem 0;
+}
+
+.section.hero .badges a {
+    display: inline-block;
+    margin: 0 0.3rem;
+    padding: 0.25rem 0.7rem;
+    border-radius: 0.3rem;
+    background: var(--color-background-secondary, #f5f5f5);
+    color: var(--color-foreground, #333);
+    text-decoration: none;
+    border: 1px solid var(--color-foreground-border, #e0e0e0);
+    font-size: 0.85rem;
+}
+
+.section.hero .badges a:hover {
+    background: var(--color-background-hover, #e8e8e8);
+}
+
+/* 入口矩阵 —— 卡片式入口区块 */
+.entry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.entry-card {
+    border: 1px solid var(--color-foreground-border, #e0e0e0);
+    border-radius: 0.5rem;
+    padding: 1rem 1.2rem;
+    background: var(--color-background-primary, #fff);
+    transition: box-shadow 0.2s;
+}
+
+.entry-card:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.entry-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.4rem;
+    font-size: 1.05rem;
+    color: var(--color-foreground-strong, #1a1a1a);
+}
+
+.entry-card p {
+    margin: 0.3rem 0;
+    font-size: 0.92rem;
+    color: var(--color-foreground-muted, #555);
+    line-height: 1.5;
+}
+
+.entry-card a.more {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--color-link, #1976d2);
+    text-decoration: none;
+}
+
+.entry-card a.more:hover {
+    text-decoration: underline;
+}
+
+/* 能力矩阵表格增强 */
+table.capability-matrix {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+}
+
+table.capability-matrix th {
+    background: var(--color-background-secondary, #f5f5f5);
+    padding: 0.6rem 0.8rem;
+    text-align: left;
+    border-bottom: 2px solid var(--color-foreground-border, #e0e0e0);
+}
+
+table.capability-matrix td {
+    padding: 0.55rem 0.8rem;
+    border-bottom: 1px solid var(--color-foreground-border, #e0e0e0);
+    vertical-align: top;
+}
+
+/* 推荐路径卡片 */
+.path-card {
+    border-left: 4px solid var(--color-link, #1976d2);
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    background: var(--color-background-secondary, #fafafa);
+    border-radius: 0 0.4rem 0.4rem 0;
+}
+
+.path-card strong {
+    color: var(--color-foreground-strong, #1a1a1a);
+}
+
+.path-card ul {
+    margin: 0.4rem 0 0;
+    padding-left: 1.5rem;
+}
+
+.path-card li {
+    margin: 0.2rem 0;
+}
+
+/* v1.0 路线图区块 */
+.roadmap-block {
+    border: 1px solid var(--color-foreground-border, #e0e0e0);
+    border-radius: 0.5rem;
+    padding: 1.2rem;
+    margin: 1.5rem 0;
+    background: var(--color-background-secondary, #fafafa);
+}
+
+.roadmap-block h3 {
+    margin-top: 0;
+    color: var(--color-foreground-strong, #1a1a1a);
+}
+
+.roadmap-block ol {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.roadmap-block li {
+    margin: 0.3rem 0;
+    line-height: 1.5;
+}
+
+/* Showcase 区块（project-showcase 页用） */
+.showcase-section {
+    margin: 2rem 0;
+}
+
+.showcase-section h2 {
+    border-bottom: 2px solid var(--color-link, #1976d2);
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+/* 时间线 */
+.timeline {
+    border-left: 3px solid var(--color-foreground-border, #ccc);
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.timeline-entry {
+    margin: 1rem 0;
+    position: relative;
+}
+
+.timeline-entry::before {
+    content: "●";
+    position: absolute;
+    left: -1.85rem;
+    top: -0.2rem;
+    color: var(--color-link, #1976d2);
+    font-size: 1.2rem;
+}
+
+.timeline-entry h4 {
+    margin: 0 0 0.3rem;
+    font-size: 1rem;
+    color: var(--color-foreground-strong, #1a1a1a);
+}
+
+.timeline-entry p {
+    margin: 0;
+    font-size: 0.92rem;
+    color: var(--color-foreground-muted, #555);
+}

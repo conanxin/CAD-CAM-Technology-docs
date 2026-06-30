@@ -292,6 +292,13 @@ CAD/CAM 工具链总览
 下一步建议
 ================================
 
+.. note::
+
+   **workflow-roadmap 是学习路线** —— 帮你从设计到制造的完整认知。
+   **project-showcase 是项目全景** —— 展示本站有什么、演进到哪里、读者怎么开始。
+   两者互补：workflow-roadmap 是纵向（按学习阶段），project-showcase 是横向（按模块和读者类型）。
+   查看项目全景请阅读 :doc:`project-showcase`。
+
 **如果你刚开始学习**：
 
 1. 从 :doc:`course-overview` 开始，建立全局认知
@@ -557,3 +564,13 @@ V9D 的关键交付：
 - 2 个新 SVG（cadquery-runtime-portfolio-path + pycompile-import-export-levels）
 
 参考 :doc:`examples/cadquery-runtime-portfolio-path` 查看 V9D 总入口。
+
+项目全景补充
+==============
+
+V10A 新增项目全景页 :doc:`project-showcase`，展示本站模块与演进时间线。
+
+- workflow-roadmap（本页）：**学习路线** —— 按阶段展开，从设计到制造的完整认知
+- project-showcase：**项目全景** —— 按模块与读者类型展开，展示有什么、读者怎么开始
+
+两者互补，无需选一，建议同时阅读。

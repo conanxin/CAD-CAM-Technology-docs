@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360">
+  <rect width="900" height="360" fill="#f8f9fa" rx="10"/>
+
+  <text x="450" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">CAD/CAM Technology Docs — 站点全景图</text>
+  <text x="450" y="44" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">课程基础 → FreeCAD 实操 → Capstone → CadQuery → Assembly → Portfolio</text>
+
+  <!-- Layer 1: 课程基础 -->
+  <rect x="20" y="65" width="130" height="60" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="85" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0d47a1">课程基础</text>
+  <text x="85" y="102" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">unit1~unit8</text>
+  <text x="85" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">course-overview</text>
+
+  <line x1="150" y1="95" x2="170" y2="95" stroke="#666" stroke-width="2"/>
+  <polygon points="167,91 175,95 167,99" fill="#666"/>
+
+  <!-- Layer 2: FreeCAD 实操 -->
+  <rect x="175" y="65" width="130" height="60" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="240" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0d47a1">FreeCAD 实操</text>
+  <text x="240" y="102" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">V5A-V5D</text>
+  <text x="240" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">freecad-workflow-index</text>
+
+  <line x1="305" y1="95" x2="325" y2="95" stroke="#666" stroke-width="2"/>
+  <polygon points="322,91 330,95 322,99" fill="#666"/>
+
+  <!-- Layer 3: STEP/STL + CAM -->
+  <rect x="330" y="65" width="130" height="60" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="395" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0d47a1">STEP/STL + CAM</text>
+  <text x="395" y="102" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">V4A-V4C</text>
+  <text x="395" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">gcode + mini-lab</text>
+
+  <line x1="460" y1="95" x2="480" y2="95" stroke="#666" stroke-width="2"/>
+  <polygon points="477,91 485,95 477,99" fill="#666"/>
+
+  <!-- Layer 4: Capstone -->
+  <rect x="485" y="65" width="130" height="60" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="5"/>
+  <text x="550" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#e65100">Capstone 项目</text>
+  <text x="550" y="102" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">V6A-V6D</text>
+  <text x="550" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">capstone-learning-path</text>
+
+  <line x1="615" y1="95" x2="635" y2="95" stroke="#666" stroke-width="2"/>
+  <polygon points="632,91 640,95 632,99" fill="#666"/>
+
+  <!-- Layer 5: CadQuery -->
+  <rect x="640" y="65" width="130" height="60" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <text x="705" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1b5e20">CadQuery 建模</text>
+  <text x="705" y="102" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">V7A-V7D</text>
+  <text x="705" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">cadquery-learning-path</text>
+
+  <line x1="770" y1="95" x2="790" y2="95" stroke="#666" stroke-width="2"/>
+  <polygon points="787,91 795,95 787,99" fill="#666"/>
+
+  <!-- Layer 6: Assembly -->
+  <rect x="795" y="65" width="85" height="60" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <text x="837" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1b5e20">Assembly</text>
+  <text x="837" y="102" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">V8A-V8D</text>
+  <text x="837" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">assembly</text>
+
+  <!-- 向下箭头到 Portfolio 层 -->
+  <line x1="450" y1="125" x2="450" y2="160" stroke="#666" stroke-width="2"/>
+  <polygon points="445,158 455,158 450,166" fill="#666"/>
+  <text x="465" y="148" font-family="Arial, sans-serif" font-size="9" fill="#444" font-weight="bold">作品集汇总</text>
+
+  <!-- Layer 7: Portfolio 收口 -->
+  <rect x="20" y="170" width="860" height="55" fill="#fce4ec" stroke="#c2185b" stroke-width="2" rx="5"/>
+  <text x="450" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#880e4f">Portfolio 收口线（V9A-V9D）</text>
+  <text x="450" y="207" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">capstone-portfolio-upgrade（V9A）→ runtime-export-pilot（V9B）→ local-environment-guide（V9C）→ runtime-portfolio-path（V9D）</text>
+
+  <!-- 工作流路线图层 -->
+  <line x1="450" y1="225" x2="450" y2="245" stroke="#666" stroke-width="2"/>
+  <polygon points="445,243 455,243 450,251" fill="#666"/>
+
+  <!-- 横向工具链：贯穿所有模块的工作流 -->
+  <rect x="20" y="255" width="860" height="50" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" rx="5"/>
+  <text x="450" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#4a148c">工作流路线图（workflow-roadmap）</text>
+  <text x="450" y="292" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">工具链总览 + 四阶段学习路线 + 文件格式决策指南 + 实操任务 — 贯穿全站</text>
+
+  <!-- 底部说明 -->
+  <text x="20" y="335" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" font-weight="bold">阅读入口（按角色）：</text>
+  <text x="20" y="350" font-family="Arial, sans-serif" font-size="9" fill="#333">零基础 → course-overview → workflow-roadmap；实操派 → freecad-workflow-index → capstone-learning-path；代码派 → cadquery-learning-path → cadquery-assembly-learning-path；作品集派 → capstone-portfolio-upgrade → cadquery-runtime-portfolio-path</text>
+</svg>

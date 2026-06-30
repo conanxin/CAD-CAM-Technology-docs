@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280">
+  <rect width="900" height="280" fill="#f8f9fa" rx="10"/>
+
+  <text x="450" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">v1.0 Roadmap：从 v0.9.x 到稳定版</text>
+  <text x="450" y="44" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">Showcase 化 → 质量审计 → 发布收口 → 稳定版</text>
+
+  <!-- 阶段 1: v0.9.x 当前 -->
+  <rect x="20" y="65" width="160" height="120" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="5"/>
+  <text x="100" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#e65100">v0.9.x 当前</text>
+  <text x="100" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">V9A-V9D 已完成</text>
+  <text x="100" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">作品集升级</text>
+  <text x="100" y="128" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">运行诊断</text>
+  <text x="100" y="141" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">本地环境</text>
+  <text x="100" y="154" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">路线总入口</text>
+  <text x="100" y="172" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-style="italic" fill="#e65100">当前版本</text>
+
+  <line x1="180" y1="125" x2="205" y2="125" stroke="#666" stroke-width="2"/>
+  <polygon points="202,121 210,125 202,129" fill="#666"/>
+
+  <!-- 阶段 2: V10A Showcase -->
+  <rect x="210" y="65" width="160" height="120" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="290" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0d47a1">V10A Showcase</text>
+  <text x="290" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">首页视觉升级</text>
+  <text x="290" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">Hero + 入口矩阵</text>
+  <text x="290" y="128" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">project-showcase 页</text>
+  <text x="290" y="141" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">轻量 CSS + 2 SVG</text>
+  <text x="290" y="154" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">README 展示友好化</text>
+  <text x="290" y="172" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-style="italic" fill="#0d47a1">v0.10.0-homepage-showcase</text>
+
+  <line x1="370" y1="125" x2="395" y2="125" stroke="#666" stroke-width="2"/>
+  <polygon points="392,121 400,125 392,129" fill="#666"/>
+
+  <!-- 阶段 3: V10B Quality Audit -->
+  <rect x="400" y="65" width="160" height="120" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <text x="480" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1b5e20">V10B Quality Audit</text>
+  <text x="480" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">全站质量审计</text>
+  <text x="480" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">链接失效检查</text>
+  <text x="480" y="128" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">死链 / 拼写 / 一致性</text>
+  <text x="480" y="141" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">Sphinx 0 warning</text>
+  <text x="480" y="154" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">HTML / CSS 验证</text>
+  <text x="480" y="172" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-style="italic" fill="#1b5e20">v0.10.x-quality-audit</text>
+
+  <line x1="560" y1="125" x2="585" y2="125" stroke="#666" stroke-width="2"/>
+  <polygon points="582,121 590,125 582,129" fill="#666"/>
+
+  <!-- 阶段 4: V10C Release Closure -->
+  <rect x="590" y="65" width="160" height="120" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="5"/>
+  <text x="670" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#e65100">V10C Release</text>
+  <text x="670" y="98" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#e65100">Closure</text>
+  <text x="670" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">最终发布收口</text>
+  <text x="670" y="128" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">README 最终版</text>
+  <text x="670" y="141" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">release notes</text>
+  <text x="670" y="154" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">导航 / 标签收口</text>
+  <text x="670" y="172" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-style="italic" fill="#e65100">v0.10.x-release-closure</text>
+
+  <line x1="750" y1="125" x2="775" y2="125" stroke="#666" stroke-width="2"/>
+  <polygon points="772,121 780,125 772,129" fill="#666"/>
+
+  <!-- 阶段 5: v1.0.0 Stable -->
+  <rect x="780" y="65" width="100" height="120" fill="#fce4ec" stroke="#c2185b" stroke-width="2" rx="5"/>
+  <text x="830" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#880e4f">v1.0.0</text>
+  <text x="830" y="98" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#880e4f">Stable</text>
+  <text x="830" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">稳定版</text>
+  <text x="830" y="128" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">里程碑</text>
+  <text x="830" y="141" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">长期支持</text>
+  <text x="830" y="154" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">v1.0.0 tag</text>
+  <text x="830" y="172" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-style="italic" fill="#880e4f">生产可用</text>
+
+  <!-- 底部说明 -->
+  <rect x="20" y="200" width="860" height="65" fill="#fff" stroke="#90a4ae" stroke-width="1" rx="5"/>
+  <text x="450" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">v1.0 阶段说明</text>
+  <text x="40" y="240" font-family="Arial, sans-serif" font-size="10" fill="#333">• V10A：首页与 Showcase 化（本次）— 把内容丰富但偏文档型的站点升级为作品集型学习站</text>
+  <text x="40" y="255" font-family="Arial, sans-serif" font-size="10" fill="#333">• V10B：全站质量审计 — 死链 / 拼写 / Sphinx 0 warning / CSS 验证 / SVG 引用检查</text>
+  <text x="450" y="240" font-family="Arial, sans-serif" font-size="10" fill="#333">• V10C：最终发布收口 — README / release notes / 导航标签 / GitHub Release 完整</text>
+  <text x="450" y="255" font-family="Arial, sans-serif" font-size="10" fill="#333">• v1.0.0：稳定版 — 长期支持版本，里程碑式 tag，CI/CD 完整</text>
+</svg>
