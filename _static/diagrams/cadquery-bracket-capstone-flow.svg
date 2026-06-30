@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320">
+  <rect width="900" height="320" fill="#f8f9fa" rx="10"/>
+
+  <text x="450" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">CadQuery 支架 Capstone 数据流（V7C）</text>
+
+  <!-- Step 1: Python 参数 -->
+  <rect x="20" y="60" width="140" height="70" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="90" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">1. Python 参数</text>
+  <text x="90" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">8 个支架参数</text>
+  <text x="90" y="114" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">与 V6A 一致</text>
+
+  <!-- Arrow 1 -->
+  <polygon points="163,95 178,90 178,100" fill="#666"/>
+  <line x1="160" y1="95" x2="178" y2="95" stroke="#666" stroke-width="2"/>
+
+  <!-- Step 2: CadQuery 建模 -->
+  <rect x="183" y="60" width="140" height="70" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <text x="253" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">2. CadQuery 建模</text>
+  <text x="253" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">6 步流程</text>
+  <text x="253" y="114" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">底板/立板/union</text>
+
+  <!-- Arrow 2 -->
+  <polygon points="326,95 341,90 341,100" fill="#666"/>
+  <line x1="323" y1="95" x2="341" y2="95" stroke="#666" stroke-width="2"/>
+
+  <!-- Step 3: 实体模型 -->
+  <rect x="346" y="60" width="140" height="70" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="5"/>
+  <text x="416" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">3. 实体模型</text>
+  <text x="416" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">B-rep 表示</text>
+  <text x="416" y="114" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">与 V6A 等价</text>
+
+  <!-- Arrow 3 -->
+  <polygon points="489,95 504,90 504,100" fill="#666"/>
+  <line x1="486" y1="95" x2="504" y2="95" stroke="#666" stroke-width="2"/>
+
+  <!-- Step 4: 导出 -->
+  <rect x="509" y="60" width="140" height="70" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" rx="5"/>
+  <text x="579" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">4. 导出 STEP/STL</text>
+  <text x="579" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">bracket_capstone</text>
+  <text x="579" y="114" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">.step / .stl</text>
+
+  <!-- Arrow 4 -->
+  <polygon points="652,95 667,90 667,100" fill="#666"/>
+  <line x1="649" y1="95" x2="667" y2="95" stroke="#666" stroke-width="2"/>
+
+  <!-- Step 5: 验证与作品集 -->
+  <rect x="672" y="60" width="208" height="70" fill="#ffebee" stroke="#c62828" stroke-width="2" rx="5"/>
+  <text x="776" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">5. 验证 + 作品集</text>
+  <text x="776" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">FreeCAD 对比 V6A</text>
+  <text x="776" y="114" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">V6A 提包补充材料</text>
+
+  <!-- 横向数据流标注 -->
+  <line x1="20" y1="155" x2="880" y2="155" stroke="#999" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="450" y="172" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666" font-style="italic">↑ V6A 图形化（FreeCAD .FCStd）与 V7C 代码化（.py）输出相同的 STEP</text>
+
+  <!-- 底部说明 -->
+  <rect x="20" y="195" width="852" height="110" fill="#fff" stroke="#90a4ae" stroke-width="1" rx="5"/>
+  <text x="450" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">V7C 在 V6 Capstone 作品集中的位置</text>
+
+  <!-- V6A 提包内容 -->
+  <text x="40" y="240" font-family="Arial, sans-serif" font-size="11" fill="#333" font-weight="bold">V6A 原有提包：</text>
+  <text x="40" y="258" font-family="Arial, sans-serif" font-size="10" fill="#333">• requirements.md (需求文档)</text>
+  <text x="40" y="272" font-family="Arial, sans-serif" font-size="10" fill="#333">• bracket.FCStd (FreeCAD 模型)</text>
+  <text x="40" y="286" font-family="Arial, sans-serif" font-size="10" fill="#333">• bracket-v1.step / .stl (导出)</text>
+  <text x="40" y="300" font-family="Arial, sans-serif" font-size="10" fill="#333">• cam-task-list.md, gcode-interpretation.md</text>
+
+  <!-- V7C 补充 -->
+  <text x="480" y="240" font-family="Arial, sans-serif" font-size="11" fill="#1976d2" font-weight="bold">V7C 补充：</text>
+  <text x="480" y="258" font-family="Arial, sans-serif" font-size="10" fill="#333">• bracket_capstone.py (代码模型)</text>
+  <text x="480" y="272" font-family="Arial, sans-serif" font-size="10" fill="#333">• bracket_capstone.step (代码版导出)</text>
+  <text x="480" y="286" font-family="Arial, sans-serif" font-size="10" fill="#333">• 几何一致性证明（双版本对比）</text>
+  <text x="480" y="300" font-family="Arial, sans-serif" font-size="10" fill="#333">• 项目参数表（从代码自动生成）</text>
+</svg>

@@ -39,7 +39,7 @@ CAD/CAM 工具链总览
      - 输出物
    * - **CAD 设计**
      - 几何建模、装配设计、工程图生成
-     - SolidWorks, CATIA, Siemens NX, FreeCAD, Fusion 360, CadQuery（Python 代码化建模，含 V7A 入门 / V7B 进阶）
+     - SolidWorks, CATIA, Siemens NX, FreeCAD, Fusion 360, CadQuery（Python 代码化建模，含 V7A 入门 / V7B 进阶 / V7C 支架 Capstone）
      - 三维模型、装配体、二维工程图、参数化代码
    * - **工程分析**
      - 有限元分析、运动仿真、优化设计
@@ -369,6 +369,20 @@ CAD/CAM 工具链总览
 - :file:`code/cadquery/bracket_variant.py` —— L 型支架变体
 
 本任务同样不需要立即安装 CadQuery。代码即文档，阅读即可理解原理。
+
+**任务 1.10：CadQuery 支架 Capstone（V7C，综合阶段）**
+
+完成 V7A + V7B 后，可以进入代码化建模的综合阶段：阅读 :doc:`examples/cadquery-bracket-capstone` 学习如何用 CadQuery 重写 :doc:`examples/bracket-capstone-project` 的 L 型支架。
+
+V7C 的关键约束：
+
+- **几何与 V6A 一致**：参数与 :doc:`examples/bracket-capstone-project` 严格对齐（200×140×10 mm，2 个底板孔 + 2 个立板孔）
+- **代码可验证**：用 FreeCAD 打开 V7C 导出的 STEP，与 V6A 的 `bracket-v1.step` 视觉对比
+- **作品集补充**：可作为 V6A 提包的代码化补充材料
+
+配套代码：
+
+- :file:`code/cadquery/bracket_capstone.py` —— 完整 L 型支架代码化建模
 
 **任务 2：对比 STEP 与 STL 文件差异**
 

@@ -9,6 +9,7 @@
 | [`plate_with_hole.py`](./plate_with_hole.py) | 带孔矩形板示例：参数化建模 + STEP/STL 导出 | V7A |
 | [`plate_advanced_features.py`](./plate_advanced_features.py) | 带圆角和孔阵列的矩形板：进阶特征示例 | V7B |
 | [`bracket_variant.py`](./bracket_variant.py) | L 型支架变体：从板到支架的扩展示例 | V7B |
+| [`bracket_capstone.py`](./bracket_capstone.py) | 完整 L 型支架 Capstone：与 V6A 几何一致 | V7C |
 
 ## 代码用途
 
@@ -38,6 +39,17 @@
 - 内棱边圆角
 
 这两个文件配合 [`examples/cadquery-advanced-features.rst`](../../examples/cadquery-advanced-features.rst) 阅读。
+
+### V7C — 支架 Capstone（综合示例）
+
+`bracket_capstone.py` 是 V7 系列的**综合阶段**：
+
+- **与 V6A 几何一致**：参数与 [`bracket-capstone-project`](../../examples/bracket-capstone-project.html) 严格对齐（200×140×10 mm，2 个底板孔 + 2 个立板孔）
+- **完整建模流程**：底板 → 立板 → union → 圆角 → 倒角
+- **可验证**：用 FreeCAD 打开导出的 STEP，可以与 V6A 的 `bracket-v1.step` 视觉对比
+- **可重复**：同一份代码 = 同一结果，适合作品集提交
+
+这个文件配合 [`examples/cadquery-bracket-capstone.rst`](../../examples/cadquery-bracket-capstone.rst) 阅读。
 
 ## 如何阅读
 
