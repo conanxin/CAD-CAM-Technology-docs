@@ -41,17 +41,21 @@
 **案例 F — FreeCAD 到 CAM**：
   从模型到加工：CAM 前置检查、加工任务拆解、刀具与参数选择、加工顺序规划、与 G-code 的衔接。对应 V5C。
 
+**案例 G — FreeCAD 五步学习路线**：
+  FreeCAD 实操线的总入口和收口页：五步学习路线、全链路产出物表、初学者完成标准。对应 V5D。
+
 推荐阅读顺序
 ============
 
 1. **零基础入门**：先阅读 :doc:`freecad-plate-modeling`，完成第一个 CAD 建模实践
 2. **导出检查**：阅读 :doc:`freecad-export-checklist`，系统验证 STEP/STL 导出结果
 3. **CAM 规划**：阅读 :doc:`freecad-to-cam-worksheet`，学习如何为零件规划加工任务
-4. **初学者**：阅读 :doc:`data-exchange`，了解数据如何在不同系统间流转
-5. **有一定基础**：阅读 :doc:`capp-process-plan`，理解工艺规划的核心思路
-6. **系统学习**：阅读 :doc:`cad-to-gcode`，建立从设计到制造的完整认知
-7. **深入理解**：阅读 :doc:`gcode-toolpath-visualization`，逐行理解 G-code 程序如何控制机床动作
-8. **格式实验**：阅读 :doc:`step-stl-mini-lab`，通过对比实验理解 STEP 与 STL 的本质差异
+4. **学习路线总览**：阅读 :doc:`freecad-workflow-index`，查看 FreeCAD 五步学习路线和完成标准
+5. **初学者**：阅读 :doc:`data-exchange`，了解数据如何在不同系统间流转
+6. **有一定基础**：阅读 :doc:`capp-process-plan`，理解工艺规划的核心思路
+7. **系统学习**：阅读 :doc:`cad-to-gcode`，建立从设计到制造的完整认知
+8. **深入理解**：阅读 :doc:`gcode-toolpath-visualization`，逐行理解 G-code 程序如何控制机床动作
+9. **格式实验**：阅读 :doc:`step-stl-mini-lab`，通过对比实验理解 STEP 与 STL 的本质差异
 
 每个案例对应的课程章节
 ========================
@@ -87,6 +91,9 @@
    * - FreeCAD 到 CAM
      - CAM 前置检查、加工任务拆解、刀具参数
      - V5C
+   * - FreeCAD 五步学习路线
+     - 五步路线、产出物表、完成标准
+     - V5D
 
 如何用案例复习 unit1~unit8
 ============================
@@ -101,6 +108,7 @@
    - **动手实践**：阅读 :doc:`freecad-plate-modeling`，在 FreeCAD 中创建你的第一个零件
    - **导出验证**：阅读 :doc:`freecad-export-checklist`，确保导出文件质量可靠
    - **CAM 规划**：阅读 :doc:`freecad-to-cam-worksheet`，理解如何从模型到加工任务
+   - **路线收口**：阅读 :doc:`freecad-workflow-index`，查看完整学习闭环
 
 3. **学完 unit5（工程分析）后**
    - 阅读 :doc:`data-exchange` 中 CAE 分析的数据准备
@@ -122,6 +130,7 @@
 7. **学完 unit8（集成）后**
    - 回顾三个案例中的数据流
    - 思考如何实现更高效的系统集成
+   - **总收口**：再次阅读 :doc:`freecad-workflow-index`，确认是否所有完成标准都已达成
 
 .. toctree::
    :hidden:
@@ -134,3 +143,4 @@
    freecad-plate-modeling
    freecad-export-checklist
    freecad-to-cam-worksheet
+   freecad-workflow-index

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280">
+  <rect width="800" height="280" fill="#f8f9fa" rx="10"/>
+  
+  <text x="400" y="22" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">FreeCAD 实践全链路产出物</text>
+  
+  <!-- Column 1: Design -->
+  <rect x="30" y="45" width="230" height="200" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <rect x="30" y="45" width="230" height="28" fill="#1976d2" rx="5"/>
+  <text x="145" y="64" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">设计层 (Step 1-2)</text>
+  
+  <text x="45" y="92" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">📐 freecad-plate.FCStd</text>
+  <text x="45" y="106" font-family="Arial, sans-serif" font-size="9" fill="#555">FreeCAD 原生文件（参数化）</text>
+  
+  <text x="45" y="128" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">📦 freecad-plate-v1.step</text>
+  <text x="45" y="142" font-family="Arial, sans-serif" font-size="9" fill="#555">精确几何（CAM 入口）</text>
+  
+  <text x="45" y="164" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">🖨 freecad-plate-v1.stl</text>
+  <text x="45" y="178" font-family="Arial, sans-serif" font-size="9" fill="#555">三角网格（3D 打印）</text>
+  
+  <text x="45" y="200" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">📋 export-checklist.md</text>
+  <text x="45" y="214" font-family="Arial, sans-serif" font-size="9" fill="#555">导出检查表</text>
+  
+  <text x="45" y="234" font-family="Arial, sans-serif" font-size="9" fill="#666">V5A + V5B</text>
+  
+  <!-- Arrow 1 -->
+  <line x1="270" y1="145" x2="290" y2="145" stroke="#666" stroke-width="2" marker-end="url(#arr-v5d)"/>
+  
+  <!-- Column 2: CAM -->
+  <rect x="290" y="45" width="230" height="200" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="5"/>
+  <rect x="290" y="45" width="230" height="28" fill="#f57c00" rx="5"/>
+  <text x="405" y="64" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">CAM 任务层 (Step 3)</text>
+  
+  <text x="305" y="92" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">📝 cam-task-list.md</text>
+  <text x="305" y="106" font-family="Arial, sans-serif" font-size="9" fill="#555">工序拆解 + 加工顺序</text>
+  
+  <text x="305" y="128" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">🛠 tool-list.csv</text>
+  <text x="305" y="142" font-family="Arial, sans-serif" font-size="9" fill="#555">刀具参数参考表</text>
+  
+  <text x="305" y="164" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">📐 worksheet-template.md</text>
+  <text x="305" y="178" font-family="Arial, sans-serif" font-size="9" fill="#555">CAM 任务单模板</text>
+  
+  <text x="305" y="200" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">✅ 检查清单</text>
+  <text x="305" y="214" font-family="Arial, sans-serif" font-size="9" fill="#555">换刀、补偿、原点</text>
+  
+  <text x="305" y="234" font-family="Arial, sans-serif" font-size="9" fill="#666">V5C</text>
+  
+  <!-- Arrow 2 -->
+  <line x1="530" y1="145" x2="550" y2="145" stroke="#666" stroke-width="2" marker-end="url(#arr-v5d)"/>
+  
+  <!-- Column 3: G-code -->
+  <rect x="550" y="45" width="220" height="200" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <rect x="550" y="45" width="220" height="28" fill="#388e3c" rx="5"/>
+  <text x="660" y="64" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">G-code 层 (Step 4-5)</text>
+  
+  <text x="565" y="92" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">📄 freecad-plate.gcode</text>
+  <text x="565" y="106" font-family="Arial, sans-serif" font-size="9" fill="#555">CAM 后处理输出</text>
+  
+  <text x="565" y="128" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">🔍 G-code 解读</text>
+  <text x="565" y="142" font-family="Arial, sans-serif" font-size="9" fill="#555">G00/G01/G02/G03 指令</text>
+  
+  <text x="565" y="164" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">🗺 路径可视化</text>
+  <text x="565" y="178" font-family="Arial, sans-serif" font-size="9" fill="#555">SVG 刀具路径图</text>
+  
+  <text x="565" y="200" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">📊 格式对比</text>
+  <text x="565" y="214" font-family="Arial, sans-serif" font-size="9" fill="#555">STEP vs STL 验证</text>
+  
+  <text x="565" y="234" font-family="Arial, sans-serif" font-size="9" fill="#666">V4A + V4B</text>
+  
+  <!-- Bottom message -->
+  <text x="400" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">每层都产生可复用资产：源文件 + 检查表 + 模板</text>
+  
+  <defs>
+    <marker id="arr-v5d" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#666"/>
+    </marker>
+  </defs>
+</svg>

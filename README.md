@@ -7,7 +7,7 @@
 本项目已从旧版阅读笔记升级为**课程化学习文档站**，基于 [《CAD/CAM技术基础》](http://book.douban.com/subject/5296837/) 教材，使用 Sphinx 构建为适合自学的在线课程。
 
 - **在线版本**：https://conanxin.github.io/CAD-CAM-Technology-docs
-- **当前版本**：`v0.5.2-freecad-to-cam-worksheet`
+- **当前版本**：`v0.5.3-freecad-workflow-closure`
 - **历史版本**（SAE）：http://conanxincv.sinaapp.com/project2/index.html（已归档，不再更新）
 
 ## 当前版本亮点
@@ -20,6 +20,7 @@
 | **工程案例** | 3 个完整制造案例：CAD→G-code、数据交换、CAPP 工艺路线 |
 | **G-code 教学** | 逐行解释 + 路径可视化，帮助初学者理解数控程序 |
 | **工作流路线图** | 工具链总览、四阶段学习路线、文件格式决策指南、3 个低门槛实践任务 |
+| **FreeCAD 五步路线** | 五步学习路线、全链路产出物、初学者完成标准 |
 | **FreeCAD 到 CAM** | CAM 前置检查、加工任务拆解、刀具参数、工序顺序规划 |
 | **FreeCAD 导出检查** | STEP/STL 导出检查清单、文件命名规范、错误排查 |
 | **FreeCAD 实操** | 带孔矩形板建模 + STEP/STL 导出，完整 FreeCAD 操作指南 |
@@ -40,6 +41,7 @@
 | FreeCAD 实操 | 建模练习 + STEP/STL 导出指南 | V5A |
 | FreeCAD 导出检查 | 导出检查清单 + 资源包 | V5B |
 | FreeCAD 到 CAM | CAM 任务规划 + 工作单模板 | V5C |
+| FreeCAD 五步路线 | 五步学习路线 + 收口页 | V5D |
 
 ## 教学亮点速览
 
@@ -62,12 +64,14 @@
 | **工程案例：CAD 到 G-code** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cad-to-gcode.html |
 | **工程案例：数据交换格式** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/data-exchange.html |
 | **G-code 逐行解释** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/gcode-toolpath-visualization.html |
+| **FreeCAD 五步路线** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/freecad-workflow-index.html |
 | **FreeCAD 到 CAM** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/freecad-to-cam-worksheet.html |
 | **FreeCAD 导出检查** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/freecad-export-checklist.html |
 | **FreeCAD 实操 Lab** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/freecad-plate-modeling.html |
 
 ## 版本演进
 
+- **V5D**（2024-06）：FreeCAD 五步学习路线（建模→导出→CAM→G-code→全链路收口页 + 初学者完成标准）
 - **V5C**（2024-06）：FreeCAD 到 CAM 加工任务单（CAM 前置检查、加工任务拆解、刀具参数、工序顺序规划、工作单模板）
 - **V5B**（2024-06）：FreeCAD STEP/STL 导出检查清单 + 教学资源包（检查清单、文件命名、错误排查）
 - **V5A**（2024-06）：FreeCAD 实操 Lab（带孔矩形板建模 + STEP/STL 导出完整指南）
