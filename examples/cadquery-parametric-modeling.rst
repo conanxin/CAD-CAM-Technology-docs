@@ -527,11 +527,12 @@ K. 教学声明
 - 不替代 :doc:`freecad-plate-modeling`，两者是同一目标的两种路径
 - 真实工程中应根据团队技能选择建模方式
 
-L. V9B 实际运行试点
-==================
+L. V9B/V9C 实际运行与本地环境
+=============================
 
-V7A 代码仅能通过 ``py_compile`` 语法检查。实际运行需要 OCCT 环境，V9B 记录了环境诊断与运行试点结果：
+V7A 代码仅能通过 ``py_compile`` 语法检查。实际运行需要 OCCT 环境：
 
-- :doc:`cadquery-runtime-export-pilot` —— 环境诊断表、6 个文件运行结果、读者本地如何生成
+- :doc:`cadquery-runtime-export-pilot` —— V9B 服务器端环境诊断表、6 个文件运行结果
+- :doc:`cadquery-local-environment-guide` —— V9C 本地环境配置指南、conda/pip 路线、smoke test、导出检查
 
-如果你计划在本机运行 V7A 代码，V9B 页面有完整的安装指导（推荐 conda）。
+如果要在本机运行 V7A 代码，参考 V9C 页面的 2 条环境路线和 smoke test 脚本。

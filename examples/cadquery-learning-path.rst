@@ -478,4 +478,9 @@ V9A 作品集升级
 V9B CadQuery 实际运行试点
 ============================
 
-V7V7/V8 所有代码文件都通过了 ``py_compile`` 语法检查，但需要 OCCT 环境才能真实运行。V9B 记录了环境诊断与运行试点结果，参考 :doc:`cadquery-runtime-export-pilot`。
+V7/V8 所有代码文件都通过了 ``py_compile`` 语法检查，但需要 OCCT 环境才能真实运行。V9B 记录了环境诊断与运行试点结果，参考 :doc:`cadquery-runtime-export-pilot`。
+
+V9C 本地运行环境指南
+====================
+
+V9B 确认云端环境不能跑 CadQuery。如果想在本地运行代码并导出 STEP/STL，阅读 :doc:`cadquery-local-environment-guide` 获取 conda/pip 路线、smoke test、导出检查清单。

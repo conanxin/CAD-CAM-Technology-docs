@@ -24,3 +24,19 @@ env/
 
 # Jupyter
 .ipynb_checkpoints/
+
+# CadQuery generated outputs（本地运行产生，不提交）
+local-exports/
+*.step
+*.stp
+*.stl
+*.STEP
+*.STL
+
+# CadQuery virtual environments
+venv-cadquery/
+cad-env/
+
+# CadQuery smoke test temp files
+smoke_test.step
+smoke_test.stl

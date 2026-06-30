@@ -347,3 +347,17 @@ J. 相关页面
 - :doc:`cadquery-assembly-learning-path` — V8D
 - :doc:`step-stl-mini-lab` — V4B STEP/STL 格式对比
 - :doc:`capstone-portfolio-upgrade` — V9A 作品集升级
+
+下一步：本地运行环境指南
+============================
+
+V9B 诊断确认云端环境不能运行 CadQuery。如果你想在本地运行代码并导出 STEP/STL，阅读 :doc:`cadquery-local-environment-guide` （V9C）。
+
+V9C 提供了：
+
+- 2 条本地环境路线（Python venv + Conda）
+- 最小 smoke test 脚本
+- 运行 V7/V8 示例的推荐顺序
+- 导出文件保存策略
+- 导出后检查清单
+- 8 条常见错误

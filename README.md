@@ -7,7 +7,7 @@
 本项目已从旧版阅读笔记升级为**课程化学习文档站**,基于 [《CAD/CAM技术基础》](http://book.douban.com/subject/5296837/) 教材,使用 Sphinx 构建为适合自学的在线课程。
 
 - **在线版本**:https://conanxin.github.io/CAD-CAM-Technology-docs
-- **当前版本**:`v0.9.1-cadquery-runtime-export-pilot`
+- **当前版本**:`v0.9.2-cadquery-local-environment-guide`
 - **历史版本**(SAE):http://conanxincv.sinaapp.com/project2/index.html(已归档,不再更新)
 
 ## 当前版本亮点
@@ -31,6 +31,7 @@
 | **Assembly 学习路径** | V8 系列(V8A/V8B/V8C)三步走总入口和收口页 |
 | **Capstone 作品集升级** | V6/V7/V8 三线整合(FreeCAD + CadQuery + Assembly 综合作品集) |
 | **CadQuery 运行试点** | CadQuery 真实运行环境诊断、运行结果、读者本地指导 |
+| **CadQuery 本地环境指南** | conda/pip 路线、smoke test、导出后检查、本地导出工作流 |
 | **FreeCAD Path Workbench** | Job/Tool/Operation/Post 概念、教学 G-code 样例 |
 | **项目档案与评分** | 项目档案模板、评分表、资源包 |
 | **L 型支架 Capstone** | 集成 V5A-V5D 全部学习成果的综合项目 |
@@ -70,6 +71,10 @@
 | Assembly 学习路径 | V8 系列收口、三步走总览 | V8D |
 | Capstone 作品集升级 | V6/V7/V8 三线整合 | V9A |
 | CadQuery 运行试点 | 环境诊断、运行结果 | V9B |
+| CadQuery 本地环境指南 | conda/pip 路线、smoke test、导出检查 | V9C |
+| CadQuery 本地环境指南 | conda/pip 路线、smoke test、导出检查 | V9C |
+| CadQuery 本地环境指南 | conda/pip 路线、smoke test、导出检查 | V9C |
+| CadQuery 本地环境指南 | conda/pip 路线、smoke test、导出检查 | V9C |
 
 ## 教学亮点速览
 

@@ -382,7 +382,7 @@ STL 文件结构（ASCII）
 - **unit5 工程分析** ：CAE 网格划分与几何离散化
 
 V9B CadQuery 实际运行
-====================
+=====================
 
 本环境未能真实运行 CadQuery 并导出 STEP/STL 。如果你本地有 OCCT 环境，可以使用 :doc:`cadquery-runtime-export-pilot` 中的指导生成 CadQuery 导出的 STEP/STL 作为本 mini-lab 的补充样本。
 

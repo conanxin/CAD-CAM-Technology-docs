@@ -1,0 +1,29 @@
+# CadQuery 环境配置示例（可选文件，不影响 Sphinx 文档构建）
+#
+# 用途：为 CadQuery 代码示例提供 conda 环境配置参考。
+# 详见：examples/cadquery-local-environment-guide.rst
+#
+# 使用方法：
+#   conda env create -f environment-cadquery.yml
+#   conda activate cadquery
+
+name: cadquery
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Python 3.11 是 CadQuery 2.8+ 的要求
+  - python=3.11
+
+  # CadQuery 本体（conda-forge 会自动处理 OCCT 依赖）
+  - cadquery
+
+  # OCP（OpenCascade Python wrapper，conda-forge 自动安装）
+  - ocp
+
+  # 文档构建依赖（可选，仅在需要构建 Sphinx 文档时安装）
+  - pip
+  - pip:
+    - sphinx>=7.0
+    - furo>=2023.0
+    - jieba>=0.42

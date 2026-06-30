@@ -521,4 +521,18 @@ V7/V8 所有 .py 代码文件都通过 ``py_compile`` 语法检查，但**未真
 - CadQuery 2.3 支持 Python 3.10 但需要 OCP（PyPI mirror 不可用）
 - 6 个 .py 实际运行全部因 CadQuery 导入失败而失败
 
-参考 :doc:`examples/cadquery-runtime-export-pilot` 了解详细诊断与读者本地运行指导。
+参考 :doc:`examples/cadquery-runtime-export-pilot` 了解详细诊断。
+
+V9C CadQuery 本地环境指南
+============================
+
+V9B 确认云端不能运行 CadQuery，V9C 提供读者本地配置指南：
+
+- 2 条本地环境路线（Python venv + Conda）
+- smoke test 脚本（快速验证环境）
+- 导出后检查清单
+- 8+ 条常见错误
+- ``environment-cadquery.yml`` conda 环境示例
+- ``scripts/cadquery/`` 辅助脚本
+
+参考 :doc:`examples/cadquery-local-environment-guide` 了解本地配置流程。

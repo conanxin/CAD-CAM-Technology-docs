@@ -89,6 +89,9 @@
 **案例 V — CadQuery 真实运行与 STEP/STL 导出试点**：
   V7/V8 代码示例的真实运行与导出诊断：环境诊断（OS/Python/pip/OCCT）、6 个 .py 实际运行结果表、为什么 OCCT 不可用、读者本地如何生成文件、不创建假 STEP/STL 的教学诚信。对应 V9B。
 
+**案例 W — CadQuery 本地环境配置指南**：
+  V9B 服务器端不能运行 CadQuery，本页提供读者本地配置路线：conda（推荐）+ pip（备选）、smoke test 脚本、导出后检查项、environment-cadquery.yml。对应 V9C。
+
 代码化建模
 ==========
 
@@ -110,6 +113,7 @@
 8. **装配体收口**：阅读 :doc:`cadquery-assembly-learning-path` （V8D）—— V8 系列总入口和三步走总览
 9. **作品集升级**：阅读 :doc:`capstone-portfolio-upgrade` （V9A）—— V6/V7/V8 三线整合
 10. **CadQuery 运行试点**：阅读 :doc:`cadquery-runtime-export-pilot` （V9B）—— 环境诊断与运行结果
+11. **本地环境指南**：阅读 :doc:`cadquery-local-environment-guide` （V9C）—— conda/pip 路线、smoke test、导出检查
 
 如果你已经完成 FreeCAD 实操（V5A-V5D），可以阅读 :doc:`cadquery-parametric-modeling` 理解代码化建模的思路；如果还没做过，建议先完成 :doc:`freecad-plate-modeling`。
 
@@ -223,6 +227,9 @@
    * - CadQuery 运行试点
      - 环境诊断、运行结果
      - V9B
+   * - CadQuery 本地环境指南
+     - conda/pip 路线、smoke test、导出检查
+     - V9C
 
 如何用案例复习 unit1~unit8
 ============================
@@ -290,3 +297,4 @@
    cadquery-assembly-learning-path
    capstone-portfolio-upgrade
    cadquery-runtime-export-pilot
+   cadquery-local-environment-guide
