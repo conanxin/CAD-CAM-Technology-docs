@@ -39,7 +39,7 @@ CAD/CAM 工具链总览
      - 输出物
    * - **CAD 设计**
      - 几何建模、装配设计、工程图生成
-     - SolidWorks, CATIA, Siemens NX, FreeCAD, Fusion 360, CadQuery（Python 代码化建模，含 V7A/V7B/V7C 三阶段 + V7D 收口）
+     - SolidWorks, CATIA, Siemens NX, FreeCAD, Fusion 360, CadQuery（Python 代码化建模，含 V7A/V7B/V7C 三阶段 + V7D 收口 + V8A 装配体）
      - 三维模型、装配体、二维工程图、参数化代码
    * - **工程分析**
      - 有限元分析、运动仿真、优化设计
@@ -395,6 +395,21 @@ V7C 的关键约束：
 - 8 条常见误区 + 8 个扩展方向
 
 本任务是 V7 系列的**收口页**——不引入新代码或新特征，仅作为路线图导航。
+
+**任务 1.12：CadQuery Assembly 入门（V8A，多零件装配体）**
+
+完成 V7 系列后，可以进一步阅读 :doc:`examples/cadquery-assembly-intro` 学习 CadQuery 的多零件装配体表达。
+
+V8A 的关键内容：
+
+- **单零件 vs 装配体**：V7C 是单实体焊接（底板+立板 union），V8A 是多零件装配（保留每个零件独立性）
+- **Assembly 基本概念**：`cq.Assembly()` + `add(part, loc=Location(...))` + `color` + `name`
+- **教学装配体**：底板 + 立板 + 2 个螺栓 + 1 个销钉
+- **CAM 关系**：装配体是展示工具，CAM 加工仍需要拆分到单零件
+
+配套代码：
+
+- :file:`code/cadquery/bracket_assembly.py` —— 简化支架装配体
 
 **任务 2：对比 STEP 与 STL 文件差异**
 

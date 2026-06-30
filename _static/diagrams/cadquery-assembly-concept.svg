@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280">
+  <rect width="900" height="280" fill="#f8f9fa" rx="10"/>
+
+  <text x="450" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">CadQuery Assembly 概念流程（V8A）</text>
+
+  <!-- Step 1: 单零件模型 -->
+  <rect x="20" y="60" width="150" height="70" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="95" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">1. 单零件模型</text>
+  <text x="95" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">V7A/V7B/V7C</text>
+  <text x="95" y="114" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">一个 Workplane</text>
+
+  <!-- Arrow 1 -->
+  <polygon points="173,95 188,90 188,100" fill="#666"/>
+  <line x1="170" y1="95" x2="188" y2="95" stroke="#666" stroke-width="2"/>
+  <text x="180" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#444">+</text>
+
+  <!-- Step 2: 多组件 -->
+  <rect x="193" y="60" width="150" height="70" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="5"/>
+  <text x="268" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">2. 多组件</text>
+  <text x="268" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">底板 + 立板 +</text>
+  <text x="268" y="114" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">螺栓 + 销钉</text>
+
+  <!-- Arrow 2 -->
+  <polygon points="346,95 361,90 361,100" fill="#666"/>
+  <line x1="343" y1="95" x2="361" y2="95" stroke="#666" stroke-width="2"/>
+
+  <!-- Step 3: Assembly -->
+  <rect x="366" y="60" width="160" height="70" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <text x="446" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">3. Assembly 容器</text>
+  <text x="446" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">cq.Assembly()</text>
+  <text x="446" y="114" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">+ Location + Color</text>
+
+  <!-- Arrow 3 -->
+  <polygon points="529,95 544,90 544,100" fill="#666"/>
+  <line x1="526" y1="95" x2="544" y2="95" stroke="#666" stroke-width="2"/>
+
+  <!-- Step 4: STEP 导出 -->
+  <rect x="549" y="60" width="150" height="70" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" rx="5"/>
+  <text x="624" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">4. STEP 导出</text>
+  <text x="624" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">assembly.save()</text>
+  <text x="624" y="114" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">所有零件</text>
+
+  <!-- Arrow 4 -->
+  <polygon points="702,95 717,90 717,100" fill="#666"/>
+  <line x1="699" y1="95" x2="717" y2="95" stroke="#666" stroke-width="2"/>
+
+  <!-- Step 5: 作品集展示 -->
+  <rect x="722" y="60" width="160" height="70" fill="#ffebee" stroke="#c62828" stroke-width="2" rx="5"/>
+  <text x="802" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">5. 作品集展示</text>
+  <text x="802" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">FreeCAD 截图</text>
+  <text x="802" y="114" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">分解图 + 装配图</text>
+
+  <!-- 横向数据流标注 -->
+  <line x1="20" y1="155" x2="880" y2="155" stroke="#999" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="450" y="172" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666" font-style="italic">↑ 装配体 STEP 是 V7C 单实体 STEP 的"多零件版"，CAM 加工时需先拆分</text>
+
+  <!-- 底部说明 -->
+  <rect x="20" y="195" width="860" height="75" fill="#fff" stroke="#90a4ae" stroke-width="1" rx="5"/>
+  <text x="450" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Assembly 关键认识</text>
+  <text x="40" y="235" font-family="Arial, sans-serif" font-size="10" fill="#333">• Assembly 是"展示和导出"工具，保留每个零件的独立性</text>
+  <text x="40" y="250" font-family="Arial, sans-serif" font-size="10" fill="#333">• 位置关系通过显式 Location(x, y, z) 数学表达</text>
+  <text x="450" y="235" font-family="Arial, sans-serif" font-size="10" fill="#333">• CAM 不直接加工装配体，需先拆分到单零件</text>
+  <text x="450" y="250" font-family="Arial, sans-serif" font-size="10" fill="#333">• Color 和 Name 用于可视化，不影响几何</text>
+</svg>

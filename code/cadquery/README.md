@@ -10,6 +10,7 @@
 | [`plate_advanced_features.py`](./plate_advanced_features.py) | 带圆角和孔阵列的矩形板：进阶特征示例 | V7B |
 | [`bracket_variant.py`](./bracket_variant.py) | L 型支架变体：从板到支架的扩展示例 | V7B |
 | [`bracket_capstone.py`](./bracket_capstone.py) | 完整 L 型支架 Capstone：与 V6A 几何一致 | V7C |
+| [`bracket_assembly.py`](./bracket_assembly.py) | 简化支架装配体：底板+立板+螺栓+销钉 | V8A |
 
 ## 代码用途
 
@@ -50,6 +51,18 @@
 - **可重复**：同一份代码 = 同一结果，适合作品集提交
 
 这个文件配合 [`examples/cadquery-bracket-capstone.rst`](../../examples/cadquery-bracket-capstone.rst) 阅读。
+
+### V8A — 装配体入门（多零件示例）
+
+`bracket_assembly.py` 演示如何用 `Assembly` 表达多零件关系：
+
+- **与 V7C 的区别**：V7C 把底板和立板 union 成一个实体；V8A 保留每个零件的独立性
+- **多组件**：底板 + 立板 + 2 个螺栓 + 1 个销钉
+- **位置表达**：用 `cq.Location(cq.Vector(x, y, z))` 显式放置每个零件
+- **导出**：用 `assembly.save()` 导出整个装配体为单个 STEP
+- **教学声明**：螺栓和销钉的尺寸是教学示意值，不可直接用于实际设计
+
+这个文件配合 [`examples/cadquery-assembly-intro.rst`](../../examples/cadquery-assembly-intro.rst) 阅读。
 
 ## 如何阅读
 

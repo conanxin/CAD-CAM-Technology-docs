@@ -71,6 +71,9 @@
 **案例 P — CadQuery 学习路径：从入门到 Capstone 收口**：
   V7 系列（V7A/V7B/V7C）的总入口和收口页：三步学习路线、4 个 .py 代码文件地图、FreeCAD vs CadQuery 路线对比、完成标准、误区与扩展方向。对应 V7D。
 
+**案例 Q — CadQuery Assembly 入门：从单零件到多零件装配体**：
+  V8 系列的第一篇：Assembly 基本概念、单零件 vs 装配体对比、底板+立板+螺栓+销钉的简化支架装配体示例、装配体与 CAM/作品集的关系。对应 V8A。
+
 代码化建模
 ==========
 
@@ -86,6 +89,7 @@
 2. **进阶**：阅读 :doc:`cadquery-advanced-features` （V7B）—— 圆角、倒角、孔阵列、支架变体
 3. **综合**：阅读 :doc:`cadquery-bracket-capstone` （V7C）—— 完整 L 型支架 Capstone（与 V6A 几何一致）
 4. **收口**：阅读 :doc:`cadquery-learning-path` （V7D）—— V7 系列总入口和三步走总览
+5. **装配体**：阅读 :doc:`cadquery-assembly-intro` （V8A）—— 多零件装配体入门
 
 如果你已经完成 FreeCAD 实操（V5A-V5D），可以阅读 :doc:`cadquery-parametric-modeling` 理解代码化建模的思路；如果还没做过，建议先完成 :doc:`freecad-plate-modeling`。
 
@@ -110,6 +114,7 @@
 16. **CadQuery 进阶**：阅读 :doc:`cadquery-advanced-features`，学习圆角、倒角、孔阵列与支架变体（V7B）
 17. **CadQuery 支架 Capstone**：阅读 :doc:`cadquery-bracket-capstone`，理解代码化建模的完整应用（V7C）
 18. **CadQuery 学习路径**：阅读 :doc:`cadquery-learning-path`，查看 V7 系列收口和三步走总览（V7D）
+19. **CadQuery Assembly 入门**：阅读 :doc:`cadquery-assembly-intro`，理解多零件装配体表达（V8A）
 
 每个案例对应的课程章节
 ========================
@@ -175,6 +180,9 @@
    * - CadQuery 学习路径
      - V7 系列收口、三步走总览
      - V7D
+   * - CadQuery Assembly 入门
+     - 多零件装配体表达、Location 概念
+     - V8A
 
 如何用案例复习 unit1~unit8
 ============================
@@ -236,3 +244,4 @@
    cadquery-advanced-features
    cadquery-bracket-capstone
    cadquery-learning-path
+   cadquery-assembly-intro
