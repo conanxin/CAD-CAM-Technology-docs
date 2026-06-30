@@ -92,6 +92,9 @@
 **案例 W — CadQuery 本地环境配置指南**：
   V9B 服务器端不能运行 CadQuery，本页提供读者本地配置路线：conda（推荐）+ pip（备选）、smoke test 脚本、导出后检查项、environment-cadquery.yml。对应 V9C。
 
+**案例 X — CadQuery 运行与作品集路线（V9D 总入口）**：
+  V9 系列发布收口页：三步学习路线（V9A 作品集升级 → V9B 运行诊断 → V9C 本地导出）、文件与脚本地图（9 个核心资源）、真实运行状态说明（py_compile ≠ 模型生成）、教学诚信声明（不伪造 STEP/STL）、作品集新增运行记录模块、8 项完成标准 + 7 条常见误区。对应 V9D。
+
 代码化建模
 ==========
 
@@ -114,6 +117,7 @@
 9. **作品集升级**：阅读 :doc:`capstone-portfolio-upgrade` （V9A）—— V6/V7/V8 三线整合
 10. **CadQuery 运行试点**：阅读 :doc:`cadquery-runtime-export-pilot` （V9B）—— 环境诊断与运行结果
 11. **本地环境指南**：阅读 :doc:`cadquery-local-environment-guide` （V9C）—— conda/pip 路线、smoke test、导出检查
+12. **V9 总入口**：阅读 :doc:`cadquery-runtime-portfolio-path` （V9D）—— V9 系列发布收口、三步路线、文件地图、运行记录
 
 如果你已经完成 FreeCAD 实操（V5A-V5D），可以阅读 :doc:`cadquery-parametric-modeling` 理解代码化建模的思路；如果还没做过，建议先完成 :doc:`freecad-plate-modeling`。
 
@@ -144,6 +148,8 @@
 22. **Assembly 学习路径**：阅读 :doc:`cadquery-assembly-learning-path`，查看 V8 系列收口和三步走总览（V8D）
 23. **Capstone 作品集升级**：阅读 :doc:`capstone-portfolio-upgrade`，整合 V6/V7/V8 三线（V9A）
 24. **CadQuery 运行试点**：阅读 :doc:`cadquery-runtime-export-pilot`，查看环境诊断与运行结果（V9B）
+25. **CadQuery 本地环境**：阅读 :doc:`cadquery-local-environment-guide`，了解 conda/pip 路线与本地导出（V9C）
+26. **V9 总入口**：阅读 :doc:`cadquery-runtime-portfolio-path`，查看 V9 系列发布收口与三步路线（V9D）
 
 每个案例对应的课程章节
 ========================
@@ -230,6 +236,9 @@
    * - CadQuery 本地环境指南
      - conda/pip 路线、smoke test、导出检查
      - V9C
+   * - CadQuery 运行与作品集路线
+     - V9 系列发布收口、三步路线、文件地图、运行记录
+     - V9D
 
 如何用案例复习 unit1~unit8
 ============================
@@ -298,3 +307,4 @@
    capstone-portfolio-upgrade
    cadquery-runtime-export-pilot
    cadquery-local-environment-guide
+   cadquery-runtime-portfolio-path

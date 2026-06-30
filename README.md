@@ -7,7 +7,7 @@
 本项目已从旧版阅读笔记升级为**课程化学习文档站**,基于 [《CAD/CAM技术基础》](http://book.douban.com/subject/5296837/) 教材,使用 Sphinx 构建为适合自学的在线课程。
 
 - **在线版本**:https://conanxin.github.io/CAD-CAM-Technology-docs
-- **当前版本**:`v0.9.2-cadquery-local-environment-guide`
+- **当前版本**:`v0.9.3-cadquery-runtime-portfolio-path`
 - **历史版本**(SAE):http://conanxincv.sinaapp.com/project2/index.html(已归档,不再更新)
 
 ## 当前版本亮点
@@ -32,6 +32,7 @@
 | **Capstone 作品集升级** | V6/V7/V8 三线整合(FreeCAD + CadQuery + Assembly 综合作品集) |
 | **CadQuery 运行试点** | CadQuery 真实运行环境诊断、运行结果、读者本地指导 |
 | **CadQuery 本地环境指南** | conda/pip 路线、smoke test、导出后检查、本地导出工作流 |
+| **CadQuery 运行与作品集路线** | V9 系列发布收口、三步路线、文件与脚本地图、运行记录、教学诚信 |
 | **FreeCAD Path Workbench** | Job/Tool/Operation/Post 概念、教学 G-code 样例 |
 | **项目档案与评分** | 项目档案模板、评分表、资源包 |
 | **L 型支架 Capstone** | 集成 V5A-V5D 全部学习成果的综合项目 |
@@ -75,6 +76,10 @@
 | CadQuery 本地环境指南 | conda/pip 路线、smoke test、导出检查 | V9C |
 | CadQuery 本地环境指南 | conda/pip 路线、smoke test、导出检查 | V9C |
 | CadQuery 本地环境指南 | conda/pip 路线、smoke test、导出检查 | V9C |
+| 运行诊断 | 环境诊断、真实运行结果 | V9B |
+| 本地导出工作流 | conda/pip 路线、smoke test、验证脚本 | V9C |
+| 作品集运行记录 | runtime-notes、local-export-log、教学诚信 | V9D |
+| V9 系列发布收口 | 三步路线、文件地图、5 层运行状态 | V9D |
 
 ## 教学亮点速览
 
@@ -100,9 +105,13 @@
 
 **Assembly 学习路径(V8D)**:V8 系列三步走总入口、2 个 .py 代码 + 5 个资源包文件地图 → [查看](https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-assembly-learning-path.html)
 
-**Capstone 作品集升级（V9A）**：V6/V7/V8 三线整合、升级版作品集结构、推荐文件夹结构 → [查看](https://conanxin.github.io/CAD-CAM-Technology-docs/examples/capstone-portfolio-upgrade.html)
+**Capstone 作品集升级(V9A)**:V6/V7/V8 三线整合、升级版作品集结构、推荐文件夹结构 → [查看](https://conanxin.github.io/CAD-CAM-Technology-docs/examples/capstone-portfolio-upgrade.html)
 
-**CadQuery 运行试点（V9B）**：环境诊断、6 个 .py 实际运行结果、读者本地如何生成 → [查看](https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-runtime-export-pilot.html)
+**CadQuery 运行试点(V9B)**:环境诊断、6 个 .py 实际运行结果、读者本地如何生成 → [查看](https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-runtime-export-pilot.html)
+
+**CadQuery 本地环境指南(V9C)**:conda/pip 路线、smoke test、导出后检查、environment-cadquery.yml → [查看](https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-local-environment-guide.html)
+
+**CadQuery 运行与作品集路线(V9D)**:V9 系列发布收口、三步路线、文件与脚本地图、真实运行状态说明、教学诚信 → [查看](https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-runtime-portfolio-path.html)
 
 ## 快速入口
 
@@ -136,11 +145,15 @@
 | **Assembly 学习路径** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-assembly-learning-path.html |
 | **Capstone 作品集升级** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/capstone-portfolio-upgrade.html |
 | **CadQuery 运行试点** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-runtime-export-pilot.html |
+| **CadQuery 本地环境指南** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-local-environment-guide.html |
+| **CadQuery 运行与作品集路线** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-runtime-portfolio-path.html |
 | **CadQuery 示例代码目录** | https://github.com/conanxin/CAD-CAM-Technology-docs/tree/master/code/cadquery |
 
 ## 版本演进
 
-- **V9B**(2024-06):CadQuery 真实运行与 STEP/STL 导出试点(环境诊断表、6 个 .py 实际运行结果、为什么 OCCT 不可用、读者本地如何生成、1 个资源包)
+- **V9B**(2024-06):CadQuery 真实运行与 STEP/STL 导出试点（环境诊断表、6 个 .py 实际运行结果、为什么 OCCT 不可用、读者本地如何生成、1 个资源包）
+- **V9C**(2024-06):CadQuery 本地环境配置指南（conda/pip 路线、smoke test、导出后检查、environment-cadquery.yml、3 个辅助脚本）
+- **V9D**(2024-06):CadQuery 运行与作品集路线发布收口（三步学习路线、9 个核心资源文件地图、真实运行状态说明、教学诚信、8 项完成标准、2 个新 SVG）
 - **V9A**(2024-06):Capstone 作品集升级(V6/V7/V8 三线整合、升级版作品集结构、推荐文件夹结构、V6/V7/V8 对照表、自评升级清单、2 个资源包)
 - **V8D**(2024-06):Assembly 学习路径收口页(V8 系列 V8A/V8B/V8C 三步走总入口、2 个 .py 代码 + 5 个资源包文件地图、Assembly 与 Capstone 关系、单零件/装配体/BOM/G-code 层级关系、2 个 SVG)
 - **V8C**(2024-06):Assembly Placement mini-lab(Location/Placement 概念、全局 vs 局部坐标系、nested assembly、bolt_pair 子装配、教学型干涉检查、2 个资源包文件、2 个 SVG)

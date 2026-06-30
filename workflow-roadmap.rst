@@ -536,3 +536,24 @@ V9B 确认云端不能运行 CadQuery，V9C 提供读者本地配置指南：
 - ``scripts/cadquery/`` 辅助脚本
 
 参考 :doc:`examples/cadquery-local-environment-guide` 了解本地配置流程。
+
+V9D CadQuery 运行与作品集路线
+================================
+
+V9 系列（V9A/V9B/V9C）的**总入口与发布收口**，把三条线串成完整学习闭环：
+
+- **V9A 作品集升级** → 把 V6/V7/V8 整合为一份可提交 Capstone 作品集
+- **V9B 运行诊断** → 云端环境能否真实运行 CadQuery，记录诚实结果
+- **V9C 本地导出** → 读者本地配置环境、运行示例、导出 STEP/STL
+- **V9D（本页范围）** → 三步路线总入口 + 文件脚本地图 + 真实运行状态说明 + 教学诚信
+
+V9D 的关键交付：
+
+- 三步学习路线表（学习目标 / 对应页面 / 对应文件 / 产出物 / 完成标准）
+- 9 个核心文件与脚本地图（用途 / 对应页面 / 是否需要 CadQuery / 适合阶段）
+- 真实运行状态说明（py_compile → import → build → export → verify 五层关系）
+- 作品集新增运行记录模块（runtime-notes + local-export-log）
+- 8 项学习完成标准 + 7 条常见误区
+- 2 个新 SVG（cadquery-runtime-portfolio-path + pycompile-import-export-levels）
+
+参考 :doc:`examples/cadquery-runtime-portfolio-path` 查看 V9D 总入口。

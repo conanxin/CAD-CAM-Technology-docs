@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360">
+  <rect width="900" height="360" fill="#f8f9fa" rx="10"/>
+
+  <text x="450" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">py_compile → import → build → export → verify 五层关系</text>
+  <text x="450" y="44" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">每一层都是下一层的必要条件；通过上一层 ≠ 完成下一层</text>
+
+  <!-- Layer 1: py_compile -->
+  <rect x="20" y="65" width="860" height="44" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="40" y="83" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#0d47a1">L1: py_compile</text>
+  <text x="40" y="100" font-family="Arial, sans-serif" font-size="10" fill="#333">检查 Python 语法、缩进、import 语句存在</text>
+  <text x="690" y="83" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1b5e20">✅ V7/V8 6/6 通过</text>
+  <text x="690" y="100" font-family="Arial, sans-serif" font-size="9" fill="#555">不需要任何外部库</text>
+
+  <!-- Arrow L1->L2 -->
+  <line x1="450" y1="110" x2="450" y2="125" stroke="#666" stroke-width="2"/>
+  <polygon points="445,123 455,123 450,131" fill="#666"/>
+  <text x="465" y="125" font-family="Arial, sans-serif" font-size="9" fill="#444" font-weight="bold">语法 OK → 可尝试 import</text>
+
+  <!-- Layer 2: import cadquery -->
+  <rect x="20" y="135" width="860" height="44" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="5"/>
+  <text x="40" y="153" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#e65100">L2: import cadquery</text>
+  <text x="40" y="170" font-family="Arial, sans-serif" font-size="10" fill="#333">验证 Python 包能加载到内存中</text>
+  <text x="690" y="153" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#c62828">❌ 云端失败：ModuleNotFoundError: OCP</text>
+  <text x="690" y="170" font-family="Arial, sans-serif" font-size="9" fill="#555">需要：cadquery + OCP + OCCT 共享库</text>
+
+  <!-- Arrow L2->L3 -->
+  <line x1="450" y1="180" x2="450" y2="195" stroke="#666" stroke-width="2"/>
+  <polygon points="445,193 455,193 450,201" fill="#666"/>
+  <text x="465" y="195" font-family="Arial, sans-serif" font-size="9" fill="#444" font-weight="bold">import OK → 可构建几何</text>
+
+  <!-- Layer 3: build model -->
+  <rect x="20" y="205" width="860" height="44" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <text x="40" y="223" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1b5e20">L3: build model</text>
+  <text x="40" y="240" font-family="Arial, sans-serif" font-size="10" fill="#333">用 CadQuery API 创建几何（box、fillet、hole、Assembly 等）</text>
+  <text x="690" y="223" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#555">需 L2 通过才能执行</text>
+  <text x="690" y="240" font-family="Arial, sans-serif" font-size="9" fill="#555">本地读者可成功</text>
+
+  <!-- Arrow L3->L4 -->
+  <line x1="450" y1="250" x2="450" y2="265" stroke="#666" stroke-width="2"/>
+  <polygon points="445,263 455,263 450,271" fill="#666"/>
+  <text x="465" y="265" font-family="Arial, sans-serif" font-size="9" fill="#444" font-weight="bold">几何构建 OK → 可导出文件</text>
+
+  <!-- Layer 4: export STEP/STL -->
+  <rect x="20" y="275" width="860" height="44" fill="#fce4ec" stroke="#c2185b" stroke-width="2" rx="5"/>
+  <text x="40" y="293" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#880e4f">L4: export STEP/STL</text>
+  <text x="40" y="310" font-family="Arial, sans-serif" font-size="10" fill="#333">cq.exporters.export() 写出真实文件到 local-exports/</text>
+  <text x="690" y="293" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#555">需 L3 通过才能导出</text>
+  <text x="690" y="310" font-family="Arial, sans-serif" font-size="9" fill="#555">文件非空且可被 FreeCAD 打开</text>
+
+  <!-- Arrow L4->L5 -->
+  <line x1="450" y1="320" x2="450" y2="335" stroke="#666" stroke-width="2"/>
+  <polygon points="445,333 455,333 450,341" fill="#666"/>
+  <text x="465" y="335" font-family="Arial, sans-serif" font-size="9" fill="#444" font-weight="bold">文件生成 → 可验证格式</text>
+
+  <!-- 底部说明 -->
+  <text x="40" y="350" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" font-weight="bold">关键洞察：L1 通过 ≠ L2-L5 通过；服务器仅完成 L1，本地读者可完成全部 5 层。</text>
+</svg>
