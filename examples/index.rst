@@ -47,6 +47,12 @@
 **案例 H — L 型支架 Capstone 项目**：
   FreeCAD 实操线的综合项目：集成 V5A-V5D 全部学习成果，完成从需求分析到 G-code 理解的完整流程。对应 V6A。
 
+**案例 I — Bracket Capstone 项目档案**：
+  L 型支架项目的档案模板和使用方法，包含 9 大类项目内容和推荐目录结构。对应 V6B。
+
+**案例 J — Bracket Capstone 项目评分表**：
+  L 型支架项目的详细评分标准，包含 3 大维度、20 个评分项、4 级评分等级。对应 V6B。
+
 推荐阅读顺序
 ============
 
@@ -60,6 +66,8 @@
 8. **深入理解**：阅读 :doc:`gcode-toolpath-visualization`，逐行理解 G-code 程序如何控制机床动作
 9. **格式实验**：阅读 :doc:`step-stl-mini-lab`，通过对比实验理解 STEP 与 STL 的本质差异
 10. **综合项目**：完成 :doc:`bracket-capstone-project`，集成全部 V5A-V5D 学习成果
+11. **项目档案**：阅读 :doc:`bracket-project-portfolio`，使用模板整理项目成果
+12. **项目评分**：阅读 :doc:`bracket-assessment-rubric`，使用评分表自我评估
 
 每个案例对应的课程章节
 ========================
@@ -101,6 +109,12 @@
    * - L 型支架 Capstone
      - 集成项目、5个阶段、提交包
      - V6A
+   * - Bracket 项目档案
+     - 9 大类内容、目录结构、模板
+     - V6B
+   * - Bracket 评分表
+     - 3 维度、20 评分项、4 级等级
+     - V6B
 
 如何用案例复习 unit1~unit8
 ============================
@@ -154,3 +168,5 @@
    freecad-to-cam-worksheet
    freecad-workflow-index
    bracket-capstone-project
+   bracket-project-portfolio
+   bracket-assessment-rubric

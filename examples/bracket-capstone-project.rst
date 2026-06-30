@@ -380,6 +380,8 @@ CAM 任务拆解详解
 评分标准
 ========
 
+更多详细的评分标准（包括完成度、深度、创新三大维度的详细评分项、评分等级、常见扣分项和加分项）请参考 :doc:`bracket-assessment-rubric` 页面。
+
 完成度
 ------
 
@@ -405,6 +407,15 @@ CAM 任务拆解详解
 - [ ] 工艺方案有自己的思考（不只是照搬）
 - [ ] 提出了可能的改进方向
 - [ ] 记录了学习过程中的"顿悟时刻"
+
+进一步参考
+==========
+
+完成本项目后，建议使用以下页面和资源整理项目成果、进行自我评估：
+
+- :doc:`bracket-project-portfolio`：项目档案页面（使用模板整理项目成果）
+- :doc:`bracket-assessment-rubric`：项目评分表（自我评估与等级判定）
+- 资源包：``assets/bracket-capstone/`` （包含 portfolio-template、submission-checklist、reflection-template、rubric-summary）
 
 常见问题
 ========
