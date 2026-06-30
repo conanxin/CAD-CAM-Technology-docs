@@ -53,6 +53,9 @@
 **案例 J — Bracket Capstone 项目评分表**：
   L 型支架项目的详细评分标准，包含 3 大维度、20 个评分项、4 级评分等级。对应 V6B。
 
+**案例 K — FreeCAD Path Workbench 入门**：
+  FreeCAD 内置 CAM 模块入门：Job/Tool/Operation/Toolpath/Post Processor/G-code 概念、教学型 G-code 样例。对应 V6C。
+
 推荐阅读顺序
 ============
 
@@ -68,6 +71,7 @@
 10. **综合项目**：完成 :doc:`bracket-capstone-project`，集成全部 V5A-V5D 学习成果
 11. **项目档案**：阅读 :doc:`bracket-project-portfolio`，使用模板整理项目成果
 12. **项目评分**：阅读 :doc:`bracket-assessment-rubric`，使用评分表自我评估
+13. **Path Workbench**：阅读 :doc:`freecad-path-workbench-intro`，了解 FreeCAD CAM 模块
 
 每个案例对应的课程章节
 ========================
@@ -115,6 +119,9 @@
    * - Bracket 评分表
      - 3 维度、20 评分项、4 级等级
      - V6B
+   * - FreeCAD Path Workbench
+     - Job/Tool/Operation/Post 概念
+     - V6C
 
 如何用案例复习 unit1~unit8
 ============================
@@ -170,3 +177,4 @@
    bracket-capstone-project
    bracket-project-portfolio
    bracket-assessment-rubric
+   freecad-path-workbench-intro

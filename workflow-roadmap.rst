@@ -336,6 +336,10 @@ CAD/CAM 工具链总览
 
 完成以上三步后，作为综合验证，建议完成 :doc:`examples/bracket-capstone-project` L 型支架 Capstone 项目。项目包含 5 个阶段（需求分析、CAD 建模、导出验证、CAM 规划、G-code 理解），集成 V5A-V5D 全部学习成果。
 
+**任务 1.6：尝试 FreeCAD Path Workbench**
+
+如果你有 FreeCAD 经验，可以阅读 :doc:`examples/freecad-path-workbench-intro` 了解 FreeCAD 内置的 CAM 模块，用 Path Workbench 生成真实 G-code。本任务为可选，不依赖真实机床。
+
 **任务 2：对比 STEP 与 STL 文件差异**
 
 1. 用文本编辑器打开上一步导出的 STEP 文件

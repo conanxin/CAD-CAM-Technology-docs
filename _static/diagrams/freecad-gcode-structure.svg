@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 280">
+  <rect width="700" height="280" fill="#f8f9fa" rx="10"/>
+  
+  <text x="350" y="22" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">教学型 G-code 结构与指令分布</text>
+  
+  <!-- Header section -->
+  <rect x="30" y="45" width="640" height="40" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="50" y="62" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1976d2">程序头 (Header)</text>
+  <text x="50" y="78" font-family="Arial, sans-serif" font-size="9" fill="#333">G21 (mm) | G90 (绝对) | G94 (进给单位) | G17 (XY 平面) | G54 (坐标系)</text>
+  
+  <!-- Operation 1 section -->
+  <rect x="30" y="95" width="200" height="80" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="5"/>
+  <text x="50" y="112" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#f57c00">操作 1: 粗加工</text>
+  <text x="50" y="128" font-family="Arial, sans-serif" font-size="9" fill="#333">M03 S8000  ; 主轴启动</text>
+  <text x="50" y="142" font-family="Arial, sans-serif" font-size="9" fill="#333">G00 Z5     ; 安全高度</text>
+  <text x="50" y="156" font-family="Arial, sans-serif" font-size="9" fill="#333">G01 Z-2 F100  ; 下刀</text>
+  <text x="50" y="170" font-family="Arial, sans-serif" font-size="9" fill="#333">G01 X80 Y50 F600  ; 走刀</text>
+  
+  <!-- Operation 2 section -->
+  <rect x="240" y="95" width="200" height="80" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <text x="260" y="112" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#388e3c">操作 2: 精加工</text>
+  <text x="260" y="128" font-family="Arial, sans-serif" font-size="9" fill="#333">G01 Z-2.3 F100  ; 微调深度</text>
+  <text x="260" y="142" font-family="Arial, sans-serif" font-size="9" fill="#333">G01 X80 Y50 F400  ; 慢进给</text>
+  <text x="260" y="156" font-family="Arial, sans-serif" font-size="9" fill="#333">(重复外轮廓)</text>
+  <text x="260" y="170" font-family="Arial, sans-serif" font-size="9" fill="#333">G00 Z5  ; 抬刀</text>
+  
+  <!-- Operation 3 section -->
+  <rect x="450" y="95" width="220" height="80" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" rx="5"/>
+  <text x="470" y="112" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#7b1fa2">操作 3: 钻孔</text>
+  <text x="470" y="128" font-family="Arial, sans-serif" font-size="9" fill="#333">M05  ; 主轴停止</text>
+  <text x="470" y="142" font-family="Arial, sans-serif" font-size="9" fill="#333">M00  ; 手动换刀</text>
+  <text x="470" y="156" font-family="Arial, sans-serif" font-size="9" fill="#333">M03 S2500  ; 启动</text>
+  <text x="470" y="170" font-family="Arial, sans-serif" font-size="9" fill="#333">G81 R2 Z-8 F100  ; 钻孔</text>
+  
+  <!-- Footer section -->
+  <rect x="30" y="185" width="640" height="40" fill="#ffebee" stroke="#c62828" stroke-width="2" rx="5"/>
+  <text x="50" y="202" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#c62828">程序尾 (Footer)</text>
+  <text x="50" y="218" font-family="Arial, sans-serif" font-size="9" fill="#333">M05  ; 主轴停止 | G00 Z25  ; 抬刀到更高高度 | M30  ; 程序结束并倒带</text>
+  
+  <!-- Bottom: legend -->
+  <rect x="30" y="235" width="640" height="35" fill="#ffffff" stroke="#ccc" stroke-width="1" rx="3"/>
+  <text x="350" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#555">教学重点</text>
+  <text x="50" y="264" font-family="Arial, sans-serif" font-size="9" fill="#333">G00=快速 | G01=直线 | G81=钻孔循环 | M03/M05=主轴启停 | M30=结束</text>
+</svg>

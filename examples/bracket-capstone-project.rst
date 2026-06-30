@@ -415,6 +415,7 @@ CAM 任务拆解详解
 
 - :doc:`bracket-project-portfolio`：项目档案页面（使用模板整理项目成果）
 - :doc:`bracket-assessment-rubric`：项目评分表（自我评估与等级判定）
+- :doc:`freecad-path-workbench-intro`：FreeCAD Path Workbench 入门（如何使用 FreeCAD 生成真实 G-code）
 - 资源包：``assets/bracket-capstone/`` （包含 portfolio-template、submission-checklist、reflection-template、rubric-summary）
 
 常见问题
@@ -439,6 +440,7 @@ A：本项目不要求真实运行 CAM 软件。你可以：
 - 用文本编辑器模拟 G-code
 - 重点关注工序规划和参数选择，不需要真实输出 G-code
 - 参考 :doc:`gcode-toolpath-visualization` 理解 G-code 逻辑
+- 如果你有 FreeCAD 经验，可以尝试 :doc:`freecad-path-workbench-intro` 用 Path Workbench 生成真实 G-code
 
 Q3：模型尺寸不准确怎么办？
 --------------------------

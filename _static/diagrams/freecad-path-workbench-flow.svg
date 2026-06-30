@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 260">
+  <rect width="800" height="260" fill="#f8f9fa" rx="10"/>
+  
+  <text x="400" y="22" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">FreeCAD Path Workbench 数据流转</text>
+  
+  <!-- Step 1: Job -->
+  <rect x="20" y="50" width="130" height="80" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <rect x="20" y="50" width="130" height="22" fill="#1976d2" rx="5"/>
+  <text x="85" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">Job (任务)</text>
+  <text x="85" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">• 选定毛坯 (Stock)</text>
+  <text x="85" y="102" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">• 默认基准面</text>
+  <text x="85" y="116" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">• 输出后处理 (Post)</text>
+  
+  <!-- Arrow -->
+  <polygon points="155,90 170,85 170,95" fill="#666"/>
+  <line x1="150" y1="90" x2="170" y2="90" stroke="#666" stroke-width="2"/>
+  
+  <!-- Step 2: Tools -->
+  <rect x="175" y="50" width="130" height="80" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="5"/>
+  <rect x="175" y="50" width="130" height="22" fill="#f57c00" rx="5"/>
+  <text x="240" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">Tool (刀具)</text>
+  <text x="240" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">• 刀具库定义</text>
+  <text x="240" y="102" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">• 几何参数</text>
+  <text x="240" y="116" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">• 转速/进给</text>
+  
+  <!-- Arrow -->
+  <polygon points="310,90 325,85 325,95" fill="#666"/>
+  <line x1="305" y1="90" x2="325" y2="90" stroke="#666" stroke-width="2"/>
+  
+  <!-- Step 3: Operation -->
+  <rect x="330" y="50" width="130" height="80" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <rect x="330" y="50" width="130" height="22" fill="#388e3c" rx="5"/>
+  <text x="395" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">Operation (工序)</text>
+  <text x="395" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">• Profile (轮廓)</text>
+  <text x="395" y="102" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">• Pocket (型腔)</text>
+  <text x="395" y="116" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">• Drilling (钻孔)</text>
+  
+  <!-- Arrow -->
+  <polygon points="465,90 480,85 480,95" fill="#666"/>
+  <line x1="460" y1="90" x2="480" y2="90" stroke="#666" stroke-width="2"/>
+  
+  <!-- Step 4: Toolpath -->
+  <rect x="485" y="50" width="130" height="80" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" rx="5"/>
+  <rect x="485" y="50" width="130" height="22" fill="#7b1fa2" rx="5"/>
+  <text x="550" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">Toolpath (刀路)</text>
+  <text x="550" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">• 计算刀轨</text>
+  <text x="550" y="102" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">• 切削区域</text>
+  <text x="550" y="116" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">• 步距/深度</text>
+  
+  <!-- Arrow -->
+  <polygon points="620,90 635,85 635,95" fill="#666"/>
+  <line x1="615" y1="90" x2="635" y2="90" stroke="#666" stroke-width="2"/>
+  
+  <!-- Step 5: Post Processor -->
+  <rect x="640" y="50" width="140" height="80" fill="#ffebee" stroke="#c62828" stroke-width="2" rx="5"/>
+  <rect x="640" y="50" width="140" height="22" fill="#c62828" rx="5"/>
+  <text x="710" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">Post Processor</text>
+  <text x="710" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">• 转换为机床格式</text>
+  <text x="710" y="102" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">• G-code 语法</text>
+  <text x="710" y="116" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">• 机床特定指令</text>
+  
+  <!-- Output: G-code -->
+  <rect x="280" y="160" width="240" height="60" fill="#fff9c4" stroke="#f57f17" stroke-width="2" rx="5"/>
+  <text x="400" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#333">G-code (.nc / .gcode)</text>
+  <text x="400" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">机床可识别的数控加工程序</text>
+  
+  <!-- Arrow down to gcode -->
+  <line x1="400" y1="130" x2="400" y2="155" stroke="#666" stroke-width="2" marker-end="url(#arrow-path)"/>
+  
+  <!-- Bottom: warning -->
+  <rect x="20" y="230" width="760" height="20" fill="#fff3e0" stroke="#e65100" stroke-width="1" rx="3"/>
+  <text x="400" y="244" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#e65100">⚠️ 教学提示：所有参数为示例值，实际加工前必须经过 CAM 工程师审核</text>
+  
+  <defs>
+    <marker id="arrow-path" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#666"/>
+    </marker>
+  </defs>
+</svg>
