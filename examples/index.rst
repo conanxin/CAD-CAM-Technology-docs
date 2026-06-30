@@ -59,6 +59,20 @@
 **案例 L — Capstone 项目线学习路径**：
   V6 项目线总入口和收口页：五步学习路线、产出物清单、完成标准、误区与扩展。对应 V6D。
 
+**案例 M — Python + CadQuery 参数化建模**：
+  代码化 CAD 建模示例：用 Python + CadQuery 生成带孔矩形板，与 FreeCAD 图形化工作流互补。对应 V7A。
+
+代码化建模
+==========
+
+本页 V7A 起新增"代码化建模"小节，作为 FreeCAD 图形化工作流的**补充**：
+
+- FreeCAD 适合：图形化交互式建模，几何直觉建立，初学者友好
+- CadQuery 适合：参数化建模，批量生成，版本管理，团队协作
+- 两者输出**完全相同**的 STEP/STL 文件，下游工具链无差异
+
+如果你已经完成 FreeCAD 实操（V5A-V5D），可以阅读 :doc:`cadquery-parametric-modeling` 理解代码化建模的思路；如果还没做过，建议先完成 :doc:`freecad-plate-modeling`。
+
 推荐阅读顺序
 ============
 
@@ -76,6 +90,7 @@
 12. **项目评分**：阅读 :doc:`bracket-assessment-rubric`，使用评分表自我评估
 13. **Path Workbench**：阅读 :doc:`freecad-path-workbench-intro`，了解 FreeCAD CAM 模块
 14. **项目线总入口**：阅读 :doc:`capstone-learning-path`，查看 V6 项目线完整学习闭环
+15. **代码化建模**：阅读 :doc:`cadquery-parametric-modeling`，理解 Python + CadQuery 参数化建模（V7A）
 
 每个案例对应的课程章节
 ========================
@@ -129,6 +144,9 @@
    * - Capstone 项目线
      - 五步路线、产出物、完成标准
      - V6D
+   * - Python + CadQuery
+     - 代码化建模、参数化、STEP/STL 导出
+     - V7A
 
 如何用案例复习 unit1~unit8
 ============================
@@ -186,3 +204,4 @@
    bracket-assessment-rubric
    freecad-path-workbench-intro
    capstone-learning-path
+   cadquery-parametric-modeling

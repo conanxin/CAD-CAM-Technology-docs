@@ -7,7 +7,7 @@
 本项目已从旧版阅读笔记升级为**课程化学习文档站**，基于 [《CAD/CAM技术基础》](http://book.douban.com/subject/5296837/) 教材，使用 Sphinx 构建为适合自学的在线课程。
 
 - **在线版本**：https://conanxin.github.io/CAD-CAM-Technology-docs
-- **当前版本**：`v0.6.3-capstone-learning-path`
+- **当前版本**：`v0.7.0-cadquery-parametric-modeling`
 - **历史版本**（SAE）：http://conanxincv.sinaapp.com/project2/index.html（已归档，不再更新）
 
 ## 当前版本亮点
@@ -21,6 +21,7 @@
 | **G-code 教学** | 逐行解释 + 路径可视化，帮助初学者理解数控程序 |
 | **工作流路线图** | 工具链总览、四阶段学习路线、文件格式决策指南、3 个低门槛实践任务 |
 | **Capstone 项目线** | 五步学习路线、产出物清单、完成标准 |
+| **Python + CadQuery** | 代码化参数建模示例、STEP/STL 导出、参数化教学 |
 | **FreeCAD Path Workbench** | Job/Tool/Operation/Post 概念、教学 G-code 样例 |
 | **项目档案与评分** | 项目档案模板、评分表、资源包 |
 | **L 型支架 Capstone** | 集成 V5A-V5D 全部学习成果的综合项目 |
@@ -50,6 +51,7 @@
 | 项目档案与评分 | 项目档案 + 评分表 + 资源包 | V6B |
 | FreeCAD Path Workbench | Job/Tool/Operation 入门 | V6C |
 | Capstone 项目线 | 五步路线 + 收口页 | V6D |
+| Python + CadQuery | 代码化建模示例 + 参数化教学 | V7A |
 
 ## 教学亮点速览
 
@@ -58,6 +60,8 @@
 **STEP/STL mini-lab（V4B）**：同一零件导出两种格式，对比文件结构与几何表达 → [查看](https://conanxin.github.io/CAD-CAM-Technology-docs/examples/step-stl-mini-lab.html)
 
 **工作流路线图（V4C）**：四阶段学习路线 + 文件格式决策表 + 3 个低门槛实践任务 → [查看](https://conanxin.github.io/CAD-CAM-Technology-docs/workflow-roadmap.html)
+
+**Python + CadQuery（V7A）**：代码化参数建模示例 + 与 FreeCAD 对比，读者可学习如何用 Python 描述几何 → [查看](https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-parametric-modeling.html)
 
 ## 快速入口
 
@@ -81,9 +85,12 @@
 | **FreeCAD 到 CAM** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/freecad-to-cam-worksheet.html |
 | **FreeCAD 导出检查** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/freecad-export-checklist.html |
 | **FreeCAD 实操 Lab** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/freecad-plate-modeling.html |
+| **Python + CadQuery** | https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-parametric-modeling.html |
+| **CadQuery 示例代码** | https://github.com/conanxin/CAD-CAM-Technology-docs/tree/master/code/cadquery |
 
 ## 版本演进
 
+- **V7A**（2024-06）：Python + CadQuery 参数化建模（代码化建模示例、与 FreeCAD 工作流对比、参数化教学、2 个 SVG 图示、可运行 Python 示例代码）
 - **V6D**（2024-06）：Capstone 项目线学习路径总入口（五步路线 + 产出物清单 + 完成标准 + 6 个误区 + 6 个扩展方向）
 - **V6C**（2024-06）：FreeCAD Path Workbench 入门（Job/Tool/Operation/Toolpath/Post 概念、教学型 G-code 样例）
 - **V6B**（2024-06）：Bracket Capstone 项目档案与评分表（项目档案模板、评分表、提交清单、反思笔记、4 个资源包文件）
@@ -138,13 +145,13 @@ make html
 - [x] G-code 逐行解释与路径可视化
 - [x] 增加工程案例（CAD→G-code、数据交换、CAPP）
 - [x] 增加 G-code / STEP / STL 示例
+- [x] 增加代码示例（Python + CadQuery）— V7A
 - [ ] 加入真实软件截图（SolidWorks / FreeCAD / Fusion）
 - [ ] 增加 FreeCAD / Fusion / Mastercam 工具链示例
 - [ ] 补充更多图示和公式
 - [ ] 增加软件工具链说明（SolidWorks/CATIA/UG NX/Mastercam）
 - [ ] 添加更多参考文献链接
 - [ ] 引入 Mermaid 流程图
-- [ ] 增加代码示例（Python + CAD 库）
 
 ## 贡献
 

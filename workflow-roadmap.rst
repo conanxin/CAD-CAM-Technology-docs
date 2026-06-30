@@ -39,8 +39,8 @@ CAD/CAM 工具链总览
      - 输出物
    * - **CAD 设计**
      - 几何建模、装配设计、工程图生成
-     - SolidWorks, CATIA, Siemens NX, FreeCAD, Fusion 360
-     - 三维模型、装配体、二维工程图
+     - SolidWorks, CATIA, Siemens NX, FreeCAD, Fusion 360, CadQuery（Python 代码化建模）
+     - 三维模型、装配体、二维工程图、参数化代码
    * - **工程分析**
      - 有限元分析、运动仿真、优化设计
      - ANSYS, Abaqus, NASTRAN, COMSOL
@@ -343,6 +343,16 @@ CAD/CAM 工具链总览
 **任务 1.7：查看 V6 Capstone 项目线总入口**
 
 完成以上所有任务后，可以阅读 :doc:`examples/capstone-learning-path` 查看 V6 项目线完整学习路径，整合 V6A/V6B/V6C 为一个完整的项目制学习闭环。
+
+**任务 1.8：用 Python + CadQuery 体验代码化建模（V7A）**
+
+如果你会 Python，可以进一步阅读 :doc:`examples/cadquery-parametric-modeling`，用代码生成同一个带孔矩形板。CadQuery 是 FreeCAD 图形化工作流的**补充**，不是替代：
+
+- FreeCAD 适合：图形化交互、几何直觉建立、初学者
+- CadQuery 适合：参数化、批量生成、版本管理、团队协作
+- 两者输出**完全相同**的 STEP/STL 文件，下游工具链无差异
+
+本任务不需要立即安装 CadQuery。可以先阅读 :file:`code/cadquery/plate_with_hole.py` 代码，理解每行代码对应的几何操作。愿意动手的话，参考 :file:`code/cadquery/README.md` 本地运行。
 
 **任务 2：对比 STEP 与 STL 文件差异**
 

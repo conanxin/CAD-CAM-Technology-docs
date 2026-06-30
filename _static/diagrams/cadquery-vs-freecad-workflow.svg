@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360">
+  <rect width="900" height="360" fill="#f8f9fa" rx="10"/>
+
+  <text x="450" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">FreeCAD 图形化建模 vs CadQuery 代码建模</text>
+
+  <!-- 路径标题：FreeCAD -->
+  <rect x="20" y="50" width="430" height="30" fill="#bbdefb" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="235" y="71" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#0d47a1">路径 A: FreeCAD 图形化建模</text>
+
+  <!-- 路径标题：CadQuery -->
+  <rect x="470" y="50" width="410" height="30" fill="#c8e6c9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <text x="675" y="71" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1b5e20">路径 B: CadQuery 代码建模</text>
+
+  <!-- 路径 A 步骤 -->
+  <rect x="20" y="95" width="135" height="55" fill="#e3f2fd" stroke="#1976d2" stroke-width="1.5" rx="5"/>
+  <text x="87" y="116" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">1. 打开 FreeCAD</text>
+  <text x="87" y="132" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#555">Part Design 工作区</text>
+
+  <rect x="167" y="95" width="135" height="55" fill="#e3f2fd" stroke="#1976d2" stroke-width="1.5" rx="5"/>
+  <text x="234" y="116" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">2. 画草图</text>
+  <text x="234" y="132" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#555">矩形 + 标注尺寸</text>
+
+  <rect x="314" y="95" width="135" height="55" fill="#e3f2fd" stroke="#1976d2" stroke-width="1.5" rx="5"/>
+  <text x="381" y="116" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">3. Pad / Pocket</text>
+  <text x="381" y="132" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#555">拉伸 + 打孔</text>
+
+  <polygon points="156,122 167,118 167,127" fill="#666"/>
+  <line x1="155" y1="122" x2="167" y2="122" stroke="#666" stroke-width="1.5"/>
+  <polygon points="303,122 314,118 314,127" fill="#666"/>
+  <line x1="302" y1="122" x2="314" y2="122" stroke="#666" stroke-width="1.5"/>
+
+  <!-- 路径 B 步骤 -->
+  <rect x="470" y="95" width="135" height="55" fill="#e8f5e9" stroke="#388e3c" stroke-width="1.5" rx="5"/>
+  <text x="537" y="116" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">1. 写 Python</text>
+  <text x="537" y="132" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#555">参数 + .py 文件</text>
+
+  <rect x="617" y="95" width="135" height="55" fill="#e8f5e9" stroke="#388e3c" stroke-width="1.5" rx="5"/>
+  <text x="684" y="116" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">2. 运行代码</text>
+  <text x="684" y="132" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#555">.box() .hole()</text>
+
+  <rect x="764" y="95" width="116" height="55" fill="#e8f5e9" stroke="#388e3c" stroke-width="1.5" rx="5"/>
+  <text x="822" y="116" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">3. 验证</text>
+  <text x="822" y="132" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#555">导入 FreeCAD</text>
+
+  <polygon points="606,122 617,118 617,127" fill="#666"/>
+  <line x1="605" y1="122" x2="617" y2="122" stroke="#666" stroke-width="1.5"/>
+  <polygon points="753,122 764,118 764,127" fill="#666"/>
+  <line x1="752" y1="122" x2="764" y2="122" stroke="#666" stroke-width="1.5"/>
+
+  <!-- 中间汇合 -->
+  <rect x="20" y="180" width="430" height="40" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="5"/>
+  <text x="235" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#e65100">↓ 几何实体（B-rep）</text>
+
+  <rect x="470" y="180" width="410" height="40" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="5"/>
+  <text x="675" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#e65100">↓ 几何实体（B-rep）</text>
+
+  <!-- 汇合箭头 -->
+  <polygon points="455,210 470,205 470,215" fill="#f57c00"/>
+  <line x1="450" y1="210" x2="470" y2="210" stroke="#f57c00" stroke-width="2"/>
+
+  <!-- 共同的导出环节 -->
+  <rect x="240" y="240" width="420" height="50" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" rx="5"/>
+  <text x="450" y="262" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#4a148c">共同的桥接：STEP / STL 导出</text>
+  <text x="450" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">两条路径的输出格式完全相同</text>
+
+  <!-- 汇入框 -->
+  <polygon points="450,225 440,238 460,238" fill="#7b1fa2"/>
+  <line x1="450" y1="220" x2="450" y2="240" stroke="#7b1fa2" stroke-width="2"/>
+
+  <!-- 下游 -->
+  <rect x="240" y="310" width="420" height="40" fill="#ffebee" stroke="#c62828" stroke-width="2" rx="5"/>
+  <text x="450" y="333" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#b71c1c">下游 CAM / 3D 打印 / mini-lab 验证</text>
+
+  <polygon points="450,290 440,303 460,303" fill="#c62828"/>
+  <line x1="450" y1="290" x2="450" y2="310" stroke="#c62828" stroke-width="2"/>
+
+</svg>

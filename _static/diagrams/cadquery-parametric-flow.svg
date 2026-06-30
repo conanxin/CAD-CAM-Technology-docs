@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280">
+  <rect width="900" height="280" fill="#f8f9fa" rx="10"/>
+
+  <text x="450" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">Python + CadQuery 在 CAD/CAM 工具链中的位置</text>
+
+  <!-- Step 1: Python 参数 -->
+  <rect x="20" y="60" width="135" height="70" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="87" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">Python 参数</text>
+  <text x="87" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">length, width</text>
+  <text x="87" y="114" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">hole_diameter</text>
+
+  <!-- Arrow 1 -->
+  <polygon points="158,95 173,90 173,100" fill="#666"/>
+  <line x1="155" y1="95" x2="173" y2="95" stroke="#666" stroke-width="2"/>
+
+  <!-- Step 2: CadQuery 建模 -->
+  <rect x="178" y="60" width="135" height="70" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <text x="245" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">CadQuery 建模</text>
+  <text x="245" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">.box() .hole()</text>
+  <text x="245" y="114" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">.chamfer()</text>
+
+  <!-- Arrow 2 -->
+  <polygon points="316,95 331,90 331,100" fill="#666"/>
+  <line x1="313" y1="95" x2="331" y2="95" stroke="#666" stroke-width="2"/>
+
+  <!-- Step 3: 实体模型 -->
+  <rect x="336" y="60" width="135" height="70" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="5"/>
+  <text x="403" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">实体模型</text>
+  <text x="403" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">Workplane 对象</text>
+  <text x="403" y="114" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">B-rep 表示</text>
+
+  <!-- Arrow 3 -->
+  <polygon points="474,95 489,90 489,100" fill="#666"/>
+  <line x1="471" y1="95" x2="489" y2="95" stroke="#666" stroke-width="2"/>
+
+  <!-- Step 4: STEP/STL 导出 -->
+  <rect x="494" y="60" width="135" height="70" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" rx="5"/>
+  <text x="561" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">导出 STEP/STL</text>
+  <text x="561" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">cq.exporters</text>
+  <text x="561" y="114" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">.export(obj, fmt)</text>
+
+  <!-- Arrow 4 -->
+  <polygon points="632,95 647,90 647,100" fill="#666"/>
+  <line x1="629" y1="95" x2="647" y2="95" stroke="#666" stroke-width="2"/>
+
+  <!-- Step 5: 下游工具 -->
+  <rect x="652" y="60" width="220" height="70" fill="#ffebee" stroke="#c62828" stroke-width="2" rx="5"/>
+  <text x="762" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">下游工具</text>
+  <text x="762" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">CAM 加工 · 3D 打印</text>
+  <text x="762" y="114" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">CAE 分析 · mini-lab 验证</text>
+
+  <!-- 横向数据流标注 -->
+  <line x1="20" y1="155" x2="872" y2="155" stroke="#999" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="450" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666" font-style="italic">↑ 下游工具不关心建模方式：FreeCAD 或 CadQuery 导出的 STEP/STL 是一样的</text>
+
+  <!-- 底部说明 -->
+  <rect x="20" y="190" width="852" height="70" fill="#fff" stroke="#90a4ae" stroke-width="1" rx="5"/>
+  <text x="450" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">关键理解</text>
+  <text x="40" y="230" font-family="Arial, sans-serif" font-size="10" fill="#333">• Python 参数是源头 — 所有几何特征由变量驱动</text>
+  <text x="40" y="246" font-family="Arial, sans-serif" font-size="10" fill="#333">• CadQuery 是转换器 — 把参数变成几何实体</text>
+  <text x="450" y="230" font-family="Arial, sans-serif" font-size="10" fill="#333">• STEP/STL 是桥接格式 — CAD/CAM 共同语言</text>
+  <text x="450" y="246" font-family="Arial, sans-serif" font-size="10" fill="#333">• 下游工具不关心建模方式 — 都能读取 STEP</text>
+</svg>
