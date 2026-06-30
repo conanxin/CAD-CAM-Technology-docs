@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 300">
+  <rect width="700" height="300" fill="#f8f9fa" rx="10"/>
+  
+  <text x="350" y="22" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">刀具下切深度与材料去除</text>
+  
+  <!-- Workpiece (top view-ish / cross section) -->
+  <!-- Plate -->
+  <rect x="150" y="80" width="400" height="40" fill="#cfd8dc" stroke="#455a64" stroke-width="2"/>
+  <text x="350" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">毛坯顶面（12mm）</text>
+  
+  <!-- Target surface line -->
+  <line x1="150" y1="120" x2="550" y2="120" stroke="#c62828" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="560" y="123" font-family="Arial, sans-serif" font-size="9" fill="#c62828">目标顶面（10mm）</text>
+  
+  <!-- Removed material zone -->
+  <rect x="150" y="120" width="400" height="20" fill="#ffccbc" stroke="none"/>
+  <text x="350" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#bf360c">去除材料 2mm</text>
+  
+  <!-- Tool 1: Roughing -->
+  <rect x="220" y="140" width="20" height="60" fill="#90caf9" stroke="#1565c0" stroke-width="2"/>
+  <rect x="215" y="200" width="30" height="10" fill="#1565c0" stroke="none"/>
+  <!-- Tool cutting edges -->
+  <line x1="220" y1="200" x2="220" y2="190" stroke="#1565c0" stroke-width="2"/>
+  <line x1="240" y1="200" x2="240" y2="190" stroke="#1565c0" stroke-width="2"/>
+  <text x="230" y="228" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1565c0">粗加工</text>
+  <text x="230" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">10mm 立铣刀</text>
+  
+  <!-- Depth arrow for roughing -->
+  <line x1="200" y1="120" x2="200" y2="140" stroke="#666" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="185" y="135" text-anchor="end" font-family="Arial, sans-serif" font-size="9" fill="#666">2mm/层</text>
+  
+  <!-- Tool 2: Finishing -->
+  <rect x="420" y="140" width="16" height="30" fill="#a5d6a7" stroke="#2e7d32" stroke-width="2"/>
+  <rect x="416" y="170" width="24" height="8" fill="#2e7d32" stroke="none"/>
+  <line x1="420" y1="170" x2="420" y2="162" stroke="#2e7d32" stroke-width="2"/>
+  <line x1="436" y1="170" x2="436" y2="162" stroke="#2e7d32" stroke-width="2"/>
+  <text x="428" y="196" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#2e7d32">精加工</text>
+  <text x="428" y="208" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">8mm 立铣刀</text>
+  
+  <!-- Depth arrow for finishing -->
+  <line x1="470" y1="120" x2="470" y2="140" stroke="#666" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <text x="485" y="135" font-family="Arial, sans-serif" font-size="9" fill="#666">0.5mm</text>
+  
+  <!-- Right side: Drilling -->
+  <circle cx="320" cy="140" r="18" fill="none" stroke="#f57c00" stroke-width="2" stroke-dasharray="3,2"/>
+  <line x1="320" y1="140" x2="320" y2="280" stroke="#f57c00" stroke-width="2"/>
+  <polygon points="315,270 320,280 325,270" fill="#f57c00"/>
+  <text x="320" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#f57c00">钻孔 20mm</text>
+  <text x="320" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">贯穿</text>
+  
+  <!-- Bottom section: comparison -->
+  <rect x="30" y="255" width="640" height="40" fill="#ffffff" stroke="#ccc" stroke-width="1" rx="3"/>
+  <text x="350" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+    粗加工：大刀、高速进给、大切深（快速去除材料）→ 精加工：小刀、低速进给、小切深（获得表面质量）
+  </text>
+  
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="4" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#666"/>
+    </marker>
+    <marker id="arr2" markerWidth="8" markerHeight="6" refX="4" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#666"/>
+    </marker>
+  </defs>
+</svg>

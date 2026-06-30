@@ -251,6 +251,7 @@ STEP 与 STL 验证重点对比
 带着导出的 STEP 和 STL 文件，你可以继续：
 
 - :doc:`freecad-plate-modeling`：回顾建模过程，检查是否有遗漏
+- :doc:`freecad-to-cam-worksheet`：学习如何为零件规划 CAM 加工任务，从模型到刀路
 - :doc:`step-stl-mini-lab`：深入对比 STEP 与 STL 的文件结构和本质差异
 - :doc:`../workflow-roadmap`：了解这个练习在整个 CAD/CAM 工具链中的位置
 - :doc:`gcode-toolpath-visualization`：了解从模型到加工代码的转换

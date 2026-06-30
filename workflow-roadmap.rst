@@ -328,6 +328,8 @@ CAD/CAM 工具链总览
 
 导出后建议继续阅读 :doc:`examples/freecad-export-checklist`，系统验证导出结果。
 
+导出验证后，建议继续阅读 :doc:`examples/freecad-to-cam-worksheet`，学习如何为零件规划 CAM 加工任务，理解从模型到刀路的转换。
+
 **任务 2：对比 STEP 与 STL 文件差异**
 
 1. 用文本编辑器打开上一步导出的 STEP 文件

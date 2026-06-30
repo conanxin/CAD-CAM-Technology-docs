@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 220">
+  <rect width="800" height="220" fill="#f8f9fa" rx="10"/>
+  
+  <text x="400" y="22" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">CAM 加工工序顺序</text>
+  
+  <!-- Step 1 -->
+  <rect x="30" y="45" width="150" height="70" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="105" y="68" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">工序 1：顶面粗加工</text>
+  <text x="105" y="86" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">平底立铣刀 10mm</text>
+  <text x="105" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">去除余量 2mm</text>
+  
+  <!-- Arrow -->
+  <polygon points="185,80 200,75 200,85" fill="#666"/>
+  <line x1="180" y1="80" x2="200" y2="80" stroke="#666" stroke-width="2"/>
+  
+  <!-- Step 2 -->
+  <rect x="205" y="45" width="150" height="70" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <text x="280" y="68" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">工序 2：顶面精加工</text>
+  <text x="280" y="86" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">平底立铣刀 8mm</text>
+  <text x="280" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">表面质量</text>
+  
+  <!-- Arrow -->
+  <polygon points="360,80 375,75 375,85" fill="#666"/>
+  <line x1="355" y1="80" x2="375" y2="80" stroke="#666" stroke-width="2"/>
+  
+  <!-- Step 3 -->
+  <rect x="380" y="45" width="150" height="70" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="5"/>
+  <text x="455" y="68" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">工序 3：中心孔加工</text>
+  <text x="455" y="86" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">钻头 20mm</text>
+  <text x="455" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">贯穿孔</text>
+  
+  <!-- Arrow -->
+  <polygon points="535,80 550,75 550,85" fill="#666"/>
+  <line x1="530" y1="80" x2="550" y2="80" stroke="#666" stroke-width="2"/>
+  
+  <!-- Step 4 -->
+  <rect x="555" y="45" width="150" height="70" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" rx="5"/>
+  <text x="630" y="68" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">工序 4：倒角（可选）</text>
+  <text x="630" y="86" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">倒角刀 6mm</text>
+  <text x="630" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">去毛刺</text>
+  
+  <!-- Bottom: Rules -->
+  <rect x="30" y="135" width="740" height="75" fill="#ffffff" stroke="#ccc" stroke-width="1" rx="5"/>
+  <text x="400" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#555">加工顺序原则</text>
+  <text x="45" y="175" font-family="Arial, sans-serif" font-size="10" fill="#333">1. 先面后孔 — 平面是基准，先加工平面再加工孔可确保位置精度</text>
+  <text x="45" y="190" font-family="Arial, sans-serif" font-size="10" fill="#333">2. 先粗后精 — 粗加工去除大部分材料，精加工只去除 0.1-0.5mm</text>
+  <text x="45" y="205" font-family="Arial, sans-serif" font-size="10" fill="#333">3. 先主后次 — 顶面和孔是主要特征，倒角是次要特征</text>
+</svg>
