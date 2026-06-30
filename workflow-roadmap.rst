@@ -39,7 +39,7 @@ CAD/CAM 工具链总览
      - 输出物
    * - **CAD 设计**
      - 几何建模、装配设计、工程图生成
-     - SolidWorks, CATIA, Siemens NX, FreeCAD, Fusion 360, CadQuery（Python 代码化建模，含 V7A/V7B/V7C/V7D + V8A 装配体 + V8B BOM/checklist + V8C placement/nested）
+     - SolidWorks, CATIA, Siemens NX, FreeCAD, Fusion 360, CadQuery（Python 代码化建模，含 V7A/V7B/V7C/V7D + V8A/V8B/V8C + V8D 收口）
      - 三维模型、装配体、二维工程图、参数化代码
    * - **工程分析**
      - 有限元分析、运动仿真、优化设计
@@ -448,6 +448,18 @@ V8C 的关键内容：
 
 - :file:`assets/bracket-capstone/assembly/placement-checklist.md`
 - :file:`assets/bracket-capstone/assembly/interference-check-notes-template.md`
+
+**任务 1.15：V8 Assembly 系列收口（V8D）**
+
+完成 V8A + V8B + V8C 后，可以阅读 :doc:`examples/cadquery-assembly-learning-path` 查看 V8 系列的总入口和收口页：
+
+- 三步学习路线（V8A 入门 → V8B 进阶 → V8C mini-lab）
+- 2 个 .py 代码 + 5 个资源包文件地图
+- Assembly 与 V6 Capstone / V7 单零件 / G-code 的层级关系
+- 15+ 项完成标准
+- 8 条常见误区 + 后续扩展方向
+
+本任务是 V8 系列的**收口页**——不引入新代码或新特征，仅作为路线图导航。
 
 **任务 2：对比 STEP 与 STL 文件差异**
 

@@ -80,6 +80,9 @@
 **案例 S — CadQuery Assembly 进阶：定位、子装配与干涉检查 mini-lab**：
   V8A/V8B 的第三篇：Placement/Location 概念、全局 vs 局部坐标系、nested assembly（bolt_pair 子装配）、教学型干涉检查表。对应 V8C。
 
+**案例 T — CadQuery Assembly 学习路径：从多零件到装配检查**：
+  V8 系列（V8A/V8B/V8C）的总入口和收口页：三步学习路线、2 个 .py 代码 + 5 个资源包文件地图、Assembly 与 Capstone 关系、单零件/装配体/BOM/G-code 层级关系、完成标准与误区。对应 V8D。
+
 代码化建模
 ==========
 
@@ -98,6 +101,7 @@
 5. **装配体**：阅读 :doc:`cadquery-assembly-intro` （V8A）—— 多零件装配体入门
 6. **装配体进阶**：阅读 :doc:`cadquery-assembly-bom-checklist` （V8B）—— BOM + 爆炸图 + 检查清单
 7. **Placement 与子装配**：阅读 :doc:`cadquery-assembly-placement-mini-lab` （V8C）—— Location + 子装配 + 干涉检查
+8. **装配体收口**：阅读 :doc:`cadquery-assembly-learning-path` （V8D）—— V8 系列总入口和三步走总览
 
 如果你已经完成 FreeCAD 实操（V5A-V5D），可以阅读 :doc:`cadquery-parametric-modeling` 理解代码化建模的思路；如果还没做过，建议先完成 :doc:`freecad-plate-modeling`。
 
@@ -125,6 +129,7 @@
 19. **CadQuery Assembly 入门**：阅读 :doc:`cadquery-assembly-intro`，理解多零件装配体表达（V8A）
 20. **Assembly BOM 与检查清单**：阅读 :doc:`cadquery-assembly-bom-checklist`，学习 BOM + 检查清单（V8B）
 21. **Placement 与子装配 mini-lab**：阅读 :doc:`cadquery-assembly-placement-mini-lab`，理解 Location + 子装配 + 干涉检查（V8C）
+22. **Assembly 学习路径**：阅读 :doc:`cadquery-assembly-learning-path`，查看 V8 系列收口和三步走总览（V8D）
 
 每个案例对应的课程章节
 ========================
@@ -199,6 +204,9 @@
    * - Assembly Placement mini-lab
      - Location、子装配、干涉检查
      - V8C
+   * - Assembly 学习路径
+     - V8 系列收口、三步走总览
+     - V8D
 
 如何用案例复习 unit1~unit8
 ============================
@@ -263,3 +271,4 @@
    cadquery-assembly-intro
    cadquery-assembly-bom-checklist
    cadquery-assembly-placement-mini-lab
+   cadquery-assembly-learning-path

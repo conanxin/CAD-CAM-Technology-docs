@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360">
+  <rect width="900" height="360" fill="#f8f9fa" rx="10"/>
+
+  <text x="450" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">单零件 / 装配体 / BOM / G-code 的数据层级关系</text>
+
+  <!-- 层级 1: 单零件模型 -->
+  <rect x="20" y="60" width="200" height="80" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="120" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#0d47a1">单零件模型</text>
+  <text x="120" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">.step / .stl</text>
+  <text x="120" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#777">一个可加工对象的几何</text>
+  <text x="120" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#777">CAM 工程师关心</text>
+
+  <!-- 箭头 1->2 -->
+  <polygon points="225,100 245,95 245,105" fill="#666"/>
+  <line x1="222" y1="100" x2="245" y2="100" stroke="#666" stroke-width="2"/>
+  <text x="234" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#444">+选工件</text>
+  <text x="234" y="118" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#444">+规划工序</text>
+
+  <!-- 层级 2: G-code -->
+  <rect x="250" y="60" width="200" height="80" fill="#ffebee" stroke="#c62828" stroke-width="2" rx="5"/>
+  <text x="350" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#b71c1c">G-code</text>
+  <text x="350" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">.nc / .gcode</text>
+  <text x="350" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#777">机床动作指令</text>
+  <text x="350" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#777">机床操作员关心</text>
+
+  <!-- 箭头 G-code -> 物理零件 -->
+  <line x1="350" y1="145" x2="350" y2="180" stroke="#c62828" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <polygon points="345,178 350,185 355,178" fill="#c62828"/>
+  <text x="450" y="170" font-family="Arial, sans-serif" font-size="9" fill="#b71c1c" font-style="italic">机床加工</text>
+
+  <!-- 层级 3: 物理零件 -->
+  <rect x="250" y="190" width="200" height="60" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="5"/>
+  <text x="350" y="212" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#e65100">物理零件</text>
+  <text x="350" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">车床/铣床/3D 打印出来的实物</text>
+  <text x="350" y="243" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#777">采购 / 装配 / 检测</text>
+
+  <!-- 箭头 物理 -> 装配体 -->
+  <line x1="450" y1="220" x2="500" y2="220" stroke="#f57c00" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <polygon points="498,215 505,220 498,225" fill="#f57c00"/>
+  <text x="475" y="212" font-family="Arial, sans-serif" font-size="9" fill="#e65100" font-style="italic">+其他零件</text>
+
+  <!-- 层级 4: 装配体 -->
+  <rect x="510" y="190" width="200" height="60" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <text x="610" y="212" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1b5e20">装配体</text>
+  <text x="610" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">多个零件 + 空间关系</text>
+  <text x="610" y="243" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#777">装配工程师 / 设计员关心</text>
+
+  <!-- 箭头 装配体 -> BOM -->
+  <line x1="710" y1="220" x2="755" y2="220" stroke="#388e3c" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <polygon points="753,215 760,220 753,225" fill="#388e3c"/>
+  <text x="730" y="212" font-family="Arial, sans-serif" font-size="9" fill="#1b5e20" font-style="italic">+记录</text>
+
+  <!-- 层级 5: BOM -->
+  <rect x="765" y="190" width="120" height="60" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" rx="5"/>
+  <text x="825" y="212" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#4a148c">BOM</text>
+  <text x="825" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">清单 + 数量 + 用途</text>
+  <text x="825" y="243" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#777">采购关心</text>
+
+  <!-- 底部说明 -->
+  <rect x="20" y="280" width="860" height="65" fill="#fff" stroke="#90a4ae" stroke-width="1" rx="5"/>
+  <text x="450" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">关键认识</text>
+  <text x="40" y="320" font-family="Arial, sans-serif" font-size="10" fill="#333">• 四者不是同一层级的数据，是不同视角的工程表达</text>
+  <text x="40" y="335" font-family="Arial, sans-serif" font-size="10" fill="#333">• G-code 来自单零件，不是装配体</text>
+  <text x="450" y="320" font-family="Arial, sans-serif" font-size="10" fill="#333">• 装配体来自单零件集合，不是反过来</text>
+  <text x="450" y="335" font-family="Arial, sans-serif" font-size="10" fill="#333">• BOM 来自装配体，四者独立但相互引用</text>
+</svg>

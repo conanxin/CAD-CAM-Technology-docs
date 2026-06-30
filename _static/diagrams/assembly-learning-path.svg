@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280">
+  <rect width="900" height="280" fill="#f8f9fa" rx="10"/>
+
+  <text x="450" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">V8 Assembly 三步学习路线（V8D 收口）</text>
+
+  <!-- Step 1: V8A 入门 -->
+  <rect x="20" y="60" width="270" height="120" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="155" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#0d47a1">Step 1: V8A 入门</text>
+  <text x="155" y="103" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">Assembly 多零件 + Location</text>
+  <text x="155" y="118" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">code: bracket_assembly.py</text>
+  <text x="155" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">难度 ⭐⭐</text>
+  <text x="155" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">约 2-3 小时</text>
+  <text x="155" y="168" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-style="italic" fill="#1976d2">理解装配体 ≠ union</text>
+
+  <!-- Arrow 1 -->
+  <polygon points="295,120 320,115 320,125" fill="#666"/>
+  <line x1="290" y1="120" x2="320" y2="120" stroke="#666" stroke-width="2"/>
+  <text x="305" y="108" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#444" font-weight="bold">+BOM</text>
+  <text x="305" y="138" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#444" font-weight="bold">+checklist</text>
+
+  <!-- Step 2: V8B 进阶 -->
+  <rect x="325" y="60" width="270" height="120" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <text x="460" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1b5e20">Step 2: V8B 进阶</text>
+  <text x="460" y="103" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">BOM + 爆炸图 + 检查清单</text>
+  <text x="460" y="118" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">code: bracket_assembly.py (增强)</text>
+  <text x="460" y="131" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">assets: 3 个资源包</text>
+  <text x="460" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">难度 ⭐⭐⭐</text>
+  <text x="460" y="168" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-style="italic" fill="#1b5e20">作品集记录与归档</text>
+
+  <!-- Arrow 2 -->
+  <polygon points="600,120 625,115 625,125" fill="#666"/>
+  <line x1="595" y1="120" x2="625" y2="120" stroke="#666" stroke-width="2"/>
+  <text x="610" y="108" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#444" font-weight="bold">+placement</text>
+  <text x="610" y="138" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#444" font-weight="bold">+nested</text>
+
+  <!-- Step 3: V8C mini-lab -->
+  <rect x="630" y="60" width="250" height="120" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="5"/>
+  <text x="755" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#e65100">Step 3: V8C mini-lab</text>
+  <text x="755" y="103" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">Placement + 子装配 + 干涉</text>
+  <text x="755" y="118" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">code: bracket_nested_assembly.py</text>
+  <text x="755" y="131" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">assets: 2 个资源包</text>
+  <text x="755" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">难度 ⭐⭐⭐⭐</text>
+  <text x="755" y="168" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-style="italic" fill="#e65100">精确放置和检查</text>
+
+  <!-- 底部说明 -->
+  <rect x="20" y="200" width="860" height="65" fill="#fff" stroke="#90a4ae" stroke-width="1" rx="5"/>
+  <text x="450" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">V8D 收口（当前页）</text>
+  <text x="40" y="240" font-family="Arial, sans-serif" font-size="10" fill="#333">• V8 系列三步走总入口（V8A → V8B → V8C）</text>
+  <text x="40" y="255" font-family="Arial, sans-serif" font-size="10" fill="#333">• 2 个 .py 代码 + 5 个资源包文件地图</text>
+  <text x="450" y="240" font-family="Arial, sans-serif" font-size="10" fill="#333">• 与 V6 Capstone / V7 单零件 / G-code 的层级关系</text>
+  <text x="450" y="255" font-family="Arial, sans-serif" font-size="10" fill="#333">• 15+ 项完成标准 + 8 条常见误区 + 后续扩展</text>
+</svg>
