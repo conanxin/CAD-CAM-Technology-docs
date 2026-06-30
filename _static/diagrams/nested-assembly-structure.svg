@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360">
+  <rect width="900" height="360" fill="#f8f9fa" rx="10"/>
+
+  <text x="450" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">嵌套装配体结构（V8C）</text>
+
+  <!-- 主装配（顶部） -->
+  <g transform="translate(280, 70)">
+    <rect x="0" y="0" width="340" height="60" fill="#ffebee" stroke="#c62828" stroke-width="2.5" rx="5"/>
+    <text x="170" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#b71c1c">bracket_nested_assembly (主装配)</text>
+    <text x="170" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">cq.Assembly(name="bracket_nested_assembly")</text>
+  </g>
+
+  <!-- 连接线（主装配到 4 个子项） -->
+  <line x1="320" y1="135" x2="200" y2="180" stroke="#666" stroke-width="1.5"/>
+  <line x1="370" y1="135" x2="370" y2="180" stroke="#666" stroke-width="1.5"/>
+  <line x1="420" y1="135" x2="500" y2="180" stroke="#666" stroke-width="1.5"/>
+  <line x1="580" y1="135" x2="650" y2="180" stroke="#666" stroke-width="1.5"/>
+
+  <!-- 子项 1: base_plate -->
+  <rect x="120" y="185" width="160" height="55" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="200" y="208" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0d47a1">base_plate</text>
+  <text x="200" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">单独零件</text>
+  <text x="200" y="237" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#777">loc = (0, 0, 0)</text>
+
+  <!-- 子项 2: vertical_plate -->
+  <rect x="295" y="185" width="160" height="55" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <text x="375" y="208" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1b5e20">vertical_plate</text>
+  <text x="375" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">单独零件</text>
+  <text x="375" y="237" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#777">loc = (0, 0, 0)</text>
+
+  <!-- 子项 3: bolt_pair (子装配) -->
+  <g transform="translate(440, 185)">
+    <rect x="0" y="0" width="200" height="100" fill="#fff3e0" stroke="#f57c00" stroke-width="2.5" rx="5"/>
+    <text x="100" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#e65100">bolt_pair (子装配)</text>
+    <text x="100" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">cq.Assembly(name="bolt_pair")</text>
+
+    <!-- 嵌套：2 个螺栓 -->
+    <line x1="50" y1="40" x2="50" y2="55" stroke="#666" stroke-width="1"/>
+    <line x1="150" y1="40" x2="150" y2="55" stroke="#666" stroke-width="1"/>
+
+    <rect x="20" y="58" width="60" height="35" fill="#d7ccc8" stroke="#5d4037" stroke-width="1.5" rx="2"/>
+    <text x="50" y="73" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white">bolt_left</text>
+    <text x="50" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#555">loc=(-50,0,0)</text>
+
+    <rect x="120" y="58" width="60" height="35" fill="#d7ccc8" stroke="#5d4037" stroke-width="1.5" rx="2"/>
+    <text x="150" y="73" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white">bolt_R</text>
+    <text x="150" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#555">loc=(+50,0,0)</text>
+  </g>
+
+  <!-- 子项 4: side_pin -->
+  <rect x="655" y="185" width="160" height="55" fill="#f5f5f5" stroke="#616161" stroke-width="2" rx="5"/>
+  <text x="735" y="208" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#424242">side_pin</text>
+  <text x="735" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555">单独零件</text>
+  <text x="735" y="237" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#777">loc = (20, 5, 95)</text>
+
+  <!-- 底部说明 -->
+  <rect x="20" y="310" width="860" height="40" fill="#fff" stroke="#90a4ae" stroke-width="1" rx="5"/>
+  <text x="450" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2c3e50">V8C 嵌套装配体的优势</text>
+  <text x="40" y="346" font-family="Arial, sans-serif" font-size="9" fill="#333">• 逻辑清晰：2 个螺栓作为"一对"组织</text>
+  <text x="450" y="346" font-family="Arial, sans-serif" font-size="9" fill="#333">• 复用性强：子装配可独立保存、命名、定位</text>
+</svg>

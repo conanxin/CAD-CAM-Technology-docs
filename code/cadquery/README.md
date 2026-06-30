@@ -11,6 +11,7 @@
 | [`bracket_variant.py`](./bracket_variant.py) | L 型支架变体：从板到支架的扩展示例 | V7B |
 | [`bracket_capstone.py`](./bracket_capstone.py) | 完整 L 型支架 Capstone：与 V6A 几何一致 | V7C |
 | [`bracket_assembly.py`](./bracket_assembly.py) | 简化支架装配体：底板+立板+螺栓+销钉 | V8A |
+| [`bracket_nested_assembly.py`](./bracket_nested_assembly.py) | 嵌套装配体：bolt_pair 子装配 + placement 数据结构 | V8C |
 
 ## 代码用途
 
@@ -87,6 +88,39 @@ V8B 轻量增强了 `bracket_assembly.py`：
 3. 用 `assembly-checklist.md` 逐项验证
 4. 用 `assembly-notes-template.md` 记录设计修改、导出记录
 5. 提交时同时提交 `.py` + `.step`（可选）+ BOM + checklist + notes
+
+### V8C — 嵌套装配体与 Placement mini-lab
+
+`bracket_nested_assembly.py` 演示如何用 `Assembly` 表达**子装配和精确 placement**：
+
+- **与 V8A 的区别**：
+  - V8A：所有组件直接 `add()` 到主装配
+  - V8C：使用 `bolt_pair` 子装配组织 2 个螺栓
+- **PLACEMENT_TABLE**：在文件顶部用 dict 定义每个组件的 placement 数据
+- **build_bolt_pair_subassembly()**：构造螺栓对子装配
+- **build_nested_assembly()**：构造主装配
+- **学习目标**：
+  - 显式 Location 表达组件位置
+  - 局部 vs 全局坐标系的区别
+  - 子装配（bolt_pair）的组织
+  - 教学型 placement 数据结构
+
+**与 V8B 的关系**：
+
+- V8B 讲 BOM、检查清单（如何记录和归档装配体）
+- V8C 讲 placement、子装配、干涉检查（如何放置和组织装配体）
+- V8A + V8B + V8C = 装配体三步走（多零件 → 记录 → 精确放置）
+
+**补充资源包**：
+
+- [`assets/bracket-capstone/assembly/placement-checklist.md`](../../assets/bracket-capstone/assembly/placement-checklist.md) —— Placement 检查清单
+- [`assets/bracket-capstone/assembly/interference-check-notes-template.md`](../../assets/bracket-capstone/assembly/interference-check-notes-template.md) —— 干涉检查记录模板
+
+**如果环境没有 OCCT/CadQuery**：
+
+- 阅读代码即可学习 placement、Location、子装配概念
+- 用 `placement-checklist.md` 做结构化检查
+- 用 `interference-check-notes-template.md` 记录检查结果
 
 ## 如何阅读
 

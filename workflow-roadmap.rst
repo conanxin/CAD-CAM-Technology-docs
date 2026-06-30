@@ -39,7 +39,7 @@ CAD/CAM 工具链总览
      - 输出物
    * - **CAD 设计**
      - 几何建模、装配设计、工程图生成
-     - SolidWorks, CATIA, Siemens NX, FreeCAD, Fusion 360, CadQuery（Python 代码化建模，含 V7A/V7B/V7C/V7D + V8A 装配体 + V8B BOM/checklist）
+     - SolidWorks, CATIA, Siemens NX, FreeCAD, Fusion 360, CadQuery（Python 代码化建模，含 V7A/V7B/V7C/V7D + V8A 装配体 + V8B BOM/checklist + V8C placement/nested）
      - 三维模型、装配体、二维工程图、参数化代码
    * - **工程分析**
      - 有限元分析、运动仿真、优化设计
@@ -427,6 +427,27 @@ V8B 的关键内容：
 - :file:`assets/bracket-capstone/assembly/assembly-bom-template.md`
 - :file:`assets/bracket-capstone/assembly/assembly-checklist.md`
 - :file:`assets/bracket-capstone/assembly/assembly-notes-template.md`
+
+**任务 1.14：Assembly Placement 与子装配（V8C）**
+
+完成 V8A + V8B 后，可以进一步阅读 :doc:`examples/cadquery-assembly-placement-mini-lab` 学习 Assembly 的 Placement 和子装配。
+
+V8C 的关键内容：
+
+- **Placement/Location**：组件如何被精确放置
+- **全局 vs 局部坐标系**：理解不同坐标系的区别
+- **Nested Assembly**：把相关组件组织成子装配（bolt_pair）
+- **教学型干涉检查**：用结构化方法（checklist）判断装配关系
+- **PLACEMENT_TABLE**：用 dict 定义每个组件的 placement
+
+配套代码：
+
+- :file:`code/cadquery/bracket_nested_assembly.py` —— 嵌套装配体
+
+补充资源包：
+
+- :file:`assets/bracket-capstone/assembly/placement-checklist.md`
+- :file:`assets/bracket-capstone/assembly/interference-check-notes-template.md`
 
 **任务 2：对比 STEP 与 STL 文件差异**
 
