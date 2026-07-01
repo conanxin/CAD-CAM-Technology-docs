@@ -3,6 +3,7 @@
 **Tag**: `v1.0.0`
 **Title**: v1.0.0 - CAD/CAM Technology Docs Stable
 **Date**: 2026-07-01
+**RC1 Validation**: v1.0.0-rc1 验证通过（V10D）
 
 ## Overview
 

@@ -9,11 +9,11 @@
 ## 项目状态
 
 - **在线版本**: https://conanxin.github.io/CAD-CAM-Technology-docs
-- **当前版本**: `v1.0.0-ready`（稳定版候选准备中）
-- **当前 HEAD**: `v0.10.1-full-site-quality-audit`（质量审计里程碑）
+- **当前版本**: `v1.0.0 stable`（稳定版已发布）
+- **v1.0.0 GitHub Release**: https://github.com/conanxin/CAD-CAM-Technology-docs/releases/tag/v1.0.0
 - **历史版本**（SAE）：http://conanxincv.sinaapp.com/project2/index.html（已归档，不再更新）
 - **Release Notes**: https://github.com/conanxin/CAD-CAM-Technology-docs/releases
-- **v1.0.0 发布候选说明**：当前站点已通过 V10B 全站质量审计（v1.0 Readiness: READY），准备进入 v1.0.0 稳定版发布
+- **v1.0.0 发布说明**：本站已完成 V10B 全站质量审计 + V10C 最终发布收口 + V10D rc1 验证，正式发布 v1.0.0 stable。
 
 ## 快速入口表
 
@@ -130,7 +130,8 @@
 
 ## 版本演进
 
-- **v1.0.0**（2026-07，待发布）：稳定版发布——当前已通过 V10B 全站质量审计，准备进入 v1.0.0 稳定版
+- **v1.0.0**（2026-07）：稳定版发布——基于 V10B 全站质量审计 + V10C 最终发布收口 + V10D rc1 验证，正式发布 v1.0.0 stable。tag `v1.0.0` + GitHub Release（latest）
+- **V10D**（2026-07）：rc1 验证 + v1.0.0 stable 发布——验证 rc1 全通过，创建正式 v1.0.0 tag + GitHub Release（latest=true），保留 v1.0.0-rc1 prerelease
 - **V10C**（2026-07）：最终发布收口——release notes v1.0.0 草案 + v1.0.0 release checklist + README v1.0.0-ready
 - **V10B**（2026-07）：全站质量审计——Sphinx 0 warning / py_compile 10/10 / 47 HTML / 3,654 引用 0 broken / 13/13 HTTP 200
 - **V10A**（2026-07）：首页 Showcase 化 + project-showcase 全景页 + 轻量 CSS + 2 SVG（site-showcase-map + v1-roadmap）
@@ -147,8 +148,8 @@
 |------|------|---------|-----|
 | V10A | 首页与 Showcase | 首页视觉升级 + project-showcase 全景页 + 轻量 CSS + 2 SVG | **v0.10.0-homepage-showcase**（✅ 完成）|
 | V10B | 全站质量审计 | 死链 / 拼写 / Sphinx 0 warning / HTML CSS 验证 / SVG 引用检查 | **v0.10.1-full-site-quality-audit**（✅ 完成）|
-| V10C | 最终发布收口 | README 最终版、release notes、v1.0.0 release checklist、GitHub Release 完整 | **v1.0.0-rc1**（⏳ 待发布）|
-| v1.0.0 | 稳定版 | 长期支持里程碑、CI/CD 完整 | **v1.0.0**（⏳ 待发布）|
+| V10C | 最终发布收口 | README 最终版、release notes、v1.0.0 release checklist、GitHub Release 完整 | **v1.0.0-rc1**（✅ 完成）|
+| v1.0.0 | 稳定版 | 长期支持里程碑、CI/CD 完整 | **v1.0.0**（✅ 已发布）|
 
 ## 本地构建
 
