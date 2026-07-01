@@ -1,0 +1,14 @@
+URL,HTTP_Status,Check
+https://conanxin.github.io/CAD-CAM-Technology-docs/,200,首页
+https://conanxin.github.io/CAD-CAM-Technology-docs/project-showcase.html,200,V10A 项目全景
+https://conanxin.github.io/CAD-CAM-Technology-docs/workflow-roadmap.html,200,工具链路线图
+https://conanxin.github.io/CAD-CAM-Technology-docs/examples/index.html,200,examples 索引
+https://conanxin.github.io/CAD-CAM-Technology-docs/examples/freecad-workflow-index.html,200,V5D FreeCAD 五步路线
+https://conanxin.github.io/CAD-CAM-Technology-docs/examples/capstone-learning-path.html,200,V6D Capstone 学习路径
+https://conanxin.github.io/CAD-CAM-Technology-docs/examples/capstone-portfolio-upgrade.html,200,V9A 作品集升级
+https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-learning-path.html,200,V7D CadQuery 学习路径
+https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-assembly-learning-path.html,200,V8D Assembly 学习路径
+https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-runtime-portfolio-path.html,200,V9D 运行与作品集路线
+https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-local-environment-guide.html,200,V9C 本地环境指南
+https://conanxin.github.io/CAD-CAM-Technology-docs/examples/cadquery-runtime-export-pilot.html,200,V9B 运行试点
+https://conanxin.github.io/CAD-CAM-Technology-docs/search.html,200,搜索页
