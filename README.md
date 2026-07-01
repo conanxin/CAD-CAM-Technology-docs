@@ -9,9 +9,11 @@
 ## 项目状态
 
 - **在线版本**: https://conanxin.github.io/CAD-CAM-Technology-docs
-- **当前版本**: `v0.10.0-homepage-showcase`
+- **当前版本**: `v1.0.0-ready`（稳定版候选准备中）
+- **当前 HEAD**: `v0.10.1-full-site-quality-audit`（质量审计里程碑）
 - **历史版本**（SAE）：http://conanxincv.sinaapp.com/project2/index.html（已归档，不再更新）
 - **Release Notes**: https://github.com/conanxin/CAD-CAM-Technology-docs/releases
+- **v1.0.0 发布候选说明**：当前站点已通过 V10B 全站质量审计（v1.0 Readiness: READY），准备进入 v1.0.0 稳定版发布
 
 ## 快速入口表
 
@@ -128,6 +130,9 @@
 
 ## 版本演进
 
+- **v1.0.0**（2026-07，待发布）：稳定版发布——当前已通过 V10B 全站质量审计，准备进入 v1.0.0 稳定版
+- **V10C**（2026-07）：最终发布收口——release notes v1.0.0 草案 + v1.0.0 release checklist + README v1.0.0-ready
+- **V10B**（2026-07）：全站质量审计——Sphinx 0 warning / py_compile 10/10 / 47 HTML / 3,654 引用 0 broken / 13/13 HTTP 200
 - **V10A**（2026-07）：首页 Showcase 化 + project-showcase 全景页 + 轻量 CSS + 2 SVG（site-showcase-map + v1-roadmap）
 - **V9D**(2026-07)：CadQuery 运行与作品集路线发布收口（三步学习路线、9 个核心资源文件地图、真实运行状态说明、教学诚信、8 项完成标准、2 个新 SVG）
 - **V9C**(2026-07)：CadQuery 本地环境配置指南（conda/pip 路线、smoke test、导出后检查、environment-cadquery.yml、3 个辅助脚本）
@@ -140,10 +145,10 @@
 
 | 阶段 | 主题 | 主要交付 | Tag |
 |------|------|---------|-----|
-| V10A | 首页与 Showcase | 首页视觉升级 + project-showcase 全景页 + 轻量 CSS + 2 SVG | **v0.10.0-homepage-showcase**（本次）|
-| V10B | 全站质量审计 | 死链 / 拼写 / Sphinx 0 warning / HTML CSS 验证 / SVG 引用检查 | v0.10.x-quality-audit |
-| V10C | 最终发布收口 | README 最终版、release notes、导航/标签收口、GitHub Release 完整 | v0.10.x-release-closure |
-| v1.0.0 | 稳定版 | 长期支持里程碑、CI/CD 完整 | v1.0.0 |
+| V10A | 首页与 Showcase | 首页视觉升级 + project-showcase 全景页 + 轻量 CSS + 2 SVG | **v0.10.0-homepage-showcase**（✅ 完成）|
+| V10B | 全站质量审计 | 死链 / 拼写 / Sphinx 0 warning / HTML CSS 验证 / SVG 引用检查 | **v0.10.1-full-site-quality-audit**（✅ 完成）|
+| V10C | 最终发布收口 | README 最终版、release notes、v1.0.0 release checklist、GitHub Release 完整 | **v1.0.0-rc1**（⏳ 待发布）|
+| v1.0.0 | 稳定版 | 长期支持里程碑、CI/CD 完整 | **v1.0.0**（⏳ 待发布）|
 
 ## 本地构建
 
